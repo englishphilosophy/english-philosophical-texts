@@ -1,0 +1,17 @@
+---
+id: Smith
+inherit: ../index.mit
+forename: Adam
+surname: Smith
+author: Adam Smith
+birth: 1720
+death: 1790
+published: 1759
+nationality: Scottish
+sex: Male
+texts:
+  - tms/index.mit
+  - dol/index.mit
+  - ewn/index.mit
+  - eps/index.mit
+---
