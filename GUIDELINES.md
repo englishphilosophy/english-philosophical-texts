@@ -22,11 +22,10 @@ however, encoding the texts manually in this format is undesirable:
     consuming for human beings to produce by hand.
   - Specialist knowledge, both of XML and of the TEI schema in particular, would
     be required of our typists.
-  - Errors---in the form of unmatched or malformed XML tags---are very easily
-    produced.
-  - Texts stored as XML are not very easy or pleasant for the human eye to
-    parse, making the identification and correction of typographical errors
-    harder.
+  - Errors&mdash;in the form of unmatched or malformed XML tags&mdash;are very
+    easily produced.
+  - Texts stored as XML are not very easy or pleasant for the human eye to read,
+    making the identification and correction of typographical errors harder.
 
 To eliminate these problems, a terse markup language called
 [Markit](https://github.com/englishphilosophy/markit) has been designed as part
@@ -44,14 +43,14 @@ open Atom's settings tab (from the 'File' menu), click '+ Install', and search
 for 'language-markit' in the 'Search packages' box. With this package installed,
 Atom will recognise files with a `.mit` extension as Markit files, and will use
 the appropriate syntax highlighting. This syntax highlighting, as well as making
-the files easier to read, will also make it much easier to spot syntax errors.
+the files easier to read, will make it much easier to spot syntax errors.
 
 In Atom, you can also use the 'Edit -> Reflow Selection' command to break
 paragraphs down into a sequence of shorter lines (`Ctrl-Shift-Q` on Windows, or
 `Cmd-Alt-Q` on Mac). While not necessary, we strongly recommend that lines of
 text in a Markit file do not exceed 80 characters; this makes the syntax
-highlighting work better, and also makes the file much nicer on the human eye.
-The 'Reflow Selection' command help you do this automatically.
+highlighting work better, and also makes the file much nicer to read. The
+'Reflow Selection' command can help you to do this automatically.
 
 ### 1.2. Text structure, filenames, and metadata
 
@@ -86,24 +85,24 @@ those three files would then each contain references to separate files for their
 several parts; those files would, in turn, contain references to separate files
 for their several sections; and these files, finally, would contain the textual
 content (i.e. the sequence of paragraphs) of each section. The generated TEI-XML
-file will nest all of these things in `<div` elements accordingly.
+file will place all of these things in nested `<div>` elements accordingly.
 
 References from one Markit file to another take the form of relative file paths,
-and consequently the file being referred to can reside anywhere else on the same
-hard drive. By convention, however, files should be stored in a directory
-structure that mirrors the structure of the work itself, with each directory
-containing an `index.mit` file. Thus Hume's _Treatise_ would have a main
-`index.mit` file alongside three subdirectories (one for each book); those
-subdirectories would each have their own `index.mit` file and subdirectories
-(one for each part); and those subdirectories would each have an `index.mit`
-file and one file for each section (called `1.mit`, `2.mit`, `3.mit`, etc.). For
-this project, filenames and directory structures will follow this convention,
-with one general exception: since the texts are all ultimately grouped in
-separate directories for each author, the individual letters in works consisting
-of published correspondence will be split across two directories (one residing
-in the directory of each correspondent). We will effectively be producing two
-copies of each of these works (one for each author), although the text for each
-individual letter will only be stored once.
+and consequently the file being referred to can reside anywhere on the same hard
+drive. By convention, however, files should be stored in a directory structure
+that mirrors the structure of the work itself, with each directory containing a
+main `index.mit` file. Thus the root directory for Hume's _Treatise_ would have
+a main `index.mit` file alongside three subdirectories (one for each book);
+those subdirectories would each have their own `index.mit` file and
+subdirectories (one for each part); and _those_ subdirectories would each have
+an `index.mit` file and one file for each section (called `1.mit`, `2.mit`,
+`3.mit`, etc.). For this project, filenames and directory structures will follow
+this convention, with one general exception: since the texts are all ultimately
+grouped in separate directories for each author, the individual letters in works
+consisting of published correspondence will be split across two directories (one
+residing in the directory of each correspondent). We will effectively be
+producing two copies of each of these works (one for each author), although the
+text for each individual letter will only be stored once.
 
 ### 1.3. Starting point
 
@@ -119,12 +118,13 @@ the project editor. From the editor, typists will be provided with:
      filenames.
 
 Typically there will be more Markit files than there are PDF files, since some
-Markit files---namely the `index.mit` files in each directory---correspond to
-higher-level structures in the work, which group together the smaller units.
+Markit files&mdash;namely the `index.mit` files in each
+directory&mdash;correspond to higher-level structures in the work, which group
+together the smaller units.
 
 The job of typists is to fill in the text part of the relevant Markit files
 (i.e. the part following the metadata), by transcribing the corresponding PDF
-file. The rules governing this transcription are explained in the next section.
+files. The rules governing this transcription are explained in the next section.
 
 ## 2. Output
 
@@ -136,16 +136,16 @@ for each paragraph and each footnote. In the latter case, these numbers should
 replace the symbol used to identify the footnote in the original text (\*, †, ‡,
 §, etc.).
 
-Additional critical markup---identifying named individuals, citations, and
-correcting typographical errors in the source text---may be included, but need not
-be (ultimately these things are the responsibility of the project editor). The
-correction of typographical errors explicitly noted in any official ERRATA
-sheets published with the original work would be particularly welcome.
+Additional critical markup&mdash;identifying named individuals, citations, and
+correcting typographical errors in the source text&mdash;may be included, but
+need not be (ultimately these things are the responsibility of the project
+editor). The correction of typographical errors explicitly noted in any official
+ERRATA sheets published with the original work would be particularly welcome.
 
-For all markup, optional and required, the general rule is simple: _if in
-doubt, leave it out_, and simply transcribe the plain text unadorned. And, of
-course, feel free to contact that project editor if you encounter anything not
-covered by this document, or which you feel requires special treatment.
+For all markup, optional and required, the general rule is simple: _if in doubt,
+leave it out_, and simply transcribe the text unadorned. And, of course, feel
+free to contact that project editor if you encounter anything not covered by
+this document, or which you feel requires special treatment.
 
 ### 2.1. Required output
 
@@ -156,8 +156,8 @@ paragraph is represented by a single block of text with no more than one
 consecutive line break anywhere inside it. Single line breaks may be used
 anywhere in the paragraph for the sake of readability, and we encourage you to
 use them throughout to ensure that no line of text exceeds 80 characters in
-length. (Or better yet, just use Atom's 'Reflow Selection' feature to automate
-this process, as explained above.) Markit treats a single line break as
+length (or better yet, just use Atom's 'Reflow Selection' feature to automate
+this process, as explained above). Markit treats a single line break as
 equivalent to a single space (and any additional spaces at the start or end of a
 line are ignored). Use two consecutive line breaks to indicate the start of a
 new paragraph.
@@ -200,13 +200,14 @@ a companion, by affecting friendship, is evil.
 
 Note that the printed number `1.` at the start of the first paragraph in the
 text is distinct from the ID tag, and _both_ must be included. The numbers in
-the printed text correspond to subsections created by Hume himself, subsections
+this printed text correspond to subsections created by Hume himself, subsections
 which typically span several paragraphs. However, if, in a source text, there
-are printed numbers at the start of each paragraph which correspond exactly to
-the ID tags, these should be omitted. (This is the case, for example, in our
-source text for Locke's _Essay Concerning Human Understanding_.) If you are
-uncertain whether printed numbers at the start of paragraphs of text should be
-included or not, please check with the project editor.
+are printed numbers at the start of _every_ paragraph, and which correspond
+exactly to the ID tags, then these printed numbers should be omitted. (This is
+the case, for example, in our source text for Locke's _Essay Concerning Human
+Understanding_.) If you are uncertain whether printed numbers at the start of
+paragraphs of text should be included or not, please check with the project
+editor.
 
 Paragraph numbering should be reset at the start of each section. The first
 paragraph of section 2 of Hume's _Disseration_, for example, will also be
@@ -254,15 +255,18 @@ _Evil_. The punishment of an adversary, by gratifying revenge, is good; the
 sickness of a companion, by affecting friendship, is evil.
 ```
 
-Note the words `Good` and `Evil` are in small capitals in the first paragraph,
+Note the words "Good" and "Evil" are in small capitals in the first paragraph,
 and italicized in the second.
 
-When something that is not italicized occurs within an italicized phrase---such
-as a footnote anchor, or some unitalicized text in small capitals---you should
-_not_ break up the larger italicized phrase, but simply embed the smaller phrase
-as if it were in italics. (When our texts our displayed on the web, these
-formatting niceties will be taken care of automatically.) For example, consider
-the following passage from the start of Hume's essay on the British government:
+##### 2.1.3.1. Nested formatting
+
+When something that is not italicized occurs within an italicized
+phrase&mdash;such as a footnote anchor, or some unitalicized text in small
+capitals&mdash;you should _not_ break up the larger italicized phrase, but
+simply embed the smaller phrase as if it were in italics. (When our texts our
+displayed on the web, these formatting niceties will be taken care of
+automatically.) For example, consider the following passage from the start of
+Hume's essay on the British government:
 
 ```
 Notwithstanding this unlucky example, I will venture to examine an important
@@ -273,7 +277,7 @@ sudden revolution either way, I shall at least escape the shame attending my
 temerity, if I should be found to have been mistaken.
 ```
 
-In the printed text, the word `British` is in small capitals and _not_
+In the printed text, the word "British" is in small capitals and _not_
 italicized (in fact, in our source texts, small capitals are _never_ rendered
 in italics). Nevertheless, in transcribing this you should _not_ break the
 italicized phrase into two separate parts, with the small capitals text in the
@@ -285,10 +289,10 @@ republic; and in which of these two species of government it will most probably
 terminate?_
 ```
 
-This more convoluted markup is unnecessary, and does not reflect the logic of
-the formatting; when we render the texts on our sites, we will always show
-small capitals as unitalicized, whether or not they occur within an italicized
-phrase.
+This more convoluted markup is unnecessary, and does not reflect the implicit
+structure of the text; when we render the texts on our sites, we will always
+show small capitals as unitalicized, whether or not they occur within an
+italicized phrase.
 
 Sometimes whole paragraphs or sections of texts (often prefaces) are rendered
 in italics. In these cases, you should enclose each paragraph entirely in
@@ -310,26 +314,28 @@ Note that the whole paragraph here is enclosed in underscores, as is the phrase
 `the Love of God` within that. Markit will handle the formatting here for you
 (rendering the embedded italics as ordinary text).
 
+##### 2.1.3.2. Formatting and surrounding punctuation
+
 It is not always obvious or even determinate where exactly formatting in italics
 or small capitals should end. Proper names are often rendered in small capitals
-in our source texts, and these in turn are often possessives, ending in `’s`. In
-these cases, the apostrophe and the `s` should be rendered _outside_ the span of
-the small capitals. With italicized text, the main issues concern whether any
-surrounding punctuation marks should also be italicized. As a general rule,
-surrounding punctuation should _not_ be included in italicized text, unless the
-whole sentence is italicized. In these cases, the concluding full-stop, question
-mark, exclamation mark, or colon should also be included. It is a consequence of
-the general rule that concluding commas or semi-colons at the ends of italicized
-phrases should _not_ generally be included (even if, in the source text, the
-punctuation looks as though it is italicized).
+in our source texts, and these in turn are often possessives, ending in
+"&rsquo;s". In these cases, the apostrophe and the "s" should be rendered
+_outside_ the span of the small capitals. With italicized text, the main issues
+concern whether any surrounding punctuation marks should also be italicized. As
+a general rule, surrounding punctuation should _not_ be included in italicized
+text, unless the whole sentence is italicized. In these cases, the concluding
+full-stop, question mark, exclamation mark, or colon should also be included. It
+is a consequence of the general rule that concluding commas or semi-colons at
+the ends of italicized phrases should _not_ generally be included (even if, in
+the source text, the punctuation looks as though it is italicized).
 
-Comma separated lists are a notable particular case. These may often begin with
-"viz." in italics, which should be rendered in a separate italicized span, apart
-from the list itself. As for that list, whether it should be one long italicized
-span, or several separate ones (one for each element in the list), depends on
-whether the "and" preceding the last item is in italics. For example, if the
-whole list, including the "and" at the end, is in italics, then it should be
-rendered like so:
+Comma separated lists are a notable case. These may often begin with "viz." in
+italics, which should be rendered in a separate italicized span, apart from the
+list itself. As for that list, whether it should be one long italicized span, or
+several separate ones (one for each element in the list), depends on whether the
+"and" preceding the last item is in italics. For example, if the whole list,
+including the "and" at the end, is in italics, then it should be rendered like
+so:
 
 ```
 _viz._, _the first item, the second item, the third, and the fourth_.
@@ -346,7 +352,7 @@ _viz._, _the first item_, _the second item_, _the third, and _the fourth_.
 
 Comments in the margins of our source texts (which usually serve as markers
 indicating the topic being addressed in the main text) should be enclosed in
-hash tags. For example:
+hash tags `#`. For example:
 
 ```
 {#1} #Occasion of this INQUIRY.# RELIGION and VIRTUE appear in many respects so
@@ -356,10 +362,10 @@ speak, or even think of 'em apart. [...]
 ```
 
 It is not always obvious where, in the flow of a paragraph, a margin comment
-ought to be placed. Try and place them at the _start_ of the sentence to which
+ought to be placed. Try to place them at the _start_ of the sentence to which
 they most obviously apply, and try to avoid placing them in the middle of
 sentences. If they must go in the middle of a sentence, try to place them after
-a comma or other punctuation, or in any case try not to interrupt a clause.
+a comma or other punctuation mark, or in any case try not to interrupt a clause.
 
 #### 2.1.5. Quotations
 
@@ -368,7 +374,7 @@ should be marked up just like regular italic text (with no distinction being
 made between the two). Quotations that have surrounding quotation marks should
 be marked up with surrounding quotation marks. Note, however, that Markit
 demands the use of the flat double quotation mark either side of the quotation
-(`" ... "`, rather than the nicer-looking curly quotation marks used in the
+(`" ... "`), rather than the nicer-looking curly quotation marks used in the
 printed texts themselves (`“ ... ”`). This is designed to save you time, since
 the flat quotation mark is much easier to type on a regular keyboard. Markit
 will take care of the pretty display for you.
@@ -388,10 +394,11 @@ quotation. In other words, use underscores and quotation marks to mark up the
 superficial features of the text; do not try to interpret the semantics behind
 the italics or quotation marks.
 
-Block quotations---i.e. quotations separated from the flow of the paragraph, by
-being placed on a new line and indented---should be surrounded by _two_ double
-quotation marks: `"" ... ""`. To make the Markit file easier to read, they
-should likewise be placed on a new line and indented with four spaces, like so:
+Block quotations&mdash;i.e. quotations separated from the flow of the paragraph,
+by being placed on a new line and indented&mdash;should be surrounded by _two_
+double quotation marks: `"" ... ""`. To make the Markit file easier to read,
+they should likewise be placed on a new line and indented with four spaces, like
+so:
 
 ```
 {#3} Few men would envy the character, which ^Caesar^ gives of ^Cassius^.
@@ -431,7 +438,7 @@ to the source text. However, Markit will interpret this as _three separate
 paragraphs_, with the block quotation as a distinct paragraph in between the
 other two. This does not reflect the intended structure of the text, which is of
 a single paragraph with a block quotation inside it. Thus the first option, with
-only one line break either side of the quotation, is to be preferred.
+only one line break either side of the quotation, is required.
 
 #### 2.1.6. Foreign text
 
@@ -532,7 +539,7 @@ or `\^`.
 
 #### 2.1.10. Ligatures and long `s`s
 
-Our source texts use the now old-fashioned long `s`---`ſ`---at the end of words
+Our source texts use the now old-fashioned long `s`&mdash;`ſ`&mdash;at the end of words
 ending in `s`. These should be rendered here as an ordinary `s`.
 
 Our source texts also very often include `ae` or `oe` ligatures (in words like
