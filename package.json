@@ -1,0 +1,17 @@
+{
+  "name": "english-philosophical-texts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/englishphilosophy/english-philosophical-texts.git",
+  "author": "Amyas Merivale <merivale@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "import-text": "node --experimental-modules import/index.js"
+  },
+  "dependencies": {
+    "jsdom": "^16.2.0",
+    "sync-request": "^6.1.0",
+    "yamljs": "^0.3.0"
+  }
+}
