@@ -37,14 +37,16 @@ export default function convert (filePath, noteUrls = []) {
     fileContents = `---\n${yamlCheck[1]}\n---\n`
 
     // look for a section title, and maybe add it
-    const title = doc.querySelector('#doccontent h2')
+    const title = doc.querySelector('#doccontent h1') ||
+      doc.querySelector('#doccontent h2') ||
+      doc.querySelector('#doccontent h3')
     if (title) {
       fileContents += convertTitle(noteUrls, title)
       fileContents += '\n\n'
     }
 
     // get text of all paragraphs and notes
-    const paragraphs = Array.from(doc.querySelectorAll('#doccontent p, #doccontent .lg'))
+    const paragraphs = Array.from(doc.querySelectorAll('#doccontent p, #doccontent .lg, #doccontent .q1'))
       .map(convertParagraph.bind(null, noteUrls))
     const notes = noteUrls.map(convertFootnote)
 
@@ -116,16 +118,19 @@ function convertFootnote (url, index) {
 // convert html content to Markit
 function markit (text) {
   return text
+    .replace(/\n\n/g, ' ')
+    .replace(/\n/g, ' ')
     .replace(/<div class="line">(.*?)<\/div>/g, '$1 //')
     .replace(/<span class="pbtext">.*?<\/span>/g, '')
     .replace(/<span class="rend-italic">(.*?)<\/span>/g, '_$1_')
     .replace(/<span class="notenumber">.*?<\/span>/g, '')
-    .replace(/<span class="gap">•<\/span>/g, '[?]')
+    .replace(/<span class="gap">〈1 page duplicate〉<\/span>/g, '')
+    .replace(/<span class="gap">•+<\/span>/g, '[?]')
     .replace(/<span class="gap">〈◊〉<\/span>/g, '[??]')
-    .replace(/<span class="gap">〈 in non-Latin alphabet 〉<\/span>/g, '$[Greek text]$')
-    .replace(/∣/g, '') // ditch line breaks
-    .replace(/\n\n/g, ' ') // sort out white space
-    .replace(/\n/g, ' ')
+    .replace(/<span class="gap">〈 in non-Latin alphabet 〉<\/span>/g, '$$[Greek text]$$')
+    .replace(/∣/g, '')
+    .replace(/▪/g, ';')
+    .replace(/§/g, '\\S') // section symbols
     .replace(/&amp;/g, '&') // ampersands
     .replace(/‘|’/g, '\'') // apostrophes
     .replace(/“|”/g, '"') // quotes

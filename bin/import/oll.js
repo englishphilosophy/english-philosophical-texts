@@ -155,6 +155,7 @@ function markit (text) {
     .replace(/<span class="c?sc">(.*?)<\/span>/g, '^$1^') // smallcaps
     .replace(/^<br>/, '//') // line breaks
     .replace(/<([^>]+)>/g, '') // remove all remaining HTML tags
+    .replace(/§/g, '\\S') // section symbols
     .replace(/&amp;/g, '&') // ampersands
     .replace(/‘|’/g, '\'') // apostrophes
     .replace(/“|”/g, '"') // quotes
