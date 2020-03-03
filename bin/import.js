@@ -2,8 +2,8 @@
  * Command-line module for importing texts.
  */
 import fs from 'fs'
-import oll from './oll.js'
-import tcp from './tcp.js'
+import oll from './import/oll.js'
+import tcp from './import/tcp.js'
 
 // create an object containing all the importers
 const importers = { oll, tcp }

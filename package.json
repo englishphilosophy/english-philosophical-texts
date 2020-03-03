@@ -7,7 +7,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "import-text": "node --experimental-modules --no-warnings import/index.js",
+    "fetch": "node --experimental-modules --no-warnings bin/import.js",
+    "stats": "node --experimental-modules --no-warnings bin/stats.js",
     "markit": "node --experimental-modules --no-warnings ../markit/bin/index.js"
   },
   "dependencies": {

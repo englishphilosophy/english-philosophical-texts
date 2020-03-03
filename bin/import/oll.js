@@ -146,6 +146,7 @@ function convertFootnote (doc, divId, index) {
   return text.replace(/(?![^\n]{1,80}$)([^\n]{1,80})\s/g, '$1\n')
 }
 
+// convert html content to Markit
 function markit (text) {
   return text
     .replace(/<a[^>]*footnote-link.*?>(.*?)<\/a>/g, '[n$1]')
