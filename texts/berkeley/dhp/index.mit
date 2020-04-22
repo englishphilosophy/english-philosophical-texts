@@ -1,9 +1,33 @@
 ---
+imported: true
 id: Berkeley.DHP
 inherit: ../index.mit
 title: Three Dialogues between Hylas and Philonous
 breadcrumb: Dialogues between Hylas and Philonous
 published: 1713
+copytext: 1734
 sourceUrl: >
-  https://quod.lib.umich.edu/e/ecco/004848507.0001.000?view=toc
+  https://www.maths.tcd.ie/~dwilkins/Berkeley/Hylas/
+sourceDesc: >
+  Berkeley’s [Dialogues between Hylas and Philonous] was first published in
+  1713. Our copytext is the third edition of 1734, and the text derives from
+  David Wilkins’s online edition.
+texts:
+  - ded.mit
+  - pref.mit
+  - 1.mit
+  - 2.mit
+  - 3.mit
 ---
+{title}
+£4 THREE £4
+£1 DIALOGUES £1
+£4 ^between^ £4
+£2 _Hylas_ and _Philonous_. £2
+£5 The Design of which £5
+Is plainly to demonstrate the Reality and Perfection of ^Human Knowledge^, the
+Incorporeal Nature of the ^Soul^, and the Immediate Providence of a ^Deity^:
+£5 In OPPOSITION to £5
+£3 SCEPTICS and ATHEISTS. £3
+£5 ALSO £5
+To open a Method for rendring the ^Sciences^ more easy, useful, and compendious.
