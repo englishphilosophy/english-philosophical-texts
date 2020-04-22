@@ -6,7 +6,7 @@ import sentences from './build/sentences.ts'
 import html from './build/html.ts'
 
 // texts -> build/texts (using Markit)
-// texts()
+texts()
 
 // build/texts -> build/html
 // html()
@@ -18,7 +18,7 @@ import html from './build/html.ts'
 // sentences()
 
 // build/texts -> build/analysis
-analysis()
+// analysis()
 
 // build/analysis -> build/topics
-topics()
+// topics()
