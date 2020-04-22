@@ -5,19 +5,18 @@ inherit: ../index.mit
 title: A Treatise Concerning the Principles of Human Knowledge
 breadcrumb: Treatise Concerning Human Knowledge
 published: 1710
-copytext: 1710
+copytext: 1734
 sourceUrl: >
-  https://quod.lib.umich.edu/e/ecco/004848510.0001.000?view=toc
+  https://www.maths.tcd.ie/~dwilkins/Berkeley/HumanKnowledge/
 sourceDesc: >
   Berkeley’s [Treatise Concerning the Principles of Human Knowledge] was first
   published in 1710, and then again in 1734 together with the [Three Dialogues
   Between Hylas and Philonous]. Our copytext is this later edition, which
   corrects a few typographical errors, makes some small stylistic improvements,
-  and uses more modern spelling. Where the 1734 edition has ‘humane knowledge’,
-  however, and the 1710 edition has ‘human knowlege’, we have preferred ‘human
-  knowledge’, which we presume to be easier on the eye of modern readers.
+  and uses more modern spelling. The text here derives from David Wilkins’s
+  online edition.
 licence: This text is in the public domain.
-contents:
+texts:
   - ded.mit
   - pref.mit
   - intro.mit
