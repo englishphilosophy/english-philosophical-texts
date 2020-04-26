@@ -1,3 +1,5 @@
+/*
+
 import { Index, Author, Stub, Collection, Document } from '../types/text.ts'
 import { Analysis } from '../types/analysis.ts'
 import { Topics } from '../types/topics.ts'
@@ -6,27 +8,27 @@ import { readText, readAnalysis, write } from '../file.ts'
 export default function (): void {
   console.log('Computing topic similarity data...')
   const index = readText('index') as Index
-  index.texts.forEach((text: Author) => {
-    addTopicsRecursively(text.id, index.texts)
-  })
+  for (const author of index.texts) {
+    addTopicsRecursively(author.id, index.texts)
+  }
 }
 
 function addTopicsRecursively (id: string, authors: Author[]): void {
   const text = readText(id) as Author|Stub
 
   if (text instanceof Author || (text instanceof Collection && text.imported)) {
-    text.texts.forEach((sub: Author|Stub) => {
-      addTopicsRecursively(sub.id, authors)
-    })
+    for (const stub of text.texts) {
+      addTopicsRecursively(stub.id, authors)
+    }
   }
 
   const analysis = readAnalysis(id)
   const topics = new Topics(analysis)
 
   if (text instanceof Author || text.imported) {
-    authors.forEach((author) => {
+    for (const author of authors) {
       addSimilarityRecursively(author.id, analysis, topics)
-    })
+    }
     
     topics.similarTexts.sort((x, y) => y.similarity - x.similarity)
   }
@@ -41,11 +43,11 @@ function addSimilarityRecursively (id: string, analysis: Analysis, topics: Topic
   const text = readText(id) as Author|Collection|Document
 
   if (text instanceof Author || (text instanceof Collection && text.imported)) {
-    text.texts.filter(x => x.imported).forEach((sub: Author|Stub) => {
-      if ((text.id === 'index') || (sub.id.split('.')[0] === text.id.split('.')[0])) {
-        addSimilarityRecursively(sub.id, analysis, topics)
+    for (const stub of text.texts.filter(x => x.imported)) {
+      if ((text.id === 'index') || (stub.id.split('.')[0] === text.id.split('.')[0])) {
+        addSimilarityRecursively(stub.id, analysis, topics)
       }
-    })
+    }
   }
 
   if (text instanceof Author || text.imported) {
@@ -58,3 +60,5 @@ function addSimilarityRecursively (id: string, analysis: Analysis, topics: Topic
     if (similarity > 0) topics.similarTexts.push({ id, similarity })
   }
 }
+
+*/

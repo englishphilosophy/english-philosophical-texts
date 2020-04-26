@@ -1,6 +1,4 @@
-import { Text, Document } from './text.ts'
-
-export class Analysis {
+export interface Analysis {
   id: string
   documentCount: number
   importedDocumentCount: number
@@ -15,23 +13,6 @@ export class Analysis {
   names: string[]
   foreignText: string[]
   citations: string[]
-  
-  constructor (text: Text) {
-    this.id = text.id
-    this.documentCount = (text instanceof Document) ? 1 : 0
-    this.importedDocumentCount = (text instanceof Document && text.imported) ? 1 : 0
-    this.wordCount = 0
-    this.lemmaWordCount = 0
-    this.numberWordCount = 0
-    this.nameWordCount = 0
-    this.foreignWordCount = 0
-    this.citationWordCount = 0
-    this.lemmas = []
-    this.numbers = []
-    this.names = []
-    this.foreignText = []
-    this.citations = []
-  }
 }
   
 export type LemmatizeResult = {

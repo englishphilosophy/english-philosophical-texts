@@ -1,7 +1,7 @@
 import texts from './build/texts.ts'
 import search from './build/search.ts'
 import analysis from './build/analysis.ts'
-import topics from './build/topics.ts'
+// import topics from './build/topics.ts'
 import sentences from './build/sentences.ts'
 import html from './build/html.ts'
 
@@ -9,16 +9,16 @@ import html from './build/html.ts'
 texts()
 
 // build/texts -> build/html
-// html()
+html()
 
 // build/texts -> build/search
-// search()
+search()
 
 // build/search -> build/sentences
-// sentences()
+sentences()
 
 // build/texts -> build/analysis
-// analysis()
+analysis()
 
 // build/analysis -> build/topics
 // topics()

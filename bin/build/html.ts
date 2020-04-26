@@ -1,30 +1,28 @@
-import { Index, Author, Stub, Collection, Document } from '../types/text.ts'
-import { readText, write } from '../file.ts'
+import {
+  markit
+} from '../../deps.ts'
+
+import { Author, Text } from '../types/library.ts'
+import { write } from '../file.ts'
+import recurse from './recurse.ts'
 
 export default function html (): void {
   console.log('Building HTML...')
-  buildHtmlRecursively('index')
+  recurse(buildHtml)
   console.log('HTML created.')
 }
 
-function buildHtmlRecursively(id: string): void {
-  const text = readText(id)
-
-  if (text instanceof Index || text instanceof Author || text instanceof Collection) {
-    text.texts.forEach((subText: Author|Stub) => {
-      buildHtmlRecursively(subText.id)
-    })
+function buildHtml (data: Author|Text): void {
+  if ((data as Text).blocks) {
+    for (const block of (data as Text).blocks) {
+      try {
+        block.content = markit.content(block.content, { format: 'html' })
+      } catch (error) {
+        console.log(`Problem with ${block.id}.`)
+        throw error
+      }
+    }
   }
 
-  if (text instanceof Document || text instanceof Collection) {
-    text.blocks.forEach(x => {
-      x.content = formatHtml(x.content)
-    })
-  }
-
-  write(text, 'html')
-}
-
-function formatHtml (content: string): string {
-  return `<p>${content}</p>`
+  write(data, 'html')
 }
