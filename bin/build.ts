@@ -15,10 +15,10 @@ html()
 search()
 
 // build/search -> build/sentences
-sentences()
+//sentences()
 
 // build/texts -> build/analysis
-analysis()
+//analysis()
 
 // build/analysis -> build/topics
 // topics()

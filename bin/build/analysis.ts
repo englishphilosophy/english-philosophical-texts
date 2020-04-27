@@ -1,4 +1,5 @@
 import {
+  markit,
   parseYaml,
   readFileStrSync
 } from '../../deps.ts'
@@ -176,11 +177,13 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
 
   const numbers: string[] = []
 
-  const lemmas = content
+  const strippedContent = content
     .replace(/\=.*?\=/g, '') // remove names
     .replace(/\$\$?.*?\$?\$/g, '') // remove foreign text
     .replace(/\[.*?\]/g, '') // remove citations
     .replace(/[";:(),.!?]/g, '') // remove punctuation
+
+  const lemmas = markit.content(strippedContent, { format: 'txt' })
     .toLowerCase() // put in lower case
     .split(' ') // split into words
     .filter(x => x.length > 0) // get rid of empties
