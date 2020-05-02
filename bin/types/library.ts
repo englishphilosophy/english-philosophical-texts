@@ -13,7 +13,8 @@ export type Author = {
 
 export type Text = {
   id: string
-  imported: boolean
+  imported?: boolean
+  duplicate?: string
   title: string
   breadcrumb: string
   published: number

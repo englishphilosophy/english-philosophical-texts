@@ -2,6 +2,7 @@
 imported: true
 id: Norris.LLG
 inherit: ../index.mit
+duplicate: Astell.LLG
 title: Letters Concerning the Love of God, Between the Author of the Proposal to
   the Ladies and Mr. John Norris
 breadcrumb: Letters Concerning the Love of God
@@ -10,12 +11,12 @@ copytext: 1705
 sourceUrl: >
   https://quod.lib.umich.edu/e/eebo/A52424.0001.001?rgn=main;view=fulltext
 sourceDesc: >
-  Our copytext is the second edition of 1705, which is, according to its title
-  page, ‘Corrected by the Authors, with some few Things added’. The text is
-  derived from a transcription of the first 1695 edition from EEBO-TCP. Several
-  changes have been made to this source, correcting some errors and bringing the
-  text in line with the 1705 edition.
-licence: This text is in the public domain.
+  The letters between Astell and Norris were first published in 1695. Our
+  copytext is the second edition of 1705, which is, according to its title page,
+  ‘Corrected by the Authors, with some few Things added’. The text is derived
+  from a transcription of the first edition from EEBO-TCP. Several changes have
+  been made to this source, correcting some errors and bringing the text in line
+  with the 1705 edition.
 texts:
   - pref.mit
   - pref1.mit
@@ -43,5 +44,5 @@ texts:
 £3 Proposal to the ^Ladies^ £3
 £4 ^and^ £4
 £3 Mr. _JOHN NORRIS:_ £3
-Wherein his late Discourse, shewing that it ought to be intire and exclusive of
-all other Loves, is further cleared and justified.
+Wherein his late Discourse, shewing, That it ought to be intire and exclusive of
+all other Loves, is further Cleared and Justified.

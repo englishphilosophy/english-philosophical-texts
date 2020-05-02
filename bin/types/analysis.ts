@@ -1,4 +1,4 @@
-export interface Analysis {
+export type Analysis = {
   id: string
   documentCount: number
   importedDocumentCount: number
@@ -23,22 +23,13 @@ export type LemmatizeResult = {
   lemmas: string[]
 }
 
-export class Lemma {
+export type Lemma = {
   label: string
   frequency: number
   documentFrequency: number
-  rawIdf: number
   idf: number
-  tfidf: number
-
-  constructor (label: string, frequency: number, documentFrequency: number) {
-    this.label = label
-    this.frequency = frequency
-    this.documentFrequency = documentFrequency
-    this.rawIdf = 0
-    this.idf = 0
-    this.tfidf = 0
-  }
+  absoluteTfIdf: number
+  relativeTfIdf: number
 }
 
 export type Lemmas = Record<string, string>

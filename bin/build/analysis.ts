@@ -6,7 +6,7 @@ import {
 
 import { Author, Text } from '../types/library.ts'
 import { Analysis, Lemmas, Lemma, LemmatizeResult } from '../types/analysis.ts'
-import { readAnalysis, write } from '../file.ts'
+import { readAnalysis, readText, write } from '../file.ts'
 import recurse from './recurse.ts'
 
 export default function analysis (): void {
@@ -15,20 +15,16 @@ export default function analysis (): void {
 
   console.log('Lexicon OK. Starting analysis of texts...')
   recurse(analyse, lemmas)
+  analyse(readText('index'), true, lemmas)
 
   console.log('Base analysis complete. Adding TF-IDF data...')
   recurse(addTfIdf, readAnalysis('index'))
+  console.log('TF-IDF data added.')
 }
 
 function getLemmas (): Lemmas {
   const lemmas: Lemmas = {}
-
-  let lexicon: any
-  try {
-    lexicon = parseYaml(readFileStrSync('lexicon.yml'))
-  } catch (error) {
-    throw new Error(`Failed to open or parse lexicon file.`)
-  }
+  const lexicon: any = parseYaml(readFileStrSync('lexicon.yml'))
 
   for (const lemma of Object.keys(lexicon)) {
     if (!Array.isArray(lexicon[lemma])) {
@@ -46,8 +42,8 @@ function getLemmas (): Lemmas {
   return lemmas
 }
 
-function analyse (data: Author|Text, lemmas: Lemmas): void {
-  const imported = (data as Author).sex || (data as Text).imported
+function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
+  const imported = isAuthor || (data as Text).imported
   const analysis: Analysis = {
     id: data.id,
     documentCount: (data.texts.length === 0) ? 1 : 0,
@@ -108,37 +104,53 @@ function analyse (data: Author|Text, lemmas: Lemmas): void {
         if (existing) {
           existing.frequency += 1
         } else if (data.texts.length) {
-          analysis.lemmas.push(new Lemma(lemma, 1, 0)) // 0 document frequency
+          analysis.lemmas.push({
+            label: lemma,
+            frequency: 1,
+            documentFrequency: 0,
+            idf: 0,
+            absoluteTfIdf: 0,
+            relativeTfIdf: 0
+          })
         } else {
-          analysis.lemmas.push(new Lemma(lemma, 1, 1)) // 1 document frequency
+          analysis.lemmas.push({
+            label: lemma,
+            frequency: 1,
+            documentFrequency: 1,
+            idf: 0,
+            absoluteTfIdf: 0,
+            relativeTfIdf: 0
+          })
         }
       }
     }
   }
 
   for (const stub of data.texts) {
-    const subAnalysis = readAnalysis(stub.id)
-    analysis.documentCount += subAnalysis.documentCount
-    analysis.importedDocumentCount += subAnalysis.importedDocumentCount
+    if (data.id === 'index' || (stub.id.split('.')[0] === data.id.split('.')[0])) { // don't count subtexts by different authors
+      const subAnalysis = readAnalysis(stub.id)
+      analysis.documentCount += subAnalysis.documentCount
+      analysis.importedDocumentCount += subAnalysis.importedDocumentCount
 
-    analysis.wordCount += subAnalysis.wordCount
-    analysis.lemmaWordCount += subAnalysis.lemmaWordCount
-    analysis.numberWordCount += subAnalysis.numberWordCount
-    analysis.nameWordCount += subAnalysis.nameWordCount
-    analysis.foreignWordCount += subAnalysis.foreignWordCount
-    analysis.citationWordCount += subAnalysis.citationWordCount
+      analysis.wordCount += subAnalysis.wordCount
+      analysis.lemmaWordCount += subAnalysis.lemmaWordCount
+      analysis.numberWordCount += subAnalysis.numberWordCount
+      analysis.nameWordCount += subAnalysis.nameWordCount
+      analysis.foreignWordCount += subAnalysis.foreignWordCount
+      analysis.citationWordCount += subAnalysis.citationWordCount
 
-    analysis.numbers.push(...subAnalysis.numbers)
-    analysis.names.push(...subAnalysis.names)
-    analysis.foreignText.push(...subAnalysis.foreignText)
-    analysis.citations.push(...subAnalysis.citations)
-    for (const lemma of subAnalysis.lemmas) {
-      const existing = analysis.lemmas.find(x => x.label === lemma.label)
-      if (existing) {
-        existing.frequency += lemma.frequency
-        existing.documentFrequency += lemma.documentFrequency
-      } else {
-        analysis.lemmas.push(Object.assign({}, lemma))
+      analysis.numbers.push(...subAnalysis.numbers)
+      analysis.names.push(...subAnalysis.names)
+      analysis.foreignText.push(...subAnalysis.foreignText)
+      analysis.citations.push(...subAnalysis.citations)
+      for (const lemma of subAnalysis.lemmas) {
+        const existing = analysis.lemmas.find(x => x.label === lemma.label)
+        if (existing) {
+          existing.frequency += lemma.frequency
+          existing.documentFrequency += lemma.documentFrequency
+        } else {
+          analysis.lemmas.push(Object.assign({}, lemma))
+        }
       }
     }
   }
@@ -157,7 +169,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
   content = content
     .replace(/\n/g, ' ') // replace actual line breaks with spaces
     .replace(/\/\//g, ' ') // replace Markit line breaks with spaces
-    .replace(/—/g, ' ') // replace dashes with spaces
+    .replace(/—/g, ' ') // replace long dashes with spaces
     .replace(/\|/g, '') // remove page breaks
     .replace(/\[n.*?\]/g, '') // remove footnote references
     .replace(/£\d ?(.*?) ?£\d/g, '$1') // remove heading markup
@@ -206,7 +218,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
   }
 }
 
-function addTfIdf (data: Author|Text, indexAnalysis: Analysis): void {
+function addTfIdf (data: Author|Text, isAuthor: boolean, indexAnalysis: Analysis): void {
   const analysis = readAnalysis(data.id)
   for (const lemma of analysis.lemmas) {
     const indexLemma = indexAnalysis.lemmas.find(x => x.label === lemma.label)
@@ -214,12 +226,11 @@ function addTfIdf (data: Author|Text, indexAnalysis: Analysis): void {
     const rawIdf = df - lemma.documentFrequency + 1
     const totalDocuments = indexAnalysis.importedDocumentCount - analysis.importedDocumentCount
     const idf = Math.log(totalDocuments / rawIdf)
-    const tf = (lemma.frequency / analysis.wordCount)
-    lemma.rawIdf = rawIdf
     lemma.idf = idf
-    lemma.tfidf = tf * idf
+    lemma.relativeTfIdf = (lemma.frequency / analysis.wordCount) * idf
+    lemma.absoluteTfIdf = lemma.frequency * idf
   }
 
-  analysis.lemmas.sort((x, y) => y.tfidf - x.tfidf)
+  analysis.lemmas.sort((x, y) => y.absoluteTfIdf - x.absoluteTfIdf)
   write(analysis, 'analysis')
 }

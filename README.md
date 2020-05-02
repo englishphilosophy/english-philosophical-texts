@@ -24,11 +24,11 @@ stylistic analyses.
 
 ## Ambiguous Words
 
-Note that some words have a `` ` `` character at the end. This is to insure that
+Note that some words have a `` ` `` character at the end. This is to ensure that
 they are mapped to the appropriate lemma. For example, the word "leaves" could
-be the third person present singular of the verb lemma "leave" or the plural of
-the noun lemma "leaf"; the former is written in these texts as `"leaves"`, while
-the latter is written as ``"leaves`"``.
+be the third person present singular of the verb "leave" or the plural of the
+the noun "leaf"; the former is written in these texts as `"leaves"`, while the
+latter is written as ``"leaves`"``.
 
 No attempts are made to disambiguate words more generally. For example, the
 words "alarm" and "alarms" both map to the same lemma "alarm", even though both
