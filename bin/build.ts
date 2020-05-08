@@ -1,7 +1,7 @@
 import texts from './build/texts.ts'
 import analysis from './build/analysis.ts'
 // import topics from './build/topics.ts'
-// import sentences from './build/sentences.ts'
+import sentences from './build/sentences.ts'
 
 // texts -> build/texts (using Markit)
 // texts -> build/html (using Markit)
@@ -10,10 +10,10 @@ import analysis from './build/analysis.ts'
 texts()
 
 // build/search -> build/sentences
-// sentences()
+sentences()
 
 // build/texts -> build/analysis
-// analysis()
+analysis()
 
 // build/analysis -> build/topics
 // topics()

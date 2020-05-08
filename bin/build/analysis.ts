@@ -68,7 +68,6 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
         result = lemmatize(block.content, lemmas)
       } catch (error) {
         console.log(`something wrong with ${data.id}, ${block.id}`)
-        console.log(block)
         throw error
       }
 
@@ -190,9 +189,17 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
   const numbers: string[] = []
 
   const strippedContent = content
+    .replace(/\\\=/g, '&#61;')
     .replace(/\=.*?\=/g, '') // remove names
+    .replace(/&#61;/g, '\\=')
+    .replace(/\\\$/g, '&#36;')
     .replace(/\$\$?.*?\$?\$/g, '') // remove foreign text
+    .replace(/&#36;/g, '\\$')
+    .replace(/\\\[/g, '&#91;')
+    .replace(/\\\]/g, '&#93;')
     .replace(/\[.*?\]/g, '') // remove citations
+    .replace(/&#91;/g, '\\[')
+    .replace(/&#93;/g, '\\]')
     .replace(/[";:(),.!?]/g, '') // remove punctuation
 
   const lemmas = markit.content(strippedContent, { format: 'txt' })
