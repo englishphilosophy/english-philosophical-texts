@@ -4,8 +4,15 @@ id: Hume.DNR
 inherit: ../index.mit
 title: Dialogues concerning Natural Religion
 breadcrumb: Dialogues
-published: 1779
-copytext: 1779
+published: [1779]
+copytext: [1779]
+sourceDesc: >
+  Hume began work on his [Dialogues Concerning Natural Religion] in the 1750s.
+  Because of the sensitive nature of the text, however, he did not publish it in
+  his lifetime, but left instructions to his nephew to publish it after his
+  death. It was printed in 1779, and this edition is naturally our copytext.
+  Fortunately, however, Hume’s own manuscript for the work survives. This
+  manuscript was consulted in drawing up the critical text provided here.
 texts:
   - intro.mit
   - 1.mit

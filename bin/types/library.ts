@@ -15,10 +15,11 @@ export type Text = {
   id: string
   imported?: boolean
   duplicate?: string
+  parent?: string
   title: string
   breadcrumb: string
-  published: number
-  copytext: number
+  published: number[]
+  copytext: number[]
   sourceDesc: string
   sourceUrl: string
   texts: Text[]

@@ -4,8 +4,15 @@ id: Hume.ETSS
 inherit: ../index.mit
 title: Essays and Treatises on Several Subjects
 breadcrumb: Essays and Treatises
-published: 1741,1742,1748,1751,1752,1757
-copytext: 1777
+published: [1758]
+copytext: [1777]
+sourceDesc: >
+  The first more or less complete edition of Hume’s [Essays and Treatises on
+  Several Subjects], his collected philosophical works, was published in 1758,
+  although each of its component works were published separately before then,
+  and an incomplete version (predating the [Four Dissertations]) was published
+  in 1753. Our copytext is the posthumous edition of 1777, which Hume was
+  working on before he died, and which contains many final alterations.
 texts:
   - empl1/index.mit
   - empl2/index.mit

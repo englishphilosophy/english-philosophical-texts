@@ -4,8 +4,13 @@ id: Hume.THN
 inherit: ../index.mit
 title: A Treatise of Human Nature
 breadcrumb: Treatise
-published: 1739-40
-copytext: 1739-40
+published: [1739, 1740]
+copytext: [1739, 1740]
+sourceDesc: >
+  The first two Books of Hume’s [Treatise of Human Nature] were published
+  together in 1739. The third Book, which included an Appendix making some
+  changes to Book 1, was published in 1740. There was only one edition published
+  in Hume’s lifetime, an this edition is therefore our copytext.
 texts:
   - ad1.mit
   - intro.mit

@@ -5,8 +5,8 @@ inherit: ../index.mit
 title: An Essay on the Nature and Conduct of the Passions and Affections, with
   Illustrations on the Moral Sense
 breadcrumb: Essay and Illustrations
-published: 1728
-copytext: 1742
+published: [1728]
+copytext: [1742]
 sourceUrl: >
   https://oll.libertyfund.org/titles/hutcheson-an-essay-on-the-nature-and-conduct-of-the-passions-and-affections-1742-2002/simple
 sourceDesc: >
@@ -17,10 +17,6 @@ sourceDesc: >
   (Indianapolis: Liberty Fund, 2002), which follows the first edition (noting
     significant differences between this and third). This source text has been
     substantially altered, to bring the text in line with the 1742 edition.
-licence: >
-  The copyright to the edition from which this text was derived is held by
-  Liberty Fund, Inc. The text may be used freely for educational and academic
-  purposes. It may not be used in any way for profit.
 texts:
   - pref.mit
   - enp/index.mit

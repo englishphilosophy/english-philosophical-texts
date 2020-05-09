@@ -190,7 +190,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
 
   const strippedContent = content
     .replace(/\\\=/g, '&#61;')
-    .replace(/\=.*?\=/g, '') // remove names
+    .replace(/\=.*?\=('s)?/g, '') // remove names
     .replace(/&#61;/g, '\\=')
     .replace(/\\\$/g, '&#36;')
     .replace(/\$\$?.*?\$?\$/g, '') // remove foreign text
