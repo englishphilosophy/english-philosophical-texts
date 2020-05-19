@@ -8,17 +8,20 @@ export type Analysis = {
   nameWordCount: number
   foreignWordCount: number
   citationWordCount: number
+  marginCommentWordCount: number
   lemmas: Lemma[]
   numbers: string[]
   names: string[]
   foreignText: string[]
   citations: string[]
+  marginComments: string[]
 }
   
 export type LemmatizeResult = {
   names: string[]
   foreignText: string[]
   citations: string[]
+  marginComments: string[]
   numbers: string[]
   lemmas: string[]
 }

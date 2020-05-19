@@ -13,8 +13,8 @@ export function readAuthors (): Author[] {
   return (readJsonSync('build/index.json') as any).texts as Author[]
 }
 
-export function readText (id: string): Text {
-  const filePath = path(id, 'texts')
+export function readText (id: string, base: string = 'texts'): Text {
+  const filePath = path(id, base)
   if (!existsSync(filePath)) {
     throw new Error(`Failed to open text file for ${id}.`)
   }
@@ -45,6 +45,12 @@ export function write (data: any, base: string): void {
   const filePath = path(data.id, base)
   ensureDirSync(dirname(filePath))
   writeFileStrSync(filePath, JSON.stringify(data))
+}
+
+export function writeText (id: string, base: string, text: string): void {
+  const filePath = path(id, base)
+  ensureDirSync(dirname(filePath))
+  writeFileStrSync(filePath, text)
 }
 
 function path (id: string, base: string): string {

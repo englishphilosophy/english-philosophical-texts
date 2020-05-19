@@ -28,6 +28,7 @@ export type Text = {
 
 export type Block = {
   id: string
+  type: string
   pages?: string
   speaker?: string
   content: string

@@ -5,8 +5,8 @@ import {
 } from '../../deps.ts'
 
 import { Author, Text } from '../types/library.ts'
-import { Analysis, Lemmas, Lemma, LemmatizeResult } from '../types/analysis.ts'
-import { readAnalysis, readText, write } from '../file.ts'
+import { Analysis, Lemmas, LemmatizeResult } from '../types/analysis.ts'
+import { readAnalysis, readText, write, writeText } from '../file.ts'
 import recurse from './recurse.ts'
 
 export default function analysis (): void {
@@ -19,7 +19,10 @@ export default function analysis (): void {
 
   console.log('Base analysis complete. Adding TF-IDF data...')
   recurse(addTfIdf, readAnalysis('index'))
-  console.log('TF-IDF data added.')
+
+  console.log('TF-IDF data added. Generating lists of unidentified words...')
+  recurse(unidentifiedWords, lemmas)
+  console.log('Lists of unidentified words created.')
 }
 
 function getLemmas (): Lemmas {
@@ -30,6 +33,7 @@ function getLemmas (): Lemmas {
     if (!Array.isArray(lexicon[lemma])) {
       throw new Error(`Lexicon entry for '${lemma} is not an array.`)
     }
+    lemmas[lemma] = lemma // add this for the sake of determining unidentified words
     for (const word of lexicon[lemma]) {
       if (typeof word === 'string') {
         lemmas[word] = lemma
@@ -54,15 +58,17 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
     nameWordCount: 0,
     foreignWordCount: 0,
     citationWordCount: 0,
+    marginCommentWordCount: 0,
     lemmas: [],
     numbers: [],
     names: [],
     foreignText: [],
-    citations: []
+    citations: [],
+    marginComments: []
   }
 
   if (imported && (data as Text).blocks) {
-    for (const block of (data as Text).blocks) {
+    for (const block of (data as Text).blocks.filter(x => x.type !== 'title')) {
       let result
       try {
         result = lemmatize(block.content, lemmas)
@@ -93,6 +99,11 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
         .reduce((x: number, y: string) => x + y.split(' ').length, 0)
       analysis.citationWordCount += citationWordCount
       analysis.wordCount += citationWordCount
+
+      const marginCommentWordCount = result.marginComments
+        .reduce((x: number, y: string) => x + y.split(' ').length, 0)
+      analysis.marginCommentWordCount += marginCommentWordCount
+      analysis.wordCount += marginCommentWordCount
 
       analysis.numbers = analysis.numbers.concat(result.numbers)
       analysis.names = analysis.names.concat(result.names)
@@ -172,7 +183,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
     .replace(/\|/g, '') // remove page breaks
     .replace(/\[n.*?\]/g, '') // remove footnote references
     .replace(/£\d ?(.*?) ?£\d/g, '$1') // remove heading markup
-    .replace(/_|\^|#/g, '') // remove italics, small-caps, and comments markup
+    .replace(/_|\^/g, '') // remove italics and small-caps markup
     .replace(/{--.*?--}/g, '') // remove deletions
     .replace(/{\+\+(.*?)\+\+}/g, '$1') // remove insertion markup
     .replace(/{~~.*?->(.*?)~~}/g, '$1') // remove replacement markup
@@ -186,23 +197,38 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
   const citationsCheck = content.match(/\[(.*?)\]/g)
   const citations = citationsCheck ? citationsCheck.map(x => x.slice(1, -1)) : []
 
+  const marginCommentsCheck = content.match(/#(.*?)#/g)
+  const marginComments = marginCommentsCheck ? marginCommentsCheck.map(x => x.slice(1, -1)) : []
+
   const numbers: string[] = []
 
   const strippedContent = content
+    // remove names
     .replace(/\\\=/g, '&#61;')
-    .replace(/\=.*?\=('s)?/g, '') // remove names
+    .replace(/\=.*?\=('s)?/g, '')
     .replace(/&#61;/g, '\\=')
+    // remove foreign text
     .replace(/\\\$/g, '&#36;')
-    .replace(/\$\$?.*?\$?\$/g, '') // remove foreign text
+    .replace(/\$\$?.*?\$?\$/g, '')
     .replace(/&#36;/g, '\\$')
-    .replace(/\\\[/g, '&#91;')
-    .replace(/\\\]/g, '&#93;')
-    .replace(/\[.*?\]/g, '') // remove citations
-    .replace(/&#91;/g, '\\[')
-    .replace(/&#93;/g, '\\]')
-    .replace(/[";:(),.!?]/g, '') // remove punctuation
+    // remove margin comments
+    .replace(/\\#/g, '&#35;')
+    .replace(/#.*?#/g, '')
+    .replace(/&#35;/g, '\\#')
+    // remove citations
+    .replace(/\\\[/g, '&#91;').replace(/\\\]/g, '&#93;')
+    .replace(/\[.*?\]/g, '')
+    .replace(/&#91;/g, '\\[').replace(/&#93;/g, '\\]')
+    // remove punctuation
+    .replace(/(e\.g\.|i\.e\.|etc\.|&c\.)/g, '[$1]')
+    .replace(/[";:(),.!?]/g, '')
+    .replace(/\[eg\]/g, 'e.g.')
+    .replace(/\[ie\]/g, 'i.e.')
+    .replace(/\[etc\]/g, 'etc.')
+    .replace(/\[&c\]/g, '&c.')
 
-  const lemmas = markit.content(strippedContent, { format: 'txt' })
+  const lemmas = markit.content(strippedContent.replace(/([^~\\])~([^~])/g, '$1&126;$2'), { format: 'txt' })
+    .replace(/&126;/g, '~') // keep tildes (which combine two-word lemmas)
     .toLowerCase() // put in lower case
     .split(' ') // split into words
     .filter(x => x.length > 0) // get rid of empties
@@ -220,6 +246,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
     names,
     foreignText,
     citations,
+    marginComments,
     numbers,
     lemmas
   }
@@ -240,4 +267,12 @@ function addTfIdf (data: Author|Text, isAuthor: boolean, indexAnalysis: Analysis
 
   analysis.lemmas.sort((x, y) => y.absoluteTfIdf - x.absoluteTfIdf)
   write(analysis, 'analysis')
+}
+ 
+function unidentifiedWords (data: Author|Text, isAuthor: boolean, lemmasRecord: Lemmas): void {
+  const analysis = readAnalysis(data.id)
+  const unidentified = analysis.lemmas
+    .map(x => x.label)
+    .filter(x => lemmasRecord[x] === undefined)
+  writeText(data.id, 'lemmas', unidentified.join('\n'))
 }
