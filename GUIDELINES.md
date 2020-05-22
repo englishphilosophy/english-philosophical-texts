@@ -132,9 +132,9 @@ In plain terms, typists should transcribe the complete text, including section
 titles, formatting, block and inline quotations, foreign text, margin comments,
 citations, and footnotes. Page breaks, page numbers, and line breaks should be
 ignored. Some very basic critical markup should be added, in the form of numbers
-for each paragraph and each footnote. In the latter case, these numbers should
-replace the symbol used to identify the footnote in the original text (\*, †, ‡,
-§, etc.).
+for each paragraph and each footnote. In the case of footnotes, these numbers
+should replace the symbol used to identify the footnote in the original text
+(\*, †, ‡, §, etc.).
 
 Additional critical markup&mdash;identifying named individuals, citations, and
 correcting typographical errors in the source text&mdash;may be included, but
@@ -466,6 +466,7 @@ Some foreign words or word pairs have effectively been imported into English,
 and should not be marked up with dollar signs. Examples include:
 
 - a priori
+- a propos
 - a posteriori
 - ad infinitum
 - etcetera
@@ -515,7 +516,7 @@ with a particular meaning. Consequently to represent an ordinary ampersand in
 TEI-XML you have to write `&amp;` instead. In Markit, however, the ampersand is
 _not_ a special character, and has no special meaning. When transcribing
 ampersands here, therefore, you do not need to bother with the tedious `amp;` at
-the end. Markit takes care of all these awkward things for you.
+the end. Markit takes care of this for you.
 
 (For those used to typing XML, you _may_ write `&amp;`, and Markit won't
 complain. But in this context we would prefer it if you don't.)
@@ -545,7 +546,7 @@ ending in `s`. These should be rendered here as an ordinary `s`.
 Our source texts also very often include `ae` or `oe` ligatures (in words like
 "phaenomenon" or "oeconomy"). These should be encoded here as separate letters,
 but enclosed in curly brackets, like so: `ph{ae}nomenon`, `{oe}conomy`. Markit
-will take care of the rest. If the ligature is capitalized, but both letters in
+will take care of the rest. If the ligature is capitalized, put both letters in
 capitals: `{OE}conomy`.
 
 #### 2.1.11. White space
@@ -575,10 +576,10 @@ fact incorrect (or rather incomplete). In the source text from which this
 example is derived, the separate lines of the quoted poetry are printed on
 separate lines. Since Markit treats single line breaks as equivalent to spaces,
 however, the result of the above encoding will be a block quotation all on one
-long line.
+line.
 
 Line breaks in the source text are encoded in Markit as two forward slashes:
-`//`. Thus the previous example should be encoding like this:
+`//`. Thus the previous example should be encoded like this:
 
 ```
 {#3} Few men would envy the character, which ^C{ae}sar^ gives of ^Cassius^.
