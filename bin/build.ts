@@ -14,10 +14,10 @@ texts()
 tidy()
 
 // build/search -> build/sentences
-// sentences()
+sentences()
 
 // build/texts -> build/analysis, build/lemmas
-// analysis()
+analysis()
 
 // build/analysis -> build/topics
 // topics()
