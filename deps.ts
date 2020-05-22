@@ -23,5 +23,5 @@ export {
   red
 } from 'https://deno.land/std@v0.42.0/fmt/colors.ts'
 
-import markit from 'https://raw.githubusercontent.com/englishphilosophy/markit/0.1.0/mod.ts'
+import markit from 'https://raw.githubusercontent.com/englishphilosophy/markit/v0.1.0/mod.ts'
 export { markit }
