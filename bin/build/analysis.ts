@@ -1,7 +1,6 @@
 import {
   markit,
-  parseYaml,
-  readFileStrSync
+  parseYaml
 } from '../../deps.ts'
 
 import { Author, Text } from '../types/library.ts'
@@ -27,7 +26,7 @@ export default function analysis (): void {
 
 function getLemmas (): Lemmas {
   const lemmas: Lemmas = {}
-  const lexicon: any = parseYaml(readFileStrSync('lexicon.yml'))
+  const lexicon: any = parseYaml(Deno.readTextFileSync('lexicon.yml'))
 
   for (const lemma of Object.keys(lexicon)) {
     if (!Array.isArray(lexicon[lemma])) {
