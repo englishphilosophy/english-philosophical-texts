@@ -1,11 +1,6 @@
-import {
-  dirname,
-  ensureDirSync,
-  existsSync
-} from '../deps.ts'
-
-import { Author, Text } from './types/library.ts'
-import { Analysis } from './types/analysis.ts'
+import { dirname, ensureDirSync, existsSync } from '../deps.ts'
+import type { Author, Text } from './types/library.ts'
+import type { Analysis } from './types/analysis.ts'
 
 export function readAuthors (): Author[] {
   return (JSON.parse(Deno.readTextFileSync('build/index.json')) as any).texts as Author[]

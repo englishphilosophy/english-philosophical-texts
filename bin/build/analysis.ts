@@ -1,10 +1,6 @@
-import {
-  markit,
-  parseYaml
-} from '../../deps.ts'
-
-import { Author, Text } from '../types/library.ts'
-import { Analysis, Lemmas, LemmatizeResult } from '../types/analysis.ts'
+import type { Author, Text } from '../types/library.ts'
+import type { Analysis, Lemmas, LemmatizeResult } from '../types/analysis.ts'
+import { markit, parseYaml } from '../../deps.ts'
 import { readAnalysis, readText, write, writeText } from '../file.ts'
 import recurse from './recurse.ts'
 

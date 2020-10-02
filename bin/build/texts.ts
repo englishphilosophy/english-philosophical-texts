@@ -1,6 +1,4 @@
-import {
-  markit
-} from '../../deps.ts'
+import { markit } from '../../deps.ts'
 
 export default function texts(): void {
   // get JSON with raw MIT content for each text from Markit

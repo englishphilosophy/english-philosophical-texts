@@ -1,8 +1,8 @@
 /*
 
-import { Index, Author, Stub, Collection, Document } from '../types/text.ts'
-import { Analysis } from '../types/analysis.ts'
-import { Topics } from '../types/topics.ts'
+import type { Index, Author, Stub, Collection, Document } from '../types/text.ts'
+import type { Analysis } from '../types/analysis.ts'
+import type { Topics } from '../types/topics.ts'
 import { readText, readAnalysis, write } from '../file.ts'
 
 export default function (): void {

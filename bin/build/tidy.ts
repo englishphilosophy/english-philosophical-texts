@@ -1,4 +1,4 @@
-import { Author, Text } from '../types/library.ts'
+import type { Author, Text } from '../types/library.ts'
 import { readText, write } from '../file.ts'
 import recurse from './recurse.ts'
 

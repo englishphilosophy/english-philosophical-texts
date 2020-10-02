@@ -1,4 +1,4 @@
-import { Author, Text } from './types/library.ts'
+import type { Author, Text } from './types/library.ts'
 import { readAuthors } from './file.ts'
 
 function percentOld(x: (Author|Text)[], y: (Author|Text)[]): string {

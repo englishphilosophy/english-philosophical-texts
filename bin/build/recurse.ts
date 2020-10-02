@@ -1,4 +1,4 @@
-import { Author, Text } from '../types/library.ts'
+import type { Author, Text } from '../types/library.ts'
 import { readAuthors, readText } from '../file.ts'
 
 type Action = (data: Author|Text, isAuthor: boolean, globalArg?: any) => void

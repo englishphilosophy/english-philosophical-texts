@@ -17,7 +17,7 @@ export default class Author {
       if (data.id) this.id = data.id
       if (data.forename) this.forename = data.forename
       if (data.surname) this.surname = data.surname
-      if (data.title) this.surname = data.surname
+      if (data.title) this.title = data.title
       if (data.birth) this.birth = data.birth
       if (data.death) this.death = data.death
       if (data.published) this.published = data.published
