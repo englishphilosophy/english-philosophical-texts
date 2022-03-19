@@ -1,8 +1,10 @@
-export type Data = Author | Text
+export type Data = Author | Text | Block
 
 export const isAuthor = (data: Data): data is Author => 'forename' in data
 
 export const isText = (data: Data): data is Text => 'blocks' in data
+
+export const isBlock = (data: Data): data is Block => 'content' in data
 
 export type Author = {
   id: string

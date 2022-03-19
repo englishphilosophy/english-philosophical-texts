@@ -1,5 +1,5 @@
 import { dirname, ensureDir } from '../../deps.ts'
-import type { Data } from '../types/library.ts'
+import type { Author, Text } from '../types/library.ts'
 import type { Analysis } from '../types/analysis.ts'
 import type { FlatLexicon } from '../types/lexicon.ts'
 import * as read from '../read.ts'
@@ -19,7 +19,7 @@ const generateUnidentifiedWordLists = async (id: string, flatLexicon: FlatLexico
   const analysisRead = await read.text('analysis', id)
   if (dataRead && analysisRead) {
     // parse the data
-    const data = JSON.parse(dataRead[1]) as Data
+    const data = JSON.parse(dataRead[1]) as Author | Text
     // keep us informed
     if (data.id.includes('.')) {
       await Deno.stdout.write(new TextEncoder().encode('.'))

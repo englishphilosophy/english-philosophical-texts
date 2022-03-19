@@ -1,5 +1,5 @@
 import { dirname, ensureDir, markit } from '../../deps.ts'
-import type { Data } from '../types/library.ts'
+import type { Author, Text } from '../types/library.ts'
 import { isAuthor, isText } from '../types/library.ts'
 import type { Analysis, LemmatizeResult } from '../types/analysis.ts'
 import type { FlatLexicon } from '../types/lexicon.ts'
@@ -20,7 +20,7 @@ const analyseData = async (id: string, flatLexicon: FlatLexicon): Promise<void> 
     // parse the data
     const [dataPath, dataRaw] = dataRead
     const analysisPath = dataPath.replace('build/texts', 'build/analysis')
-    const data = JSON.parse(dataRaw) as Data
+    const data = JSON.parse(dataRaw) as Author | Text
     // keep us informed
     if (data.id.includes('.')) {
       await Deno.stdout.write(new TextEncoder().encode('.'))
@@ -49,7 +49,7 @@ const analyseData = async (id: string, flatLexicon: FlatLexicon): Promise<void> 
   }
 }
 
-export const analyse = (data: Data, subAnalyses: Analysis[], flatLexicon: FlatLexicon): Analysis => {
+export const analyse = (data: Author | Text, subAnalyses: Analysis[], flatLexicon: FlatLexicon): Analysis => {
   const imported = isAuthor(data) || data.imported
   const analysis: Analysis = {
     id: data.id,
