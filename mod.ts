@@ -22,6 +22,7 @@ export {
   isAuthor,
   isBlock,
   isText,
+  isTextStub
 } from './bin/types/library.ts'
 
 export type {
