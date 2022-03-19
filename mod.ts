@@ -13,12 +13,14 @@ export type {
 export type {
   Author,
   Block,
+  Data,
   Text,
   TextStub
 } from './bin/types/library.ts'
 
 export {
   isAuthor,
+  isBlock,
   isText,
 } from './bin/types/library.ts'
 
