@@ -34,5 +34,3 @@ export type Lemma = {
   absoluteTfIdf: number
   relativeTfIdf: number
 }
-
-export type Lemmas = Record<string, string>

@@ -1,8 +1,6 @@
 import {
-  assert,
   assertEquals,
   dirname,
-  existsSync,
   markit
 } from '../../deps_test.ts'
 import * as tools from './tools.ts'
@@ -17,9 +15,8 @@ Deno.test({
 function testIDsRecursively(path: string, base?: string) {
   // check file exists and get parsed file contents
   const fullPath = base ? `${base}/${path}` : path
-  assert(existsSync(`texts/${fullPath}`))
   const options = { format: 'json', textFormat: 'path' }
-  const data = JSON.parse(markit.compile(`texts/${fullPath}`, options)) as any
+  const data = JSON.parse(markit.compile(`texts/${fullPath}`, options))
 
   // check ID matches path
   const trimPath = fullPath

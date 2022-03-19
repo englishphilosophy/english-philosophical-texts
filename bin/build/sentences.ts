@@ -1,3 +1,3 @@
-export default function sentences (): void {
-  console.log('sentences (still to do...)')
+export const buildSentences = async (): Promise<void> => {
+  // TODO
 }

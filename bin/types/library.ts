@@ -1,3 +1,9 @@
+export type Data = Author | Text
+
+export const isAuthor = (data: Data): data is Author => 'forename' in data
+
+export const isText = (data: Data): data is Text => 'blocks' in data
+
 export type Author = {
   id: string
   forename: string
@@ -7,11 +13,20 @@ export type Author = {
   death: number
   published: number
   nationality: string
-  sex: 'Male'|'Female'
-  texts: Text[]
+  sex: 'Male' | 'Female'
+  texts: TextStub[]
 }
 
-export type Text = {
+export type TextStub = {
+  id: string
+  imported?: boolean
+  duplicate?: boolean
+  title: string
+  breadcrumb: string
+  published: number[]
+}
+
+export type SourceText = {
   id: string
   imported?: boolean
   duplicate?: string
@@ -22,12 +37,19 @@ export type Text = {
   copytext: number[]
   sourceDesc: string
   sourceUrl: string
-  texts: Text[]
   blocks: Block[]
+  texts: TextStub[]
+}
+
+export type Text = SourceText & {
+  ancestors: [Author, ...TextStub[]]
+  prev?: TextStub
+  next?: TextStub
 }
 
 export type Block = {
   id: string
+  author?: string
   type: string
   pages?: string
   speaker?: string

@@ -15,7 +15,7 @@ function testBlocksRecursively(path: string, base?: string) {
   // check file exists and get parsed file contents
   const fullPath = base ? `${base}/${path}` : path
   const options = { format: 'json', textFormat: 'path' }
-  const data = JSON.parse(markit.compile(`texts/${fullPath}`, options)) as any
+  const data = JSON.parse(markit.compile(`texts/${fullPath}`, options))
 
   if (data.imported) {
     // check for at least one block
@@ -45,7 +45,7 @@ function testBlocksRecursively(path: string, base?: string) {
     // check paragraph numbers are sequential
     let counter = 1
     let roman = false
-    for (let index in paragraphs) {
+    for (const index in paragraphs) {
       if (roman !== isNaN(paragraphs[index].subId)) {
         counter = 1
       }

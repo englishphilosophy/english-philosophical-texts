@@ -38,29 +38,32 @@ function testNotesRecursively(path: string, base?: string) {
         noteReferences.pop() // there are two references to note 1
         break
 
-      case 'Hume.THN.3.2.3':
+      case 'Hume.THN.3.2.3': {
         // move n71a to the end
         const n71 = notes.shift()
         const n71a = notes.shift()
         notes.unshift(n71)
         notes.push(n71a)
         break
+      }
 
-      case 'Butler.S.1':
+      case 'Butler.S.1': {
         // move n6a to the end
         const n6 = notes.shift()
         const n6a = notes.shift()
         notes.unshift(n6)
         notes.push(n6a)
         break
+      }
 
-      case 'Butler.AR.Diss.2':
+      case 'Butler.AR.Diss.2': {
         // move n212a to the end
         const n212 = notes.shift()
         const n212a = notes.shift()
         notes.unshift(n212)
         notes.push(n212a)
         break
+      }
     }
 
     // check the number of referenes and the number of notes match
@@ -70,7 +73,7 @@ function testNotesRecursively(path: string, base?: string) {
     }
 
     // check the references match the note IDs
-    for (let index in noteReferences) {
+    for (const index in noteReferences) {
       if (noteReferences[index] !== `[${notes[index].subId}]`) {
         console.log(`${data.id}: Note references don't match (${noteReferences[index]} != [${notes[index].subId}]).`)
         return

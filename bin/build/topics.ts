@@ -1,3 +1,6 @@
+export const buildTopics = async (): Promise<void> => {
+  // TODO
+}
 /*
 
 import type { Index, Author, Stub, Collection, Document } from '../types/text.ts'

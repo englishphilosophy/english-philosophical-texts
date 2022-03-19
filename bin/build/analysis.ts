@@ -1,48 +1,56 @@
-import type { Author, Text } from '../types/library.ts'
-import type { Analysis, Lemmas, LemmatizeResult } from '../types/analysis.ts'
-import { markit, parseYaml } from '../../deps.ts'
-import { readAnalysis, readText, write, writeText } from '../file.ts'
-import recurse from './recurse.ts'
+import { dirname, ensureDir, markit } from '../../deps.ts'
+import type { Data } from '../types/library.ts'
+import { isAuthor, isText } from '../types/library.ts'
+import type { Analysis, LemmatizeResult } from '../types/analysis.ts'
+import type { FlatLexicon } from '../types/lexicon.ts'
+import * as read from '../read.ts'
 
-export default function analysis (): void {
-  console.log('Loading map of lemmas from lexicon.yml...')
-  const lemmas = getLemmas()
+export const buildBaseAnalyses = async (): Promise<void> => {
+  const flatLexicon = JSON.parse(await read.flatLexicon()) as FlatLexicon
 
-  console.log('Lexicon OK. Starting analysis of texts...')
-  recurse(analyse, lemmas)
-  analyse(readText('index'), true, lemmas)
-
-  console.log('Base analysis complete. Adding TF-IDF data...')
-  recurse(addTfIdf, readAnalysis('index'))
-
-  console.log('TF-IDF data added. Generating lists of unidentified words...')
-  recurse(unidentifiedWords, lemmas)
-  console.log('Lists of unidentified words created.')
+  console.log('Analysing texts...')
+  await analyseData('index', flatLexicon)
+  console.log('  base analysis complete.')
 }
 
-function getLemmas (): Lemmas {
-  const lemmas: Lemmas = {}
-  const lexicon: any = parseYaml(Deno.readTextFileSync('lexicon.yml'))
-
-  for (const lemma of Object.keys(lexicon)) {
-    if (!Array.isArray(lexicon[lemma])) {
-      throw new Error(`Lexicon entry for '${lemma} is not an array.`)
+const analyseData = async (id: string, flatLexicon: FlatLexicon): Promise<void> => {
+  // fetch the data (author or text)
+  const dataRead = await read.text('texts', id)
+  if (dataRead) {
+    // parse the data
+    const [dataPath, dataRaw] = dataRead
+    const analysisPath = dataPath.replace('build/texts', 'build/analysis')
+    const data = JSON.parse(dataRaw) as Data
+    // keep us informed
+    if (data.id.includes('.')) {
+      await Deno.stdout.write(new TextEncoder().encode('.'))
+    } else if (id !== 'index') {
+      await Deno.stdout.write(new TextEncoder().encode(`    ${data.id}`))
     }
-    lemmas[lemma] = lemma // add this for the sake of determining unidentified words
-    for (const word of lexicon[lemma]) {
-      if (typeof word === 'string') {
-        lemmas[word] = lemma
-      } else {
-        throw new Error(`Lexicon entry for '${lemma} does not contain only strings.`)
+    // analyse subtexts first
+    for (const subText of data.texts) {
+      if (id === 'index' || subText.id.split('.')[0] === data.id.split('.')[0]) { // skip over subtexts by different authors
+        await analyseData(subText.id, flatLexicon)
       }
     }
+    // now analyse this author/text (using the subAnalyses created first)
+    const subAnalyses = (await Promise.all(data.texts
+      .map(async (text) => await read.text('analysis', text.id))))
+      .filter((x): x is [string, string] => x !== undefined)
+      .map(x => JSON.parse(x[1]) as Analysis)
+    const result = analyse(data, subAnalyses, flatLexicon)
+    // save the result
+    await ensureDir(dirname(analysisPath))
+    await Deno.writeTextFile(analysisPath, JSON.stringify(result))
+    // keep us informed
+    if (id !== 'index' && !id.includes('.')) {
+      await Deno.stdout.write(new TextEncoder().encode('done.\n'))
+    }
   }
-
-  return lemmas
 }
 
-function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
-  const imported = isAuthor || (data as Text).imported
+export const analyse = (data: Data, subAnalyses: Analysis[], flatLexicon: FlatLexicon): Analysis => {
+  const imported = isAuthor(data) || data.imported
   const analysis: Analysis = {
     id: data.id,
     documentCount: (data.texts.length === 0) ? 1 : 0,
@@ -62,11 +70,11 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
     marginComments: []
   }
 
-  if (imported && (data as Text).blocks) {
-    for (const block of (data as Text).blocks.filter(x => x.type !== 'title')) {
+  if (imported && isText(data)) {
+    for (const block of data.blocks.filter(x => x.type !== 'title')) {
       let result
       try {
-        result = lemmatize(block.content, lemmas)
+        result = lemmatize(block.content, flatLexicon)
       } catch (error) {
         console.log(`something wrong with ${data.id}, ${block.id}`)
         throw error
@@ -131,9 +139,8 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
     }
   }
 
-  for (const stub of data.texts) {
-    if (data.id === 'index' || (stub.id.split('.')[0] === data.id.split('.')[0])) { // don't count subtexts by different authors
-      const subAnalysis = readAnalysis(stub.id)
+  for (const subAnalysis of subAnalyses) {
+    if (data.id === 'index' || (subAnalysis.id.split('.')[0] === data.id.split('.')[0])) { // don't count subtexts by different authors
       analysis.documentCount += subAnalysis.documentCount
       analysis.importedDocumentCount += subAnalysis.importedDocumentCount
 
@@ -167,10 +174,10 @@ function analyse (data: Author|Text, isAuthor: boolean, lemmas: Lemmas): void {
   analysis.lemmas.sort((x, y) => x.label.localeCompare(y.label))
   analysis.lemmas.sort((x, y) => y.frequency - x.frequency)
 
-  write(analysis, 'analysis')
+  return analysis
 }
 
-function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
+export const lemmatize = (content: string, flatLexicon: FlatLexicon): LemmatizeResult => {
   content = content
     .replace(/\n/g, ' ') // replace actual line breaks with spaces
     .replace(/\/\//g, ' ') // replace Markit line breaks with spaces
@@ -235,7 +242,7 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
         return false
       }
     })
-    .map(x => lemmasRecord[x] || x) // map to lemmas
+    .map(x => flatLexicon[x] || x) // map to lemmas
 
   return {
     names,
@@ -245,29 +252,4 @@ function lemmatize (content: string, lemmasRecord: Lemmas): LemmatizeResult {
     numbers,
     lemmas
   }
-}
-
-function addTfIdf (data: Author|Text, isAuthor: boolean, indexAnalysis: Analysis): void {
-  const analysis = readAnalysis(data.id)
-  for (const lemma of analysis.lemmas) {
-    const indexLemma = indexAnalysis.lemmas.find(x => x.label === lemma.label)
-    const df = indexLemma ? indexLemma.documentFrequency : 0
-    const rawIdf = df - lemma.documentFrequency + 1
-    const totalDocuments = indexAnalysis.importedDocumentCount - analysis.importedDocumentCount
-    const idf = Math.log(totalDocuments / rawIdf)
-    lemma.idf = idf
-    lemma.relativeTfIdf = (lemma.frequency / analysis.wordCount) * idf
-    lemma.absoluteTfIdf = lemma.frequency * idf
-  }
-
-  analysis.lemmas.sort((x, y) => y.absoluteTfIdf - x.absoluteTfIdf)
-  write(analysis, 'analysis')
-}
- 
-function unidentifiedWords (data: Author|Text, isAuthor: boolean, lemmasRecord: Lemmas): void {
-  const analysis = readAnalysis(data.id)
-  const unidentified = analysis.lemmas
-    .map(x => x.label)
-    .filter(x => lemmasRecord[x] === undefined)
-  writeText(data.id, 'lemmas', unidentified.join('\n'))
 }

@@ -7,7 +7,7 @@ Deno.test({
   name: 'texts/index',
   fn() {
     const options = { format: 'json', textFormat: 'path' }
-    const index = JSON.parse(markit.compile('texts/index.mit', options)) as any
+    const index = JSON.parse(markit.compile('texts/index.mit', options))
     const authorPaths = Array.from(Deno.readDirSync('texts'))
       .filter(x => x.isDirectory)
       .map(x => `${x.name}/index.mit`)

@@ -18,9 +18,8 @@ checked and edited.
 ## Lexicon
 
 This repository also includes a lexicon grouping every word in these texts into
-a smaller number of lemmas. This is used by [English Philosophical Texts
-Online](https://englishphilosophy.org) to lemmatize the texts, before performing
-stylistic analyses.
+a smaller number of lemmas. This is used by to lemmatize the texts, before
+performing stylistic analyses.
 
 ## Ambiguous Words
 
