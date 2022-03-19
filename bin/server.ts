@@ -15,7 +15,7 @@ const route = {
 } as const
 
 const responseInit = {
-  ok: { status: 200, headers: headers(ContentType.JSON) },
+  ok: { status: 200, headers: { 'content-type': ContentType.JSON, 'Access-Control-Allow-Origin': '*' } },
   notFound: { status: Status.NotFound, headers: headers(ContentType.JSON) },
   badRequest: { status: Status.BadRequest, headers: headers(ContentType.JSON) }
 } as const
