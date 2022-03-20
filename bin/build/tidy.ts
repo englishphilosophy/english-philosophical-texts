@@ -14,6 +14,21 @@ export const tidyTexts = async (): Promise<void> => {
 }
 
 const processAuthor = async (author: Author): Promise<void> => {
+  // get rid of unwanted properties
+  await Deno.writeTextFile(`build/texts/${author.id.toLowerCase()}/index.json`, JSON.stringify({
+    id: author.id,
+    forename: author.forename,
+    surname: author.surname,
+    title: author.title,
+    birth: author.birth,
+    death: author.death,
+    published: author.published,
+    nationality: author.nationality,
+    sex: author.sex,
+    texts: author.texts.map(tidyTextStub)
+  }))
+
+  // tidy texts recursively
   for (let index = 0; index < author.texts.length; index += 1) {
     await processText([author], null, null, author.texts[index], index, author.texts)
   }
@@ -53,21 +68,39 @@ const processText = async (
   }
 }
 
-export const tidyText = (text: SourceText, ancestors: [Author, ...TextStub[]], prev: TextStub | null, next: TextStub | null): Text => {
-  if (prev && next) {
-    return { ...text, ancestors, prev, next }
-  }
+export const tidyText = (
+  { id, imported, duplicate, parent, title, breadcrumb, published, copytext, sourceDesc, sourceUrl, blocks, texts }: SourceText,
+  ancestors: [Author, ...TextStub[]],
+  prev: TextStub | null,
+  next: TextStub | null
+): Text => ({
+  // get rid of unwanted properties, and add ancestors, prev, and next
+  id,
+  imported: !!imported,
+  duplicate,
+  parent,
+  title,
+  breadcrumb,
+  published,
+  copytext,
+  sourceDesc,
+  sourceUrl,
+  blocks,
+  texts: texts.map(tidyTextStub),
+  ancestors,
+  prev: prev ?? undefined,
+  next: next ?? undefined
+})
 
-  if (prev) {
-    return { ...text, ancestors, prev }
-  }
-
-  if (next) {
-    return { ...text, ancestors, next }
-  }
-
-  return { ...text, ancestors }
-}
+// get rid of unwanted properties
+export const tidyTextStub = ({ id, imported, duplicate, title, breadcrumb, published }: TextStub): TextStub => ({
+  id,
+  imported: !!imported,
+  duplicate,
+  title,
+  breadcrumb,
+  published
+})
 
 export const tidyHtml = (text: SourceText, ancestors: [Author, ...TextStub[]], prev: TextStub | null, next: TextStub | null): Text => ({
   ...tidyText(text, ancestors, prev, next),

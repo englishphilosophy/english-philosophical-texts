@@ -44,7 +44,7 @@ const analyseData = async (id: string, flatLexicon: FlatLexicon): Promise<void> 
     await Deno.writeTextFile(analysisPath, JSON.stringify(result))
     // keep us informed
     if (id !== 'index' && !id.includes('.')) {
-      await Deno.stdout.write(new TextEncoder().encode('done.\n'))
+      await Deno.stdout.write(new TextEncoder().encode('done\n'))
     }
   }
 }

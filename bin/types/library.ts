@@ -23,7 +23,7 @@ export type Author = {
 
 export type TextStub = {
   id: string
-  imported?: boolean
+  imported: boolean
   duplicate?: boolean
   title: string
   breadcrumb: string
@@ -32,7 +32,7 @@ export type TextStub = {
 
 export type SourceText = {
   id: string
-  imported?: boolean
+  imported: boolean
   duplicate?: string
   parent?: string
   title: string

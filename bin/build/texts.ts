@@ -36,9 +36,9 @@ const authorsConfig = {
   format: 'json',
   textFormat: 'stub',
   textStubProperties: [
-    // Markit doesn't support different stub properties at different hierarchies, so here we have
-    // to include all properties for both authors and texts - slightly ugly, but harmless
-    // author (and some text) properties
+    // Markit doesn't support different stub properties at different
+    // hierarchies, so here we have to include all properties for both authors
+    // and texts - the `tidyTexts` function removes the extras
     'id',
     'forename',
     'surname',

@@ -47,7 +47,7 @@ const addTfIdfData = async (id: string, indexAnalysis: Analysis): Promise<void> 
       await Deno.writeTextFile(path, JSON.stringify(result))
       // keep us informed
       if (!data.id.includes('.')) {
-        await Deno.stdout.write(new TextEncoder().encode('done.\n'))
+        await Deno.stdout.write(new TextEncoder().encode('done\n'))
       }
     }
   }
