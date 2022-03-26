@@ -7,7 +7,7 @@ const route = {
   flatLexicon: new URLPattern({ pathname: '/lexicon-flat{.json}?' }),
   reducedLexicon: new URLPattern({ pathname: '/lexicon-reduced{.json}?' }),
   authors: new URLPattern({ pathname: '/authors{.json}?' }),
-  text: new URLPattern({ pathname: '/text/:id+{.json}?' }),
+  mit: new URLPattern({ pathname: '/mit/:id+{.json}?' }),
   html: new URLPattern({ pathname: '/html/:id+{.json}?' }),
   analysis: new URLPattern({ pathname: '/analysis/:id+{.json}?' }),
   lemmas: new URLPattern({ pathname: '/lemmas/:id+{.json}?' }),
@@ -43,9 +43,9 @@ const handler = async (request: Request): Promise<Response> => {
     return new Response(await read.authors(), responseInit.ok)
   }
 
-  const textMatch = route.text.exec(url)
-  if (textMatch) {
-    const text = await read.text('texts', textMatch.pathname.groups.id)
+  const mitMatch = route.mit.exec(url)
+  if (mitMatch) {
+    const text = await read.text('mit', mitMatch.pathname.groups.id)
     return text
       ? new Response(text[1], responseInit.ok)
       : new Response('{"error":"Page not found."}', responseInit.notFound)

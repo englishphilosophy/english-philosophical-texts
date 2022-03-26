@@ -1,4 +1,4 @@
-export type TextType = 'analysis' | 'html' | 'lemmas' | 'search' | 'texts'
+export type TextType = 'analysis' | 'html' | 'lemmas' | 'mit' | 'search'
 
 export const lexicon = async (): Promise<string> => await Deno.readTextFile('build/lexicon.json')
 
@@ -21,10 +21,4 @@ export const text = async (textType: TextType, id: string): Promise<[string, str
       return undefined
     }
   }
-}
-
-export const ancestors = async (textType: TextType, id: string): Promise<string> => {
-  const ancestorIds = id.split('.').map((_, index, array) => array.slice(0, index + 1).join('.'))
-  const ancestorTexts = await Promise.all(ancestorIds.map(async (id) => await text(textType, id)))
-  return `[${ancestorTexts.filter(x => x !== undefined).join(',')}]`
 }

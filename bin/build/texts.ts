@@ -3,7 +3,7 @@ import { markit } from '../../deps.ts'
 export const buildTexts = (): void => {
   // get JSON with raw MIT content for each text from Markit
   console.log('Running Markit to get JSON with raw MIT content...')
-  markit.run('texts', 'build/texts', textsConfig)
+  markit.run('texts', 'build/mit', textsConfig)
 
   // get JSON with HTML content for each text from Markit
   console.log('Running Markit to get JSON with HTML content...')

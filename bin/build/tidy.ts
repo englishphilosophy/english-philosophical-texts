@@ -15,7 +15,7 @@ export const tidyTexts = async (): Promise<void> => {
 
 const processAuthor = async (author: Author): Promise<void> => {
   // get rid of unwanted properties
-  await Deno.writeTextFile(`build/texts/${author.id.toLowerCase()}/index.json`, JSON.stringify({
+  await Deno.writeTextFile(`build/mit/${author.id.toLowerCase()}/index.json`, JSON.stringify({
     id: author.id,
     forename: author.forename,
     surname: author.surname,
@@ -45,20 +45,20 @@ const processText = async (
   const prev = textStubs[index - 1] ?? higherPrev
   const next = textStubs[index + 1] ?? higherNext
 
-  const textRead = await read.text('texts', textStub.id)
+  const mitRead = await read.text('mit', textStub.id)
   const htmlRead = await read.text('html', textStub.id)
   const searchRead = await read.text('search', textStub.id)
 
-  if (textRead && htmlRead && searchRead) {
-    const text = JSON.parse(textRead[1]) as SourceText
+  if (mitRead && htmlRead && searchRead) {
+    const text = JSON.parse(mitRead[1]) as SourceText
     const html = JSON.parse(htmlRead[1]) as SourceText
     const search = JSON.parse(searchRead[1]) as SourceText
   
-    await ensureDir(dirname(textRead[0]))
+    await ensureDir(dirname(mitRead[0]))
     await ensureDir(dirname(htmlRead[0]))
     await ensureDir(dirname(searchRead[0]))
 
-    await Deno.writeTextFile(textRead[0], JSON.stringify(tidyText(text, ancestors, prev, next)))
+    await Deno.writeTextFile(mitRead[0], JSON.stringify(tidyText(text, ancestors, prev, next)))
     await Deno.writeTextFile(htmlRead[0], JSON.stringify(tidyHtml(html, ancestors, prev, next)))
     await Deno.writeTextFile(searchRead[0], JSON.stringify(tidySearch(search, ancestors, prev, next)))
 

@@ -16,7 +16,7 @@ await emptyDir('tmp')
 // lexicon.yml -> build/lexicon-reduced.json
 await buildLexicons()
 
-// texts -> build/texts (using Markit)
+// texts -> build/mit (using Markit)
 // texts -> build/html (using Markit)
 // texts -> build/search (using Markit)
 // texts -> build/index.json (using Markit)

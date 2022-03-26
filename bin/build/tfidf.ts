@@ -20,7 +20,7 @@ export const buildTfIdfData = async (): Promise<void> => {
 
 const addTfIdfData = async (id: string, indexAnalysis: Analysis): Promise<void> => {
   // fetch the data (author or text)
-  const dataRead = await read.text('texts', id)
+  const dataRead = await read.text('mit', id)
   // fetch the analysis
   const analysisRead = await read.text('analysis', id)
   if (dataRead && analysisRead) {

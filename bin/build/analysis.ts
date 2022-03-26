@@ -15,11 +15,11 @@ export const buildBaseAnalyses = async (): Promise<void> => {
 
 const analyseData = async (id: string, flatLexicon: FlatLexicon): Promise<void> => {
   // fetch the data (author or text)
-  const dataRead = await read.text('texts', id)
+  const dataRead = await read.text('mit', id)
   if (dataRead) {
     // parse the data
     const [dataPath, dataRaw] = dataRead
-    const analysisPath = dataPath.replace('build/texts', 'build/analysis')
+    const analysisPath = dataPath.replace('build/mit', 'build/analysis')
     const data = JSON.parse(dataRaw) as Author | Text
     // keep us informed
     if (data.id.includes('.')) {
