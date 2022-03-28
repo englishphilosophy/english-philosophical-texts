@@ -1,6 +1,6 @@
 import { ContentType, HttpError, Server, Status, headers } from '../deps.ts'
 import * as read from './read.ts'
-// import { parseQuery, runQuery } from './server/search.ts'
+import { isQueryParams, runQuery } from './server/search.ts'
 
 const route = {
   lexicon: new URLPattern({ pathname: '/lexicon{.json}?' }),
@@ -76,14 +76,18 @@ const handler = async (request: Request): Promise<Response> => {
   }
 
   const searchMatch = route.search.exec(url)
-  if (searchMatch) {
-    if (request.method === 'POST') {
-      //const query = parseQuery(request.formData())
-      //return new Response(JSON.stringify(runQuery(query)), responseInit.ok)
-      return new Response('{"error":"Not yet implemented."', responseInit.badRequest)
+  if (searchMatch && request.method === 'POST') {
+    console.log('just checking...')
+    try {
+      const queryParams = await request.json()
+      if (isQueryParams(queryParams)) {
+        return new Response(JSON.stringify(await runQuery(queryParams.ids, queryParams.query, queryParams.options)), { headers: headers(ContentType.JSON) })
+      } else {
+        throw new HttpError(500, 'Bad query body.')
+      }
+    } catch {
+      throw new HttpError(500, 'Bad query body.')
     }
-
-    return new Response('{"error":"Page not found."}', responseInit.notFound)
   }
 
   return new Response('{"error":"Page not found."}', responseInit.notFound)
@@ -91,7 +95,6 @@ const handler = async (request: Request): Promise<Response> => {
 
 const onError = (error: unknown): Response => {
   const httpError = error instanceof HttpError ? error : new HttpError(500, 'Internal server error.')
-  console.error(error)
   return new Response(`{"error":"${httpError.message}"`, { status: httpError.status, headers: headers(ContentType.JSON) })
 }
 

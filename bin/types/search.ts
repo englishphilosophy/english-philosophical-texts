@@ -1,5 +1,11 @@
 import type { Block } from './library.ts'
 
+export type QueryParams = {
+  ids: string[]
+  query: Query
+  options: SearchOptions
+}
+
 export type Query = string | ComplexQuery
 
 export type ComplexQuery = {
@@ -16,10 +22,10 @@ export type SearchOptions = {
   variantSpellings: boolean
 }
 
-export type Result = {
+export type SearchResult = {
   id: string
   title: string
   blocks: Block[]
-  results: Result[]
+  results: SearchResult[]
   total: number
 }

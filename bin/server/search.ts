@@ -3,20 +3,55 @@
 
 import type { ReducedLexicon } from '../types/lexicon.ts'
 import type { Block, Text } from '../types/library.ts'
-import type { Query, Result, SearchOptions } from '../types/search.ts'
+import type { ComplexQuery, Operator, QueryParams, Query, SearchResult, SearchOptions } from '../types/search.ts'
 import * as read from '../read.ts'
 
-/** Generates a search query object from form parameters. */
-export const parseQuery = (query1: Query | null, query2: Query | null, operator: string | null): Query | null => {
-  if (query1 === null || query2 === null) {
-    return query1
+/** Validates query params. */
+export const isQueryParams = (value: unknown): value is QueryParams => {
+  if (typeof value !== 'object' || value === null) {
+    return false
+  }
+  if (!('ids' in value) || !('query' in value) || !('options' in value)) {
+    return false
   }
 
-  if (operator !== 'and' && operator !== 'or' && operator !== 'bot') {
-    return null
+  const queryParams = value as QueryParams
+  return Array.isArray(queryParams.ids) && queryParams.ids.every(x => typeof x === 'string')
+    && isQuery(queryParams.query) && isSearchOptions(queryParams.options)
+}
+
+const isQuery = (value: unknown): value is Query => {
+  if (typeof value === 'string') {
+    return true
   }
 
-  return { query1, query2, operator }
+  if (typeof value !== 'object' || value === null) {
+    return false
+  }
+  if (!('query1' in value) || !('query2' in value) || !('operator' in value)) {
+    return false
+  }
+
+  const query = value as ComplexQuery
+  return isQuery(query.query1) && isQuery(query.query2) && isOperator(query.operator)
+}
+
+const isOperator = (value: unknown): value is Operator => {
+  return value === 'and' || value === 'or' || value === 'bot'
+}
+
+const isSearchOptions = (value: unknown): value is SearchOptions => {
+  if (typeof value !== 'object' || value === null) {
+    return false
+  }
+  if (!('ignorePunctuation' in value) || !('wholeWords' in value) || !('variantSpellings' in value)) {
+    return false
+  }
+
+  const options = value as SearchOptions
+  return typeof options.ignorePunctuation === 'boolean'
+    && typeof options.wholeWords === 'boolean'
+    && typeof options.variantSpellings === 'boolean'
 }
 
 /** Gets blocks from the texts with the given IDs that match the search query.
@@ -25,10 +60,10 @@ export const parseQuery = (query1: Query | null, query2: Query | null, operator:
  * by the recursion to filter out subtexts by a different author from the author
  * of the text being searched.
  */
-export const runQuery = async (ids: string[], query: Query, options: SearchOptions, author: string|null = null): Promise<Result[]> => {
+export const runQuery = async (ids: string[], query: Query, options: SearchOptions, author: string|null = null): Promise<SearchResult[]> => {
   const lexicon: ReducedLexicon = options.variantSpellings ? JSON.parse(await read.reducedLexicon()) : {}
 
-  const results: Result[] = []
+  const results: SearchResult[] = []
   for (const id of ids) {
     const textRead = await read.text('search', id)
     if (textRead) {
@@ -45,9 +80,9 @@ export const runQuery = async (ids: string[], query: Query, options: SearchOptio
 }
 
 /** Gets search matches from a text (recursively calling runQuery on sub-texts). */
-const matches = async (text: Text, query: Query, options: SearchOptions, lexicon: ReducedLexicon): Promise<Result> => {
+const matches = async (text: Text, query: Query, options: SearchOptions, lexicon: ReducedLexicon): Promise<SearchResult> => {
   // initialise the result object
-  const result: Result = {
+  const result: SearchResult = {
     id: text.id,
     title: text.title,
     blocks: [],
