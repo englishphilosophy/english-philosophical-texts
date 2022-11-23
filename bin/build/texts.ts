@@ -27,7 +27,7 @@ const textsConfig = {
     'duplicate',
     'title',
     'breadcrumb',
-    'published'
+    'published',
   ],
   maximumDepth: 1
 }
@@ -50,7 +50,8 @@ const authorsConfig = {
     'sex',
     // additional properties for texts
     'imported',
-    'duplicate'
+    'duplicate',
+    'breadcrumb',
   ],
   maximumDepth: 2
 }
