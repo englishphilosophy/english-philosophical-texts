@@ -77,11 +77,10 @@ const handler = async (request: Request): Promise<Response> => {
 
   const searchMatch = route.search.exec(url)
   if (searchMatch && request.method === 'POST') {
-    console.log('just checking...')
     try {
       const queryParams = await request.json()
       if (isQueryParams(queryParams)) {
-        return new Response(JSON.stringify(await runQuery(queryParams.ids, queryParams.query, queryParams.options)), { headers: headers(ContentType.JSON) })
+        return new Response(JSON.stringify(await runQuery(queryParams.ids, queryParams.query, queryParams.options)), responseInit.ok)
       } else {
         throw new HttpError(500, 'Bad query body.')
       }
