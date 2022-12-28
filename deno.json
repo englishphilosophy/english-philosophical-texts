@@ -1,0 +1,9 @@
+{
+  "importMap": "import_map.json",
+  "tasks": {
+    "test": "deno test --allow-read",
+    "build": "deno run --allow-read --allow-write bin/build.ts",
+    "serve": "deno run --allow-read --allow-net bin/serve.ts",
+    "summary": "deno run --allow-read bin/summary.ts"
+  }
+}

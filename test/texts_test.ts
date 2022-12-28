@@ -1,4 +1,5 @@
-import { assert, assertEquals, markit } from "../deps_test.ts";
+import { assert, assertEquals } from "testing";
+import markit from "markit";
 
 Deno.test({
   name: "index file matches directory structure",
@@ -228,10 +229,13 @@ const assertValidNotes = (data: any): void => {
     .filter((x: any) => x.subId.split(".").length === 1);
 
   // extract all note references
-  const noteReferences = data.blocks.reduce((accumulator: string[], current: any) => {
-    const refs = current.content.match(/\[n(\*|\d+)a?\]/g) || [];
-    return accumulator.concat(refs);
-  }, []);
+  const noteReferences = data.blocks.reduce(
+    (accumulator: string[], current: any) => {
+      const refs = current.content.match(/\[n(\*|\d+)a?\]/g) || [];
+      return accumulator.concat(refs);
+    },
+    []
+  );
 
   // normalize special cases
   switch (data.id) {
@@ -267,11 +271,17 @@ const assertValidNotes = (data: any): void => {
     }
   }
 
-  assert(noteReferences.length === notes.length, `numbers of references and notes don't match (${data.id})`)
+  assert(
+    noteReferences.length === notes.length,
+    `numbers of references and notes don't match (${data.id})`
+  );
 
   noteReferences.forEach((noteReference: string, index: number) => {
-    assert(noteReference === `[${notes[index].subId}]`, `note references don't match (${data.id})`)
-  })
+    assert(
+      noteReference === `[${notes[index].subId}]`,
+      `note references don't match (${data.id})`
+    );
+  });
 };
 
 export const idIndex = (id: string): number =>

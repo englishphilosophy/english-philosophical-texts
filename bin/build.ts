@@ -1,39 +1,39 @@
-import { emptyDir } from '../deps.ts'
-import { buildBaseAnalyses } from './build/analysis.ts'
-import { buildLexicons } from './build/lexicon.ts'
-import { buildSentences } from './build/sentences.ts'
-import { buildTexts } from './build/texts.ts'
-import { buildTfIdfData } from './build/tfidf.ts'
-import { tidyTexts } from './build/tidy.ts'
-import { buildTopics } from './build/topics.ts'
-import { buildUnidentifiedWordLists } from './build/unidentified.ts'
+import { emptyDir } from "fs";
+import { buildBaseAnalyses } from "../src/build/analysis.ts";
+import { buildLexicons } from "../src/build/lexicon.ts";
+import { buildSentences } from "../src/build/sentences.ts";
+import { buildTexts } from "../src/build/texts.ts";
+import { buildTfIdfData } from "../src/build/tfidf.ts";
+import { tidyTexts } from "../src/build/tidy.ts";
+import { buildTopics } from "../src/build/topics.ts";
+import { buildUnidentifiedWordLists } from "../src/build/unidentified.ts";
 
-await emptyDir('build')
-await emptyDir('tmp')
+await emptyDir("build");
+await emptyDir("tmp");
 
 // lexicon.yml -> build/lexicon.json
 // lexicon.yml -> build/lexicon-flat.json
 // lexicon.yml -> build/lexicon-reduced.json
-await buildLexicons()
+await buildLexicons();
 
 // texts -> build/mit (using Markit)
 // texts -> build/html (using Markit)
 // texts -> build/search (using Markit)
 // texts -> build/index.json (using Markit)
-buildTexts()
+buildTexts();
 
 // tidy authors and texts
-await tidyTexts()
+await tidyTexts();
 
 // build/search -> build/sentences
-await buildSentences()
+await buildSentences();
 
 // build/texts -> build/analysis, build/lemmas
-await buildBaseAnalyses()
-await buildTfIdfData()
+await buildBaseAnalyses();
+await buildTfIdfData();
 
 // build/analysis -> build/lemmas
-await buildUnidentifiedWordLists()
+await buildUnidentifiedWordLists();
 
 // build/analysis -> build/topics
-await buildTopics()
+await buildTopics();
