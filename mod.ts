@@ -1,34 +1,25 @@
-export type {
-  Analysis,
-  LemmatizeResult,
-  Lemma
-} from './bin/types/analysis.ts'
+export type { Analysis, LemmatizeResult, Lemma } from "./bin/types/analysis.ts";
 
 export type {
   Lexicon,
   FlatLexicon,
-  ReducedLexicon
-} from './bin/types/lexicon.ts'
+  ReducedLexicon,
+} from "./bin/types/lexicon.ts";
 
 export type {
   Author,
   Block,
   Data,
   Text,
-  TextStub
-} from './bin/types/library.ts'
+  TextStub,
+} from "./bin/types/library.ts";
 
-export {
-  isAuthor,
-  isBlock,
-  isText,
-  isTextStub
-} from './bin/types/library.ts'
+export { isAuthor, isBlock, isText, isTextStub } from "./bin/types/library.ts";
 
 export type {
   ComplexQuery,
   Operator,
   Query,
   SearchOptions,
-  Result
-} from './bin/types/search.ts'
+  SearchResult,
+} from "./bin/types/search.ts";
