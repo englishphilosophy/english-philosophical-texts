@@ -2,9 +2,7 @@
   "importMap": "import_map.json",
   "tasks": {
     "test": "deno test --allow-read",
-    "build-texts": "deno run --allow-read --allow-write bin/build-texts.ts",
-    "build-js": "deno run --allow-read --allow-write bin/build-js.ts",
-    "build-css": "deno run --allow-read --allow-write bin/build-css.ts",
+    "build": "deno run --allow-read --allow-write bin/build.ts",
     "serve": "deno run --allow-read --allow-net bin/serve.ts",
     "summary": "deno run --allow-read bin/summary.ts",
     "epto": "deno run --allow-read --allow-net bin/epto.ts"
