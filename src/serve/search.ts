@@ -1,8 +1,8 @@
 // BUG: with ignorePuncuation OFF and wholeWords ON, search does not match
 // queries with punctuation in the right place
 
-import type { ReducedLexicon } from "./types/lexicon.ts";
-import type { Block, Text } from "./types/library.ts";
+import type { ReducedLexicon } from "../types/lexicon.ts";
+import type { Block, Text } from "../types/library.ts";
 import type {
   ComplexQuery,
   Operator,
@@ -10,7 +10,7 @@ import type {
   Query,
   SearchResult,
   SearchOptions,
-} from "./types/search.ts";
+} from "../types/search.ts";
 import * as read from "./read.ts";
 
 /** Validates query params. */

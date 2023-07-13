@@ -1,49 +1,44 @@
 import * as read from "./read.ts";
 import { okResponse, idErrorResponse, queryErrorResponse } from "./response.ts";
 import { isQueryParams, runQuery } from "./search.ts";
+import type { Handler } from "../types/handler.ts";
 
-export type HandlerArgs = {
-  urlPatternResult: URLPatternResult;
-  request: Request;
-};
+export const lexicon: Handler = async () => okResponse(await read.lexicon());
 
-export type Handler = (args: HandlerArgs) => Response | Promise<Response>;
+export const flatLexicon: Handler = async () =>
+  okResponse(await read.flatLexicon());
 
-export const lexicon = async () => okResponse(await read.lexicon());
-
-export const flatLexicon = async () => okResponse(await read.flatLexicon());
-
-export const reducedLexicon = async () =>
+export const reducedLexicon: Handler = async () =>
   okResponse(await read.reducedLexicon());
 
-export const authors = async () => okResponse(await read.authors());
+export const authors: Handler = async () => okResponse(await read.authors());
 
-export const mit = async ({ urlPatternResult }: HandlerArgs) => {
+export const mit: Handler = async ({ urlPatternResult }) => {
   const text = await read.text("mit", urlPatternResult.pathname.groups.id!);
   return text ? okResponse(text[1]) : idErrorResponse();
 };
 
-export const html = async ({ urlPatternResult }: HandlerArgs) => {
+export const html: Handler = async ({ urlPatternResult }) => {
   const id = urlPatternResult.pathname.groups.id!;
   const html = await read.text("html", id);
   return html ? okResponse(html[1]) : idErrorResponse();
 };
 
-export const analysis = async ({ urlPatternResult }: HandlerArgs) => {
+export const analysis: Handler = async ({ urlPatternResult }) => {
   const id = urlPatternResult.pathname.groups.id!;
   const analysis = await read.text("analysis", id);
   return analysis ? okResponse(analysis[1]) : idErrorResponse();
 };
 
-export const lemmas = async ({ urlPatternResult }: HandlerArgs) => {
+export const lemmas: Handler = async ({ urlPatternResult }) => {
   const id = urlPatternResult.pathname.groups.id!;
   const lemmas = await read.text("lemmas", id);
   return lemmas ? okResponse(lemmas[1]) : idErrorResponse();
 };
 
-export const search = async ({ request }: HandlerArgs) => {
+export const search: Handler = async ({ request }) => {
   // check for valid JSON in the request body
-  let queryParams: string;
+  let queryParams: unknown;
   try {
     queryParams = await request.json();
   } catch {

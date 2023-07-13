@@ -1,6 +1,6 @@
 import { routeErrorResponse } from "./response.ts";
+import type { Handler } from "../types/handler.ts";
 import {
-  type Handler,
   lexicon,
   flatLexicon,
   reducedLexicon,
