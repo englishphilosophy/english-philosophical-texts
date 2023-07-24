@@ -1,5 +1,6 @@
 {
   "imports": {
+    "dotenv": "https://deno.land/std@0.194.0/dotenv/mod.ts",
     "fs": "https://deno.land/std@0.194.0/fs/mod.ts",
     "http": "https://deno.land/std@0.194.0/http/mod.ts",
     "media_types": "https://deno.land/std@0.194.0/media_types/mod.ts",

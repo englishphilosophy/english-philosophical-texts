@@ -2,8 +2,8 @@ import { Status } from "http";
 import { contentType } from "media_types";
 
 export const okResponse = (content: unknown) => {
-  const data = typeof content === "string" ? content : JSON.stringify(content);
-  return new Response(`{"data":${data}}`, {
+  const body = typeof content === "string" ? content : JSON.stringify(content);
+  return new Response(body, {
     status: Status.OK,
     headers: responseHeaders(contentType("json")),
   });

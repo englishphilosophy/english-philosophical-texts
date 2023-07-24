@@ -11,7 +11,10 @@ export const flatLexicon: Handler = async () =>
 export const reducedLexicon: Handler = async () =>
   okResponse(await read.reducedLexicon());
 
-export const authors: Handler = async () => okResponse(await read.authors());
+export const authors: Handler = async () => {
+  const index = JSON.parse(await read.authors());
+  return okResponse(index.texts);
+};
 
 export const mit: Handler = async ({ urlPatternResult }) => {
   const text = await read.text("mit", urlPatternResult.pathname.groups.id!);
