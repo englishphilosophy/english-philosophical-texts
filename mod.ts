@@ -1,12 +1,14 @@
-import "https://deno.land/std@0.194.0/dotenv/load.ts";
 import type {
-  Lexicon,
+  Analysis,
+  Author,
   FlatLexicon,
+  Lemma,
+  Lexicon,
+  QueryParams,
   ReducedLexicon,
-} from "./src/types/lexicon.ts";
-import type { Author, Text } from "./src/types/library.ts";
-import type { Analysis, Lemma } from "./src/types/analysis.ts";
-import type { QueryParams, SearchResult } from "./src/types/search.ts";
+  SearchResult,
+  Text,
+} from "./types.ts";
 
 const baseUrl = "https://ept.deno.dev";
 
