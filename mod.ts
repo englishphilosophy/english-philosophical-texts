@@ -5,7 +5,7 @@ import type {
 } from "./src/types/lexicon.ts";
 import type { Author, Text } from "./src/types/library.ts";
 import type { Analysis, Lemma } from "./src/types/analysis.ts";
-import type { SearchOptions, SearchResult } from "./src/types/search.ts";
+import type { QueryParams, SearchResult } from "./src/types/search.ts";
 
 export type { Analysis, Lemma, LemmatizeResult } from "./src/types/analysis.ts";
 
@@ -26,7 +26,13 @@ export type {
 
 export { isAuthor, isText, isTextStub, isBlock } from "./src/types/library.ts";
 
-export type { SearchOptions, SearchResult } from "./src/types/search.ts";
+export type {
+  Operator,
+  Query,
+  QueryParams,
+  SearchOptions,
+  SearchResult,
+} from "./src/types/search.ts";
 
 let base = "http://localhost:3001";
 
@@ -97,11 +103,11 @@ export const lemmas = async (id: string): Promise<Lemma[] | undefined> => {
 };
 
 export const search = async (
-  searchOptions: SearchOptions
+  queryParams: QueryParams
 ): Promise<SearchResult[]> => {
   const response = await fetch(`${base}/search`, {
     method: "POST",
-    body: JSON.stringify(searchOptions),
+    body: JSON.stringify(queryParams),
   });
   return await response.json();
 };

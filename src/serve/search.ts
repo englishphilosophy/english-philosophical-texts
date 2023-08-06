@@ -32,7 +32,7 @@ export const isQueryParams = (value: unknown): value is QueryParams => {
 };
 
 const isQuery = (value: unknown): value is Query => {
-  if (typeof value === "string") {
+  if (typeof value === "string" && value.length > 0) {
     return true;
   }
 
