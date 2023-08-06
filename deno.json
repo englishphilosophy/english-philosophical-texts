@@ -1,12 +1,19 @@
 {
-  "importMap": "import_map.json",
+  "lock": false,
   "tasks": {
+    "dev": "deno run --watch --allow-read --allow-net bin/serve.ts",
     "test": "deno test --allow-read",
-    "build-texts": "deno run --allow-read --allow-write bin/build-texts.ts",
-    "build-js": "deno run --allow-read --allow-write bin/build-js.ts",
-    "build-css": "deno run --allow-read --allow-write bin/build-css.ts",
+    "build": "deno run --allow-read --allow-write bin/build.ts",
     "serve": "deno run --allow-read --allow-net bin/serve.ts",
-    "summary": "deno run --allow-read bin/summary.ts",
-    "epto": "deno run --allow-read --allow-net bin/epto.ts"
+    "summary": "deno run --allow-read bin/summary.ts"
+  },
+  "imports": {
+    "fs": "https://deno.land/std@0.194.0/fs/mod.ts",
+    "http": "https://deno.land/std@0.194.0/http/mod.ts",
+    "media_types": "https://deno.land/std@0.194.0/media_types/mod.ts",
+    "path": "https://deno.land/std@0.194.0/path/mod.ts",
+    "testing": "https://deno.land/std@0.194.0/testing/asserts.ts",
+    "yaml": "https://deno.land/std@0.194.0/yaml/mod.ts",
+    "markit": "https://raw.githubusercontent.com/englishphilosophy/markit/v0.8.0/mod.ts"
   }
 }
