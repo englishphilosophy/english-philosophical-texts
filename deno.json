@@ -5,11 +5,9 @@
     "test": "deno test --allow-read",
     "build": "deno run --allow-read --allow-write bin/build.ts",
     "serve": "deno run --allow-read --allow-net bin/serve.ts",
-    "summary": "deno run --allow-read bin/summary.ts",
-    "epto": "deno run --allow-read --allow-net bin/epto.ts"
+    "summary": "deno run --allow-read bin/summary.ts"
   },
   "imports": {
-    "dotenv": "https://deno.land/std@0.194.0/dotenv/mod.ts",
     "fs": "https://deno.land/std@0.194.0/fs/mod.ts",
     "http": "https://deno.land/std@0.194.0/http/mod.ts",
     "media_types": "https://deno.land/std@0.194.0/media_types/mod.ts",
