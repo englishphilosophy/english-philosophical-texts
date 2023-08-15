@@ -8,7 +8,6 @@ import {
   mit,
   html,
   analysis,
-  lemmas,
   search,
 } from "./handlers.ts";
 
@@ -36,6 +35,5 @@ const handlers: Array<[string, Handler]> = [
   ["/mit/:id+{.json}?", mit],
   ["/html/:id+{.json}?", html],
   ["/analysis/:id+{.json}?", analysis],
-  ["/lemmas/:id+{.json}?", lemmas],
   ["/search", search],
 ];
