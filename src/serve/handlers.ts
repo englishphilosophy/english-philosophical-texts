@@ -33,12 +33,6 @@ export const analysis: Handler = async ({ urlPatternResult }) => {
   return analysis ? okResponse(analysis[1]) : idErrorResponse();
 };
 
-export const lemmas: Handler = async ({ urlPatternResult }) => {
-  const id = urlPatternResult.pathname.groups.id!;
-  const lemmas = await read.text("lemmas", id);
-  return lemmas ? okResponse(lemmas[1]) : idErrorResponse();
-};
-
 export const search: Handler = async ({ request }) => {
   // check for valid JSON in the request body
   let queryParams: unknown;

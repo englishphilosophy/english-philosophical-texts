@@ -1,4 +1,4 @@
-export type TextType = "analysis" | "html" | "lemmas" | "mit" | "search";
+export type TextType = "analysis" | "html" | "mit" | "search";
 
 export const lexicon = async (): Promise<string> =>
   await Deno.readTextFile("build/lexicon.json");
