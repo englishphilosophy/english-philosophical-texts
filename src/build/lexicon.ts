@@ -1,4 +1,4 @@
-import { parse } from "yaml";
+import { parse } from "$std/yaml/mod.ts";
 import type { Lexicon, FlatLexicon, ReducedLexicon } from "../types/lexicon.ts";
 
 export const buildLexicons = async (): Promise<void> => {

@@ -1,8 +1,8 @@
-import { dirname } from "path";
-import { ensureDir } from "fs";
+import { dirname } from "$std/path/mod.ts";
+import { ensureDir } from "$std/fs/mod.ts";
 import type { Author, Text } from "../types/library.ts";
 import type { Analysis } from "../types/analysis.ts";
-import * as read from "../read.ts";
+import * as read from "../serve/read.ts";
 
 export const buildTfIdfData = async (): Promise<void> => {
   // fetch the index analysis

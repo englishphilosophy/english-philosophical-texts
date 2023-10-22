@@ -1,9 +1,9 @@
-import { dirname } from "path";
-import { ensureDir } from "fs";
+import { dirname } from "$std/path/mod.ts";
+import { ensureDir } from "$std/fs/mod.ts";
 import type { Author, Text } from "../types/library.ts";
 import type { Analysis } from "../types/analysis.ts";
 import type { FlatLexicon } from "../types/lexicon.ts";
-import * as read from "../read.ts";
+import * as read from "../serve/read.ts";
 
 export const buildUnidentifiedWordLists = async (): Promise<void> => {
   const flatLexicon = JSON.parse(await read.flatLexicon()) as FlatLexicon;

@@ -1,4 +1,4 @@
-import { emptyDir } from "fs";
+import { emptyDir } from "$std/fs/mod.ts";
 import { buildBaseAnalyses } from "../src/build/analysis.ts";
 import { buildLexicons } from "../src/build/lexicon.ts";
 import { buildSentences } from "../src/build/sentences.ts";

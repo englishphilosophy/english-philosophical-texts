@@ -1,5 +1,5 @@
-import { dirname } from "path";
-import { ensureDir } from "fs";
+import { dirname } from "$std/path/mod.ts";
+import { ensureDir } from "$std/fs/mod.ts";
 import type {
   Author,
   Block,
@@ -7,7 +7,7 @@ import type {
   Text,
   TextStub,
 } from "../types/library.ts";
-import * as read from "../read.ts";
+import * as read from "../serve/read.ts";
 
 export const tidyTexts = async (): Promise<void> => {
   console.log("Tidying Markit output...");

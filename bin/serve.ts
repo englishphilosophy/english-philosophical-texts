@@ -1,4 +1,4 @@
-import { serve } from "http";
+import { serve } from "$std/http/mod.ts";
 import router from "../src/serve/router.ts";
 import { errorResponse } from "../src/serve/response.ts";
 
