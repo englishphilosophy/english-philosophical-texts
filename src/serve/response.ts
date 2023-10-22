@@ -1,5 +1,5 @@
-import { Status } from "http";
-import { contentType } from "media_types";
+import { Status } from "$std/http/mod.ts";
+import { contentType } from "$std/media_types/mod.ts";
 
 export const okResponse = (content: unknown) => {
   const body = typeof content === "string" ? content : JSON.stringify(content);

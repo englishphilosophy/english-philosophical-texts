@@ -1,4 +1,4 @@
-import { assert, assertEquals } from "testing";
+import { assert, assertEquals } from "$std/assert/mod.ts";
 import markit from "markit";
 
 Deno.test({

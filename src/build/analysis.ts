@@ -1,11 +1,11 @@
-import { dirname } from "path";
-import { ensureDir } from "fs";
+import { dirname } from "$std/path/mod.ts";
+import { ensureDir } from "$std/fs/mod.ts";
 import markit from "markit";
 import type { Author, Text } from "../types/library.ts";
 import { isAuthor, isText } from "../types/library.ts";
 import type { Analysis, LemmatizeResult } from "../types/analysis.ts";
 import type { FlatLexicon } from "../types/lexicon.ts";
-import * as read from "../read.ts";
+import * as read from "../serve/read.ts";
 
 export const buildBaseAnalyses = async (): Promise<void> => {
   const flatLexicon = JSON.parse(await read.flatLexicon()) as FlatLexicon;
