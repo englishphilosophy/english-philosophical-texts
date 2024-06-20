@@ -8,7 +8,7 @@
     "summary": "deno run --allow-read bin/summary.ts"
   },
   "imports": {
-    "$std/": "https://deno.land/std@0.204.0/",
+    "$std/": "https://deno.land/std@0.224.0/",
     "markit": "https://raw.githubusercontent.com/englishphilosophy/markit/v0.8.0/mod.ts"
   }
 }

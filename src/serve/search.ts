@@ -1,4 +1,4 @@
-// BUG: with ignorePuncuation OFF and wholeWords ON, search does not match
+// BUG: with ignorePunctuation OFF and wholeWords ON, search does not match
 // queries with punctuation in the right place
 
 import type { ReducedLexicon } from "../types/lexicon.ts";
