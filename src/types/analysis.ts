@@ -17,20 +17,16 @@ export type Analysis = {
   marginComments: string[];
 };
 
+export type Lemma = {
+  label: string;
+  frequency: number;
+};
+
 export type LemmatizeResult = {
+  lemmas: string[];
+  numbers: string[];
   names: string[];
   foreignText: string[];
   citations: string[];
   marginComments: string[];
-  numbers: string[];
-  lemmas: string[];
-};
-
-export type Lemma = {
-  label: string;
-  frequency: number;
-  documentFrequency: number;
-  idf: number;
-  absoluteTfIdf: number;
-  relativeTfIdf: number;
 };

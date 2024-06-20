@@ -1,15 +1,15 @@
-import { routeErrorResponse } from "./response.ts";
 import type { Handler } from "../types/handler.ts";
 import {
-  lexicon,
-  flatLexicon,
-  reducedLexicon,
-  authors,
-  mit,
-  html,
   analysis,
+  authors,
+  flatLexicon,
+  html,
+  lexicon,
+  mit,
+  reducedLexicon,
   search,
 } from "./handlers.ts";
+import { routeErrorResponse } from "./response.ts";
 
 export default (request: Request): Response | Promise<Response> => {
   const url = new URL(request.url);

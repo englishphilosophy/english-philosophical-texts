@@ -2,10 +2,10 @@
   "lock": false,
   "tasks": {
     "start": "deno run --watch --allow-read --allow-net bin/serve.ts",
-    "test": "deno test --allow-read",
-    "build": "deno run --allow-read --allow-write bin/build.ts",
     "serve": "deno run --allow-read --allow-net bin/serve.ts",
-    "summary": "deno run --allow-read bin/summary.ts"
+    "test": "deno test --allow-read",
+    "build-cache": "deno run --allow-read --allow-write bin/cache.ts",
+    "show-summary": "deno run --allow-read bin/summary.ts"
   },
   "imports": {
     "$std/": "https://deno.land/std@0.224.0/",

@@ -10,13 +10,22 @@ export const okResponse = (content: unknown) => {
 };
 
 export const routeErrorResponse = () =>
-  errorResponse("The requested URL doesn't match any route.", STATUS_CODE.NotFound);
+  errorResponse(
+    "The requested URL doesn't match any route.",
+    STATUS_CODE.NotFound
+  );
 
 export const idErrorResponse = () =>
-  errorResponse("The requested ID doesn't match any text.", STATUS_CODE.NotFound);
+  errorResponse(
+    "The requested ID doesn't match any text.",
+    STATUS_CODE.NotFound
+  );
 
 export const queryErrorResponse = () =>
-  errorResponse("The query is not in the correct format.", STATUS_CODE.BadRequest);
+  errorResponse(
+    "The query is not in the correct format.",
+    STATUS_CODE.BadRequest
+  );
 
 export const errorResponse = (
   error: unknown,

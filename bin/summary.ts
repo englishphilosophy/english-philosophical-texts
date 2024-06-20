@@ -1,5 +1,5 @@
+import * as read from "../src/tools/read.ts";
 import type { Author, TextStub } from "../src/types/library.ts";
-import * as read from "../src/serve/read.ts";
 
 const percent = (a: number, b: number) => `${Math.round((a / b) * 100)}%`;
 

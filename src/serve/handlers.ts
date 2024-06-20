@@ -1,7 +1,7 @@
-import * as read from "./read.ts";
-import { okResponse, idErrorResponse, queryErrorResponse } from "./response.ts";
-import { isQueryParams, runQuery } from "./search.ts";
+import * as read from "../tools/read.ts";
+import { isQueryParams, runQuery } from "../tools/search.ts";
 import type { Handler } from "../types/handler.ts";
+import { idErrorResponse, okResponse, queryErrorResponse } from "./response.ts";
 
 export const lexicon: Handler = async () => okResponse(await read.lexicon());
 
