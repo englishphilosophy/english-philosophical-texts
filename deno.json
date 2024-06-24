@@ -5,7 +5,9 @@
     "serve": "deno run --allow-read --allow-net bin/serve.ts",
     "test": "deno test --allow-read",
     "build-cache": "deno run --allow-read --allow-write bin/cache.ts",
-    "show-summary": "deno run --allow-read bin/summary.ts"
+    "show-summary": "deno run --allow-read bin/summary.ts",
+    "compute-tfidf": "deno run --allow-read --allow-write bin/tfidf.ts",
+    "compute-similarity": "deno run --allow-read --allow-write bin/similarity.ts"
   },
   "imports": {
     "$std/": "https://deno.land/std@0.224.0/",

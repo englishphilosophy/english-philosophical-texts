@@ -147,6 +147,8 @@ export const lemmatize = (
     .replace(/\n/g, " ") // replace actual line breaks with spaces
     .replace(/\/\//g, " ") // replace Markit line breaks with spaces
     .replace(/—/g, " ") // replace long dashes with spaces
+    .replace(/-----?[\n\r\s]/g, " ") // replace 4-5 short dashes followed by a space with spaces
+    .replace(/[\n\r\s]-[\n\r\s]/g, " ") // replace isolated short dashes with spaces
     .replace(/\|/g, "") // remove page breaks
     .replace(/\[n.*?\]/g, "") // remove footnote references
     .replace(/£\d ?(.*?) ?£\d/g, "$1") // remove heading markup

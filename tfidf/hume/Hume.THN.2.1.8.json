@@ -1,0 +1,2140 @@
+{
+  "id": "Hume.THN.2.1.8",
+  "lemmas": [
+    {
+      "label": "pride",
+      "relativeTfIdf": 0.013184045422938483,
+      "absoluteTfIdf": 23.072079490142343
+    },
+    {
+      "label": "beauty",
+      "relativeTfIdf": 0.011228258728633785,
+      "absoluteTfIdf": 19.649452775109125
+    },
+    {
+      "label": "deformity",
+      "relativeTfIdf": 0.01038113381471604,
+      "absoluteTfIdf": 18.166984175753072
+    },
+    {
+      "label": "humility",
+      "relativeTfIdf": 0.009343020433244436,
+      "absoluteTfIdf": 16.350285758177765
+    },
+    {
+      "label": "adventure",
+      "relativeTfIdf": 0.006464684181151514,
+      "absoluteTfIdf": 11.313197317015149
+    },
+    {
+      "label": "mortify",
+      "relativeTfIdf": 0.004584254827588335,
+      "absoluteTfIdf": 8.022445948279586
+    },
+    {
+      "label": "relate",
+      "relativeTfIdf": 0.004540189482780043,
+      "absoluteTfIdf": 7.945331594865078
+    },
+    {
+      "label": "pleasure",
+      "relativeTfIdf": 0.004479992661186796,
+      "absoluteTfIdf": 7.839987157076893
+    },
+    {
+      "label": "strength",
+      "relativeTfIdf": 0.004295357198986609,
+      "absoluteTfIdf": 7.516875098226564
+    },
+    {
+      "label": "asham'd",
+      "relativeTfIdf": 0.004232877790408786,
+      "absoluteTfIdf": 7.407536133215374
+    },
+    {
+      "label": "sickness",
+      "relativeTfIdf": 0.003590280264297577,
+      "absoluteTfIdf": 6.282990462520759
+    },
+    {
+      "label": "bodily",
+      "relativeTfIdf": 0.0035230447560348093,
+      "absoluteTfIdf": 6.165328323060916
+    },
+    {
+      "label": "surprise",
+      "relativeTfIdf": 0.003393290474406154,
+      "absoluteTfIdf": 5.938258330210769
+    },
+    {
+      "label": "transition",
+      "relativeTfIdf": 0.0033441334339010943,
+      "absoluteTfIdf": 5.852233509326915
+    },
+    {
+      "label": "calamity",
+      "relativeTfIdf": 0.0033317836642781907,
+      "absoluteTfIdf": 5.830621412486833
+    },
+    {
+      "label": "experiment",
+      "relativeTfIdf": 0.0031143401444148123,
+      "absoluteTfIdf": 5.450095252725921
+    },
+    {
+      "label": "essence",
+      "relativeTfIdf": 0.0030631636361582158,
+      "absoluteTfIdf": 5.3605363632768785
+    },
+    {
+      "label": "king's-evil",
+      "relativeTfIdf": 0.003036117702309593,
+      "absoluteTfIdf": 5.313205979041787
+    },
+    {
+      "label": "question'd",
+      "relativeTfIdf": 0.003036117702309593,
+      "absoluteTfIdf": 5.313205979041787
+    },
+    {
+      "label": "pain",
+      "relativeTfIdf": 0.0030253343321090522,
+      "absoluteTfIdf": 5.294335081190842
+    },
+    {
+      "label": "convenience",
+      "relativeTfIdf": 0.0029773208890738027,
+      "absoluteTfIdf": 5.210311555879154
+    },
+    {
+      "label": "impression",
+      "relativeTfIdf": 0.0029050212356132696,
+      "absoluteTfIdf": 5.0837871623232225
+    },
+    {
+      "label": "beautiful",
+      "relativeTfIdf": 0.0028724911188264023,
+      "absoluteTfIdf": 5.0268594579462045
+    },
+    {
+      "label": "pleasant",
+      "relativeTfIdf": 0.0028342772971263674,
+      "absoluteTfIdf": 4.959985269971143
+    },
+    {
+      "label": "sensation",
+      "relativeTfIdf": 0.0027859689527307127,
+      "absoluteTfIdf": 4.875445667278747
+    },
+    {
+      "label": "surprize",
+      "relativeTfIdf": 0.0027071622855718252,
+      "absoluteTfIdf": 4.737533999750694
+    },
+    {
+      "label": "uneasiness",
+      "relativeTfIdf": 0.0026605814800255284,
+      "absoluteTfIdf": 4.656017590044675
+    },
+    {
+      "label": "discern'd",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "fruitful",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "head-ach",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "infectious",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "itch",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "rheums",
+      "relativeTfIdf": 0.002640033599132481,
+      "absoluteTfIdf": 4.620058798481842
+    },
+    {
+      "label": "relation",
+      "relativeTfIdf": 0.0025990675397188807,
+      "absoluteTfIdf": 4.548368194508041
+    },
+    {
+      "label": "appropriate",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "architecture",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "deafness",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "epilepsy",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "gouts",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "maladies",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "pillar",
+      "relativeTfIdf": 0.002408339251642102,
+      "absoluteTfIdf": 4.214593690373678
+    },
+    {
+      "label": "passion",
+      "relativeTfIdf": 0.002397745199668379,
+      "absoluteTfIdf": 4.196054099419663
+    },
+    {
+      "label": "self",
+      "relativeTfIdf": 0.0023486965040232064,
+      "absoluteTfIdf": 4.110218882040611
+    },
+    {
+      "label": "uneasy",
+      "relativeTfIdf": 0.002305564700614238,
+      "absoluteTfIdf": 4.034738226074916
+    },
+    {
+      "label": "palace",
+      "relativeTfIdf": 0.00224394949595537,
+      "absoluteTfIdf": 3.926911617921897
+    },
+    {
+      "label": "system",
+      "relativeTfIdf": 0.0022277721769018975,
+      "absoluteTfIdf": 3.8986013095783205
+    },
+    {
+      "label": "infirmity",
+      "relativeTfIdf": 0.0021476785994933045,
+      "absoluteTfIdf": 3.758437549113282
+    },
+    {
+      "label": "top",
+      "relativeTfIdf": 0.002116438895204393,
+      "absoluteTfIdf": 3.703768066607687
+    },
+    {
+      "label": "base",
+      "relativeTfIdf": 0.00201225514846499,
+      "absoluteTfIdf": 3.521446509813732
+    },
+    {
+      "label": "recovery",
+      "relativeTfIdf": 0.00201225514846499,
+      "absoluteTfIdf": 3.521446509813732
+    },
+    {
+      "label": "health",
+      "relativeTfIdf": 0.0019767851892407745,
+      "absoluteTfIdf": 3.459374081171355
+    },
+    {
+      "label": "agility",
+      "relativeTfIdf": 0.0019241690457065567,
+      "absoluteTfIdf": 3.367295829986474
+    },
+    {
+      "label": "construction",
+      "relativeTfIdf": 0.0019241690457065567,
+      "absoluteTfIdf": 3.367295829986474
+    },
+    {
+      "label": "intrinsic",
+      "relativeTfIdf": 0.0019241690457065567,
+      "absoluteTfIdf": 3.367295829986474
+    },
+    {
+      "label": "sufficiently",
+      "relativeTfIdf": 0.001874911326626881,
+      "absoluteTfIdf": 3.281094821597042
+    },
+    {
+      "label": "engag'd",
+      "relativeTfIdf": 0.001847865392778258,
+      "absoluteTfIdf": 3.2337644373619514
+    },
+    {
+      "label": "malady",
+      "relativeTfIdf": 0.001847865392778258,
+      "absoluteTfIdf": 3.2337644373619514
+    },
+    {
+      "label": "reluctance",
+      "relativeTfIdf": 0.001847865392778258,
+      "absoluteTfIdf": 3.2337644373619514
+    },
+    {
+      "label": "double",
+      "relativeTfIdf": 0.0018281530426714052,
+      "absoluteTfIdf": 3.199267824674959
+    },
+    {
+      "label": "external",
+      "relativeTfIdf": 0.001825218406272734,
+      "absoluteTfIdf": 3.1941322109772847
+    },
+    {
+      "label": "assent",
+      "relativeTfIdf": 0.0018006129837239075,
+      "absoluteTfIdf": 3.151072721516838
+    },
+    {
+      "label": "estimate",
+      "relativeTfIdf": 0.0017805608009746105,
+      "absoluteTfIdf": 3.115981401705568
+    },
+    {
+      "label": "innumerable",
+      "relativeTfIdf": 0.0017805608009746105,
+      "absoluteTfIdf": 3.115981401705568
+    },
+    {
+      "label": "foreign",
+      "relativeTfIdf": 0.0017474472515697443,
+      "absoluteTfIdf": 3.0580326902470523
+    },
+    {
+      "label": "blindness",
+      "relativeTfIdf": 0.0017203547920272811,
+      "absoluteTfIdf": 3.0106208860477417
+    },
+    {
+      "label": "interposition",
+      "relativeTfIdf": 0.0017203547920272811,
+      "absoluteTfIdf": 3.0106208860477417
+    },
+    {
+      "label": "power",
+      "relativeTfIdf": 0.0016900265603545731,
+      "absoluteTfIdf": 2.957546480620503
+    },
+    {
+      "label": "constitution",
+      "relativeTfIdf": 0.0016720667169505472,
+      "absoluteTfIdf": 2.9261167546634574
+    },
+    {
+      "label": "vanity",
+      "relativeTfIdf": 0.0016720667169505472,
+      "absoluteTfIdf": 2.9261167546634574
+    },
+    {
+      "label": "anatomy",
+      "relativeTfIdf": 0.0016658918321390953,
+      "absoluteTfIdf": 2.9153107062434165
+    },
+    {
+      "label": "proud",
+      "relativeTfIdf": 0.0016658918321390953,
+      "absoluteTfIdf": 2.9153107062434165
+    },
+    {
+      "label": "undeniable",
+      "relativeTfIdf": 0.0016658918321390953,
+      "absoluteTfIdf": 2.9153107062434165
+    },
+    {
+      "label": "object",
+      "relativeTfIdf": 0.0016302429240316139,
+      "absoluteTfIdf": 2.852925117055324
+    },
+    {
+      "label": "wherever",
+      "relativeTfIdf": 0.0016244407782070411,
+      "absoluteTfIdf": 2.842771361862322
+    },
+    {
+      "label": "slender",
+      "relativeTfIdf": 0.0016161710452878785,
+      "absoluteTfIdf": 2.8282993292537872
+    },
+    {
+      "label": "solely",
+      "relativeTfIdf": 0.0016161710452878785,
+      "absoluteTfIdf": 2.8282993292537872
+    },
+    {
+      "label": "produce",
+      "relativeTfIdf": 0.0016114171984269662,
+      "absoluteTfIdf": 2.8199800972471913
+    },
+    {
+      "label": "something",
+      "relativeTfIdf": 0.0015963074474878384,
+      "absoluteTfIdf": 2.793538033103717
+    },
+    {
+      "label": "body",
+      "relativeTfIdf": 0.0015743772692686608,
+      "absoluteTfIdf": 2.7551602212201565
+    },
+    {
+      "label": "bless",
+      "relativeTfIdf": 0.0015704323551887147,
+      "absoluteTfIdf": 2.7482566215802504
+    },
+    {
+      "label": "brain",
+      "relativeTfIdf": 0.0015280849425294452,
+      "absoluteTfIdf": 2.6741486494265287
+    },
+    {
+      "label": "incessantly",
+      "relativeTfIdf": 0.0015280849425294452,
+      "absoluteTfIdf": 2.6741486494265287
+    },
+    {
+      "label": "overlook",
+      "relativeTfIdf": 0.0015280849425294452,
+      "absoluteTfIdf": 2.6741486494265287
+    },
+    {
+      "label": "accomplishment",
+      "relativeTfIdf": 0.0014886604445369014,
+      "absoluteTfIdf": 2.605155777939577
+    },
+    {
+      "label": "heap",
+      "relativeTfIdf": 0.0014886604445369014,
+      "absoluteTfIdf": 2.605155777939577
+    },
+    {
+      "label": "evidently",
+      "relativeTfIdf": 0.0014718334723504438,
+      "absoluteTfIdf": 2.5757085766132763
+    },
+    {
+      "label": "accidental",
+      "relativeTfIdf": 0.0014517812896011463,
+      "absoluteTfIdf": 2.540617256802006
+    },
+    {
+      "label": "fourth",
+      "relativeTfIdf": 0.0014517812896011463,
+      "absoluteTfIdf": 2.540617256802006
+    },
+    {
+      "label": "danger",
+      "relativeTfIdf": 0.0014516053842368426,
+      "absoluteTfIdf": 2.540309422414474
+    },
+    {
+      "label": "want",
+      "relativeTfIdf": 0.0014329185678232813,
+      "absoluteTfIdf": 2.507607493690742
+    },
+    {
+      "label": "figure",
+      "relativeTfIdf": 0.0014317291068518493,
+      "absoluteTfIdf": 2.505525936990736
+    },
+    {
+      "label": "argument",
+      "relativeTfIdf": 0.001421389935571757,
+      "absoluteTfIdf": 2.4874323872505744
+    },
+    {
+      "label": "difference",
+      "relativeTfIdf": 0.001421389935571757,
+      "absoluteTfIdf": 2.4874323872505744
+    },
+    {
+      "label": "exhaust",
+      "relativeTfIdf": 0.0014171386485631837,
+      "absoluteTfIdf": 2.4799926349855714
+    },
+    {
+      "label": "soul",
+      "relativeTfIdf": 0.0014121926115840777,
+      "absoluteTfIdf": 2.471337070272136
+    },
+    {
+      "label": "excel",
+      "relativeTfIdf": 0.0013844766977974988,
+      "absoluteTfIdf": 2.4228342211456226
+    },
+    {
+      "label": "inanimate",
+      "relativeTfIdf": 0.0013844766977974988,
+      "absoluteTfIdf": 2.4228342211456226
+    },
+    {
+      "label": "agree",
+      "relativeTfIdf": 0.0013740938455639726,
+      "absoluteTfIdf": 2.404664229736952
+    },
+    {
+      "label": "useful",
+      "relativeTfIdf": 0.0013740938455639726,
+      "absoluteTfIdf": 2.404664229736952
+    },
+    {
+      "label": "root",
+      "relativeTfIdf": 0.0013535811427859126,
+      "absoluteTfIdf": 2.368766999875347
+    },
+    {
+      "label": "apart",
+      "relativeTfIdf": 0.0013242706888501694,
+      "absoluteTfIdf": 2.3174737054877963
+    },
+    {
+      "label": "limitation",
+      "relativeTfIdf": 0.0013242706888501694,
+      "absoluteTfIdf": 2.3174737054877963
+    },
+    {
+      "label": "excite",
+      "relativeTfIdf": 0.0013198477658944857,
+      "absoluteTfIdf": 2.3097335903153504
+    },
+    {
+      "label": "quality",
+      "relativeTfIdf": 0.0013176449003490577,
+      "absoluteTfIdf": 2.305878575610851
+    },
+    {
+      "label": "animal",
+      "relativeTfIdf": 0.001301507096167029,
+      "absoluteTfIdf": 2.2776374182923003
+    },
+    {
+      "label": "hence",
+      "relativeTfIdf": 0.001301507096167029,
+      "absoluteTfIdf": 2.2776374182923003
+    },
+    {
+      "label": "because",
+      "relativeTfIdf": 0.0012985098716951848,
+      "absoluteTfIdf": 2.2723922754665735
+    },
+    {
+      "label": "closely",
+      "relativeTfIdf": 0.0012963905950390652,
+      "absoluteTfIdf": 2.268683541318364
+    },
+    {
+      "label": "painful",
+      "relativeTfIdf": 0.0012963905950390652,
+      "absoluteTfIdf": 2.268683541318364
+    },
+    {
+      "label": "shape",
+      "relativeTfIdf": 0.0012963905950390652,
+      "absoluteTfIdf": 2.268683541318364
+    },
+    {
+      "label": "idea",
+      "relativeTfIdf": 0.0012910935690522041,
+      "absoluteTfIdf": 2.259413745841357
+    },
+    {
+      "label": "caprice",
+      "relativeTfIdf": 0.0012698077289619838,
+      "absoluteTfIdf": 2.2221635256834715
+    },
+    {
+      "label": "structure",
+      "relativeTfIdf": 0.0012698077289619838,
+      "absoluteTfIdf": 2.2221635256834715
+    },
+    {
+      "label": "whereas",
+      "relativeTfIdf": 0.0012698077289619838,
+      "absoluteTfIdf": 2.2221635256834715
+    },
+    {
+      "label": "cause",
+      "relativeTfIdf": 0.0012648000557358206,
+      "absoluteTfIdf": 2.213400097537686
+    },
+    {
+      "label": "separate",
+      "relativeTfIdf": 0.0012499408844179208,
+      "absoluteTfIdf": 2.1873965477313613
+    },
+    {
+      "label": "moment",
+      "relativeTfIdf": 0.0012484088577792265,
+      "absoluteTfIdf": 2.1847155011136463
+    },
+    {
+      "label": "decisive",
+      "relativeTfIdf": 0.00124440672177865,
+      "absoluteTfIdf": 2.1777117631126375
+    },
+    {
+      "label": "horror",
+      "relativeTfIdf": 0.00124440672177865,
+      "absoluteTfIdf": 2.1777117631126375
+    },
+    {
+      "label": "incident",
+      "relativeTfIdf": 0.00124440672177865,
+      "absoluteTfIdf": 2.1777117631126375
+    },
+    {
+      "label": "define",
+      "relativeTfIdf": 0.0012200869421107668,
+      "absoluteTfIdf": 2.135152148693842
+    },
+    {
+      "label": "else",
+      "relativeTfIdf": 0.0012200869421107668,
+      "absoluteTfIdf": 2.135152148693842
+    },
+    {
+      "label": "novelty",
+      "relativeTfIdf": 0.0012200869421107668,
+      "absoluteTfIdf": 2.135152148693842
+    },
+    {
+      "label": "convey",
+      "relativeTfIdf": 0.0012168122708484895,
+      "absoluteTfIdf": 2.1294214739848565
+    },
+    {
+      "label": "sign",
+      "relativeTfIdf": 0.0011967600880991925,
+      "absoluteTfIdf": 2.0943301541735866
+    },
+    {
+      "label": "custom",
+      "relativeTfIdf": 0.0011846169828865511,
+      "absoluteTfIdf": 2.073079720051464
+    },
+    {
+      "label": "animate",
+      "relativeTfIdf": 0.0011743482520116032,
+      "absoluteTfIdf": 2.0551094410203055
+    },
+    {
+      "label": "attendant",
+      "relativeTfIdf": 0.0011743482520116032,
+      "absoluteTfIdf": 2.0551094410203055
+    },
+    {
+      "label": "belong",
+      "relativeTfIdf": 0.0011688531861638815,
+      "absoluteTfIdf": 2.0454930757867924
+    },
+    {
+      "label": "peculiar",
+      "relativeTfIdf": 0.001153303869528706,
+      "absoluteTfIdf": 2.0182817716752353
+    },
+    {
+      "label": "either",
+      "relativeTfIdf": 0.0011456500389248937,
+      "absoluteTfIdf": 2.004887568118564
+    },
+    {
+      "label": "connect",
+      "relativeTfIdf": 0.001137963274863402,
+      "absoluteTfIdf": 1.9914357310109536
+    },
+    {
+      "label": "phenomenon",
+      "relativeTfIdf": 0.001137963274863402,
+      "absoluteTfIdf": 1.9914357310109536
+    },
+    {
+      "label": "admire",
+      "relativeTfIdf": 0.0011320008393523335,
+      "absoluteTfIdf": 1.9810014688665833
+    },
+    {
+      "label": "cut",
+      "relativeTfIdf": 0.0011320008393523335,
+      "absoluteTfIdf": 1.9810014688665833
+    },
+    {
+      "label": "duration",
+      "relativeTfIdf": 0.0011320008393523335,
+      "absoluteTfIdf": 1.9810014688665833
+    },
+    {
+      "label": "personal",
+      "relativeTfIdf": 0.0011119486566030362,
+      "absoluteTfIdf": 1.9459101490553132
+    },
+    {
+      "label": "entertain",
+      "relativeTfIdf": 0.0011078863510721184,
+      "absoluteTfIdf": 1.938801114376207
+    },
+    {
+      "label": "explain",
+      "relativeTfIdf": 0.0010977893907083676,
+      "absoluteTfIdf": 1.9211314337396435
+    },
+    {
+      "label": "merely",
+      "relativeTfIdf": 0.0010977893907083676,
+      "absoluteTfIdf": 1.9211314337396435
+    },
+    {
+      "label": "constitute",
+      "relativeTfIdf": 0.0010925763413597897,
+      "absoluteTfIdf": 1.912008597379632
+    },
+    {
+      "label": "talent",
+      "relativeTfIdf": 0.0010925763413597897,
+      "absoluteTfIdf": 1.912008597379632
+    },
+    {
+      "label": "satisfaction",
+      "relativeTfIdf": 0.0010785807160854468,
+      "absoluteTfIdf": 1.8875162531495318
+    },
+    {
+      "label": "delight",
+      "relativeTfIdf": 0.0010738392997466522,
+      "absoluteTfIdf": 1.879218774556641
+    },
+    {
+      "label": "originally",
+      "relativeTfIdf": 0.0010738392997466522,
+      "absoluteTfIdf": 1.879218774556641
+    },
+    {
+      "label": "posterity",
+      "relativeTfIdf": 0.0010738392997466522,
+      "absoluteTfIdf": 1.879218774556641
+    },
+    {
+      "label": "utility",
+      "relativeTfIdf": 0.0010738392997466522,
+      "absoluteTfIdf": 1.879218774556641
+    },
+    {
+      "label": "young",
+      "relativeTfIdf": 0.0010738392997466522,
+      "absoluteTfIdf": 1.879218774556641
+    },
+    {
+      "label": "whether",
+      "relativeTfIdf": 0.0010660424516788175,
+      "absoluteTfIdf": 1.8655742904379307
+    },
+    {
+      "label": "primary",
+      "relativeTfIdf": 0.0010556971864240348,
+      "absoluteTfIdf": 1.8474700762420608
+    },
+    {
+      "label": "vary",
+      "relativeTfIdf": 0.0010556971864240348,
+      "absoluteTfIdf": 1.8474700762420608
+    },
+    {
+      "label": "affect",
+      "relativeTfIdf": 0.0010359848363171822,
+      "absoluteTfIdf": 1.8129734635550685
+    },
+    {
+      "label": "near",
+      "relativeTfIdf": 0.0010221318528516453,
+      "absoluteTfIdf": 1.788730742490379
+    },
+    {
+      "label": "assurance",
+      "relativeTfIdf": 0.0010044902386013564,
+      "absoluteTfIdf": 1.7578579175523736
+    },
+    {
+      "label": "conceal",
+      "relativeTfIdf": 0.0010044902386013564,
+      "absoluteTfIdf": 1.7578579175523736
+    },
+    {
+      "label": "enough",
+      "relativeTfIdf": 0.0010044902386013564,
+      "absoluteTfIdf": 1.7578579175523736
+    },
+    {
+      "label": "character",
+      "relativeTfIdf": 0.0009949196829159668,
+      "absoluteTfIdf": 1.7411094451029419
+    },
+    {
+      "label": "above-mentioned",
+      "relativeTfIdf": 0.0009883925946203873,
+      "absoluteTfIdf": 1.7296870405856775
+    },
+    {
+      "label": "cold",
+      "relativeTfIdf": 0.0009727360379414646,
+      "absoluteTfIdf": 1.702288066397563
+    },
+    {
+      "label": "expose",
+      "relativeTfIdf": 0.0009727360379414646,
+      "absoluteTfIdf": 1.702288066397563
+    },
+    {
+      "label": "opposite",
+      "relativeTfIdf": 0.00096834041187109,
+      "absoluteTfIdf": 1.6945957207744073
+    },
+    {
+      "label": "fiction",
+      "relativeTfIdf": 0.0009574970396088009,
+      "absoluteTfIdf": 1.6756198193154015
+    },
+    {
+      "label": "apprehension",
+      "relativeTfIdf": 0.0009426539045212234,
+      "absoluteTfIdf": 1.6496443329121409
+    },
+    {
+      "label": "topic",
+      "relativeTfIdf": 0.0009426539045212234,
+      "absoluteTfIdf": 1.6496443329121409
+    },
+    {
+      "label": "disagreeable",
+      "relativeTfIdf": 0.0009281865856730578,
+      "absoluteTfIdf": 1.6243265249278511
+    },
+    {
+      "label": "worth",
+      "relativeTfIdf": 0.0009281865856730578,
+      "absoluteTfIdf": 1.6243265249278511
+    },
+    {
+      "label": "inseparable",
+      "relativeTfIdf": 0.0009140765213357026,
+      "absoluteTfIdf": 1.5996339123374794
+    },
+    {
+      "label": "wonder",
+      "relativeTfIdf": 0.0009140765213357026,
+      "absoluteTfIdf": 1.5996339123374794
+    },
+    {
+      "label": "effect",
+      "relativeTfIdf": 0.0009028391579362067,
+      "absoluteTfIdf": 1.5799685263883618
+    },
+    {
+      "label": "value",
+      "relativeTfIdf": 0.0009003064918619538,
+      "absoluteTfIdf": 1.575536360758419
+    },
+    {
+      "label": "confirm",
+      "relativeTfIdf": 0.0008868604933418429,
+      "absoluteTfIdf": 1.552005863348225
+    },
+    {
+      "label": "form",
+      "relativeTfIdf": 0.0008778231129400998,
+      "absoluteTfIdf": 1.5361904476451747
+    },
+    {
+      "label": "invention",
+      "relativeTfIdf": 0.0008737236257848721,
+      "absoluteTfIdf": 1.5290163451235261
+    },
+    {
+      "label": "scruple",
+      "relativeTfIdf": 0.0008737236257848721,
+      "absoluteTfIdf": 1.5290163451235261
+    },
+    {
+      "label": "proof",
+      "relativeTfIdf": 0.0008678046713614246,
+      "absoluteTfIdf": 1.518658174882493
+    },
+    {
+      "label": "then",
+      "relativeTfIdf": 0.00086567324779679,
+      "absoluteTfIdf": 1.5149281836443824
+    },
+    {
+      "label": "convert",
+      "relativeTfIdf": 0.00086088199386941,
+      "absoluteTfIdf": 1.5065434892714675
+    },
+    {
+      "label": "curious",
+      "relativeTfIdf": 0.00086088199386941,
+      "absoluteTfIdf": 1.5065434892714675
+    },
+    {
+      "label": "fit",
+      "relativeTfIdf": 0.00086088199386941,
+      "absoluteTfIdf": 1.5065434892714675
+    },
+    {
+      "label": "hold",
+      "relativeTfIdf": 0.00086088199386941,
+      "absoluteTfIdf": 1.5065434892714675
+    },
+    {
+      "label": "old",
+      "relativeTfIdf": 0.00086088199386941,
+      "absoluteTfIdf": 1.5065434892714675
+    },
+    {
+      "label": "nothing",
+      "relativeTfIdf": 0.0008522305828885766,
+      "absoluteTfIdf": 1.4914035200550093
+    },
+    {
+      "label": "objection",
+      "relativeTfIdf": 0.0008360333584752736,
+      "absoluteTfIdf": 1.4630583773317287
+    },
+    {
+      "label": "desire",
+      "relativeTfIdf": 0.0008322725718528178,
+      "absoluteTfIdf": 1.456477000742431
+    },
+    {
+      "label": "rule",
+      "relativeTfIdf": 0.0008322725718528178,
+      "absoluteTfIdf": 1.456477000742431
+    },
+    {
+      "label": "escape",
+      "relativeTfIdf": 0.0008240028389336552,
+      "absoluteTfIdf": 1.4420049681338964
+    },
+    {
+      "label": "essential",
+      "relativeTfIdf": 0.0008122203891035206,
+      "absoluteTfIdf": 1.421385680931161
+    },
+    {
+      "label": "supply",
+      "relativeTfIdf": 0.0008122203891035206,
+      "absoluteTfIdf": 1.421385680931161
+    },
+    {
+      "label": "together",
+      "relativeTfIdf": 0.0008091837634899383,
+      "absoluteTfIdf": 1.4160715861073918
+    },
+    {
+      "label": "natural",
+      "relativeTfIdf": 0.0008079087361410052,
+      "absoluteTfIdf": 1.4138402882467591
+    },
+    {
+      "label": "ambition",
+      "relativeTfIdf": 0.0008006759849220808,
+      "absoluteTfIdf": 1.4011829736136412
+    },
+    {
+      "label": "consider",
+      "relativeTfIdf": 0.0007927749248259001,
+      "absoluteTfIdf": 1.3873561184453251
+    },
+    {
+      "label": "resolve",
+      "relativeTfIdf": 0.0007893601978956925,
+      "absoluteTfIdf": 1.3813803463174616
+    },
+    {
+      "label": "just",
+      "relativeTfIdf": 0.0007865521894371615,
+      "absoluteTfIdf": 1.3764663315150325
+    },
+    {
+      "label": "wit",
+      "relativeTfIdf": 0.0007782641488344915,
+      "absoluteTfIdf": 1.36196226046036
+    },
+    {
+      "label": "common",
+      "relativeTfIdf": 0.000770802463207259,
+      "absoluteTfIdf": 1.3489043106127032
+    },
+    {
+      "label": "contain",
+      "relativeTfIdf": 0.0007673794659940945,
+      "absoluteTfIdf": 1.3429140654896654
+    },
+    {
+      "label": "off",
+      "relativeTfIdf": 0.0007673794659940945,
+      "absoluteTfIdf": 1.3429140654896654
+    },
+    {
+      "label": "taste",
+      "relativeTfIdf": 0.0007673794659940945,
+      "absoluteTfIdf": 1.3429140654896654
+    },
+    {
+      "label": "compose",
+      "relativeTfIdf": 0.0007566982471300074,
+      "absoluteTfIdf": 1.3242219324775129
+    },
+    {
+      "label": "precede",
+      "relativeTfIdf": 0.0007566982471300074,
+      "absoluteTfIdf": 1.3242219324775129
+    },
+    {
+      "label": "variety",
+      "relativeTfIdf": 0.0007566982471300074,
+      "absoluteTfIdf": 1.3242219324775129
+    },
+    {
+      "label": "philosophy",
+      "relativeTfIdf": 0.0007534235758677303,
+      "absoluteTfIdf": 1.318491257768528
+    },
+    {
+      "label": "proper",
+      "relativeTfIdf": 0.0007534235758677303,
+      "absoluteTfIdf": 1.318491257768528
+    },
+    {
+      "label": "dangerous",
+      "relativeTfIdf": 0.0007462130250338951,
+      "absoluteTfIdf": 1.3058727938093164
+    },
+    {
+      "label": "security",
+      "relativeTfIdf": 0.0007462130250338951,
+      "absoluteTfIdf": 1.3058727938093164
+    },
+    {
+      "label": "survey",
+      "relativeTfIdf": 0.0007462130250338951,
+      "absoluteTfIdf": 1.3058727938093164
+    },
+    {
+      "label": "rest",
+      "relativeTfIdf": 0.0007425907256339659,
+      "absoluteTfIdf": 1.2995337698594402
+    },
+    {
+      "label": "viz",
+      "relativeTfIdf": 0.0007359167361752219,
+      "absoluteTfIdf": 1.2878542883066382
+    },
+    {
+      "label": "again",
+      "relativeTfIdf": 0.0007258026921184213,
+      "absoluteTfIdf": 1.270154711207237
+    },
+    {
+      "label": "propose",
+      "relativeTfIdf": 0.0007258026921184213,
+      "absoluteTfIdf": 1.270154711207237
+    },
+    {
+      "label": "necessary",
+      "relativeTfIdf": 0.0007106949677858785,
+      "absoluteTfIdf": 1.2437161936252872
+    },
+    {
+      "label": "between",
+      "relativeTfIdf": 0.0007068792527916072,
+      "absoluteTfIdf": 1.2370386923853125
+    },
+    {
+      "label": "confess",
+      "relativeTfIdf": 0.0007060963057920388,
+      "absoluteTfIdf": 1.235668535136068
+    },
+    {
+      "label": "false",
+      "relativeTfIdf": 0.0007060963057920388,
+      "absoluteTfIdf": 1.235668535136068
+    },
+    {
+      "label": "fully",
+      "relativeTfIdf": 0.0007060963057920388,
+      "absoluteTfIdf": 1.235668535136068
+    },
+    {
+      "label": "independent",
+      "relativeTfIdf": 0.0007060963057920388,
+      "absoluteTfIdf": 1.235668535136068
+    },
+    {
+      "label": "join",
+      "relativeTfIdf": 0.0007060963057920388,
+      "absoluteTfIdf": 1.235668535136068
+    },
+    {
+      "label": "require",
+      "relativeTfIdf": 0.000700257843713567,
+      "absoluteTfIdf": 1.2254512264987423
+    },
+    {
+      "label": "contrary",
+      "relativeTfIdf": 0.0006993106296057564,
+      "absoluteTfIdf": 1.2237936018100737
+    },
+    {
+      "label": "influence",
+      "relativeTfIdf": 0.0006993106296057564,
+      "absoluteTfIdf": 1.2237936018100737
+    },
+    {
+      "label": "constant",
+      "relativeTfIdf": 0.0006964922381826782,
+      "absoluteTfIdf": 1.2188614168196867
+    },
+    {
+      "label": "tendency",
+      "relativeTfIdf": 0.0006964922381826782,
+      "absoluteTfIdf": 1.2188614168196867
+    },
+    {
+      "label": "vain",
+      "relativeTfIdf": 0.0006964922381826782,
+      "absoluteTfIdf": 1.2188614168196867
+    },
+    {
+      "label": "hypothesis",
+      "relativeTfIdf": 0.0006870469227819863,
+      "absoluteTfIdf": 1.202332114868476
+    },
+    {
+      "label": "plain",
+      "relativeTfIdf": 0.0006777551965695405,
+      "absoluteTfIdf": 1.186071593996696
+    },
+    {
+      "label": "account",
+      "relativeTfIdf": 0.0006741000912234214,
+      "absoluteTfIdf": 1.1796751596409873
+    },
+    {
+      "label": "dispute",
+      "relativeTfIdf": 0.0006686121443715741,
+      "absoluteTfIdf": 1.1700712526502546
+    },
+    {
+      "label": "science",
+      "relativeTfIdf": 0.0006686121443715741,
+      "absoluteTfIdf": 1.1700712526502546
+    },
+    {
+      "label": "forego",
+      "relativeTfIdf": 0.0006507535480835145,
+      "absoluteTfIdf": 1.1388187091461501
+    },
+    {
+      "label": "certainly",
+      "relativeTfIdf": 0.0006420292782944925,
+      "absoluteTfIdf": 1.1235512370153617
+    },
+    {
+      "label": "properly",
+      "relativeTfIdf": 0.0006420292782944925,
+      "absoluteTfIdf": 1.1235512370153617
+    },
+    {
+      "label": "resemble",
+      "relativeTfIdf": 0.0006420292782944925,
+      "absoluteTfIdf": 1.1235512370153617
+    },
+    {
+      "label": "real",
+      "relativeTfIdf": 0.000639560900497626,
+      "absoluteTfIdf": 1.1192315758708453
+    },
+    {
+      "label": "whatever",
+      "relativeTfIdf": 0.000639560900497626,
+      "absoluteTfIdf": 1.1192315758708453
+    },
+    {
+      "label": "inferior",
+      "relativeTfIdf": 0.0006334362055147552,
+      "absoluteTfIdf": 1.1085133596508214
+    },
+    {
+      "label": "extraordinary",
+      "relativeTfIdf": 0.0006249704422089604,
+      "absoluteTfIdf": 1.0936982738656806
+    },
+    {
+      "label": "now",
+      "relativeTfIdf": 0.0006247647234233469,
+      "absoluteTfIdf": 1.093338265990857
+    },
+    {
+      "label": "therefore",
+      "relativeTfIdf": 0.0006166027193090334,
+      "absoluteTfIdf": 1.0790547587908086
+    },
+    {
+      "label": "along",
+      "relativeTfIdf": 0.0006084061354242448,
+      "absoluteTfIdf": 1.0647107369924282
+    },
+    {
+      "label": "already",
+      "relativeTfIdf": 0.0006084061354242448,
+      "absoluteTfIdf": 1.0647107369924282
+    },
+    {
+      "label": "derive",
+      "relativeTfIdf": 0.000600816270011133,
+      "absoluteTfIdf": 1.0514284725194827
+    },
+    {
+      "label": "destroy",
+      "relativeTfIdf": 0.0006003006297145555,
+      "absoluteTfIdf": 1.050526102000472
+    },
+    {
+      "label": "reality",
+      "relativeTfIdf": 0.0006003006297145555,
+      "absoluteTfIdf": 1.050526102000472
+    },
+    {
+      "label": "event",
+      "relativeTfIdf": 0.0005923084914432756,
+      "absoluteTfIdf": 1.036539860025732
+    },
+    {
+      "label": "live",
+      "relativeTfIdf": 0.0005923084914432756,
+      "absoluteTfIdf": 1.036539860025732
+    },
+    {
+      "label": "comparison",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "convince",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "judge",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "mere",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "none",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "remarkable",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "vulgar",
+      "relativeTfIdf": 0.0005844265930819407,
+      "absoluteTfIdf": 1.0227465378933962
+    },
+    {
+      "label": "merit",
+      "relativeTfIdf": 0.000576651934764353,
+      "absoluteTfIdf": 1.0091408858376176
+    },
+    {
+      "label": "satisfy",
+      "relativeTfIdf": 0.0005614129364316893,
+      "absoluteTfIdf": 0.9824726387554562
+    },
+    {
+      "label": "circumstance",
+      "relativeTfIdf": 0.0005541625619879844,
+      "absoluteTfIdf": 0.9697844834789726
+    },
+    {
+      "label": "commonly",
+      "relativeTfIdf": 0.0005541625619879844,
+      "absoluteTfIdf": 0.9697844834789726
+    },
+    {
+      "label": "long",
+      "relativeTfIdf": 0.0005541625619879844,
+      "absoluteTfIdf": 0.9697844834789726
+    },
+    {
+      "label": "consideration",
+      "relativeTfIdf": 0.0005465698013441118,
+      "absoluteTfIdf": 0.9564971523521957
+    },
+    {
+      "label": "opinion",
+      "relativeTfIdf": 0.000545056082388925,
+      "absoluteTfIdf": 0.9538481441806188
+    },
+    {
+      "label": "different",
+      "relativeTfIdf": 0.000541703494761724,
+      "absoluteTfIdf": 0.947981115833017
+    },
+    {
+      "label": "second",
+      "relativeTfIdf": 0.0005392903580427234,
+      "absoluteTfIdf": 0.9437581265747659
+    },
+    {
+      "label": "speak",
+      "relativeTfIdf": 0.0005392903580427234,
+      "absoluteTfIdf": 0.9437581265747659
+    },
+    {
+      "label": "conclusion",
+      "relativeTfIdf": 0.0005321024824959462,
+      "absoluteTfIdf": 0.9311793443679057
+    },
+    {
+      "label": "agreeable",
+      "relativeTfIdf": 0.0005250038996396278,
+      "absoluteTfIdf": 0.9187568243693486
+    },
+    {
+      "label": "distinguish",
+      "relativeTfIdf": 0.0005250038996396278,
+      "absoluteTfIdf": 0.9187568243693486
+    },
+    {
+      "label": "hope",
+      "relativeTfIdf": 0.0005250038996396278,
+      "absoluteTfIdf": 0.9187568243693486
+    },
+    {
+      "label": "expect",
+      "relativeTfIdf": 0.0005179924181585911,
+      "absoluteTfIdf": 0.9064867317775342
+    },
+    {
+      "label": "arise",
+      "relativeTfIdf": 0.0005156791858500646,
+      "absoluteTfIdf": 0.9024385752376131
+    },
+    {
+      "label": "compare",
+      "relativeTfIdf": 0.0005110659264258227,
+      "absoluteTfIdf": 0.8943653712451896
+    },
+    {
+      "label": "accord",
+      "relativeTfIdf": 0.0005005813209607267,
+      "absoluteTfIdf": 0.8760173116812716
+    },
+    {
+      "label": "afterward",
+      "relativeTfIdf": 0.0004974598414579834,
+      "absoluteTfIdf": 0.8705547225514709
+    },
+    {
+      "label": "origin",
+      "relativeTfIdf": 0.0004974598414579834,
+      "absoluteTfIdf": 0.8705547225514709
+    },
+    {
+      "label": "both",
+      "relativeTfIdf": 0.000495986499763733,
+      "absoluteTfIdf": 0.8679763745865328
+    },
+    {
+      "label": "proportion",
+      "relativeTfIdf": 0.0004907763901647313,
+      "absoluteTfIdf": 0.8588586827882797
+    },
+    {
+      "label": "case",
+      "relativeTfIdf": 0.00048474524168460307,
+      "absoluteTfIdf": 0.8483041729480554
+    },
+    {
+      "label": "difficult",
+      "relativeTfIdf": 0.000484170205935545,
+      "absoluteTfIdf": 0.8472978603872037
+    },
+    {
+      "label": "lie",
+      "relativeTfIdf": 0.000484170205935545,
+      "absoluteTfIdf": 0.8472978603872037
+    },
+    {
+      "label": "connection",
+      "relativeTfIdf": 0.0004776395226077605,
+      "absoluteTfIdf": 0.8358691645635807
+    },
+    {
+      "label": "moral",
+      "relativeTfIdf": 0.0004776395226077605,
+      "absoluteTfIdf": 0.8358691645635807
+    },
+    {
+      "label": "perfect",
+      "relativeTfIdf": 0.0004776395226077605,
+      "absoluteTfIdf": 0.8358691645635807
+    },
+    {
+      "label": "order",
+      "relativeTfIdf": 0.00047373829746561526,
+      "absoluteTfIdf": 0.8290420205648267
+    },
+    {
+      "label": "conclude",
+      "relativeTfIdf": 0.00047118263389122716,
+      "absoluteTfIdf": 0.8245696093096475
+    },
+    {
+      "label": "go",
+      "relativeTfIdf": 0.00047118263389122716,
+      "absoluteTfIdf": 0.8245696093096475
+    },
+    {
+      "label": "among",
+      "relativeTfIdf": 0.00046620708640383765,
+      "absoluteTfIdf": 0.8158624012067158
+    },
+    {
+      "label": "age",
+      "relativeTfIdf": 0.0004647978906922985,
+      "absoluteTfIdf": 0.8133963087115222
+    },
+    {
+      "label": "number",
+      "relativeTfIdf": 0.0004584836985856785,
+      "absoluteTfIdf": 0.8023464725249373
+    },
+    {
+      "label": "fix",
+      "relativeTfIdf": 0.0004522385154244268,
+      "absoluteTfIdf": 0.7914174019927469
+    },
+    {
+      "label": "neither",
+      "relativeTfIdf": 0.0004522385154244268,
+      "absoluteTfIdf": 0.7914174019927469
+    },
+    {
+      "label": "manner",
+      "relativeTfIdf": 0.00045145709450100056,
+      "absoluteTfIdf": 0.7900499153767511
+    },
+    {
+      "label": "yet",
+      "relativeTfIdf": 0.0004461992380000735,
+      "absoluteTfIdf": 0.7808486665001286
+    },
+    {
+      "label": "out",
+      "relativeTfIdf": 0.0004460608490791608,
+      "absoluteTfIdf": 0.7806064858885313
+    },
+    {
+      "label": "assert",
+      "relativeTfIdf": 0.000439949255298162,
+      "absoluteTfIdf": 0.7699111967717834
+    },
+    {
+      "label": "authority",
+      "relativeTfIdf": 0.000439949255298162,
+      "absoluteTfIdf": 0.7699111967717834
+    },
+    {
+      "label": "existence",
+      "relativeTfIdf": 0.000439949255298162,
+      "absoluteTfIdf": 0.7699111967717834
+    },
+    {
+      "label": "meet",
+      "relativeTfIdf": 0.000439949255298162,
+      "absoluteTfIdf": 0.7699111967717834
+    },
+    {
+      "label": "requisite",
+      "relativeTfIdf": 0.000439949255298162,
+      "absoluteTfIdf": 0.7699111967717834
+    },
+    {
+      "label": "judgment",
+      "relativeTfIdf": 0.0004339023356807123,
+      "absoluteTfIdf": 0.7593290874412465
+    },
+    {
+      "label": "let",
+      "relativeTfIdf": 0.0004339023356807123,
+      "absoluteTfIdf": 0.7593290874412465
+    },
+    {
+      "label": "measure",
+      "relativeTfIdf": 0.0004339023356807123,
+      "absoluteTfIdf": 0.7593290874412465
+    },
+    {
+      "label": "obvious",
+      "relativeTfIdf": 0.0004339023356807123,
+      "absoluteTfIdf": 0.7593290874412465
+    },
+    {
+      "label": "less",
+      "relativeTfIdf": 0.0004325531420309219,
+      "absoluteTfIdf": 0.7569679985541133
+    },
+    {
+      "label": "part",
+      "relativeTfIdf": 0.0004325531420309219,
+      "absoluteTfIdf": 0.7569679985541133
+    },
+    {
+      "label": "appear",
+      "relativeTfIdf": 0.0004296187645968351,
+      "absoluteTfIdf": 0.7518328380444614
+    },
+    {
+      "label": "kind",
+      "relativeTfIdf": 0.00041898803227134583,
+      "absoluteTfIdf": 0.7332290564748551
+    },
+    {
+      "label": "like",
+      "relativeTfIdf": 0.00041650981561556464,
+      "absoluteTfIdf": 0.7288921773272381
+    },
+    {
+      "label": "than",
+      "relativeTfIdf": 0.00041487930480146526,
+      "absoluteTfIdf": 0.7260387834025641
+    },
+    {
+      "label": "man",
+      "relativeTfIdf": 0.0004122827250911209,
+      "absoluteTfIdf": 0.7214947689094616
+    },
+    {
+      "label": "employ",
+      "relativeTfIdf": 0.00038770113760694375,
+      "absoluteTfIdf": 0.6784769908121515
+    },
+    {
+      "label": "interest",
+      "relativeTfIdf": 0.0003821800456573798,
+      "absoluteTfIdf": 0.6688150799004147
+    },
+    {
+      "label": "up",
+      "relativeTfIdf": 0.0003821800456573798,
+      "absoluteTfIdf": 0.6688150799004147
+    },
+    {
+      "label": "fall",
+      "relativeTfIdf": 0.00037671178793386513,
+      "absoluteTfIdf": 0.659245628884264
+    },
+    {
+      "label": "original",
+      "relativeTfIdf": 0.00037671178793386513,
+      "absoluteTfIdf": 0.659245628884264
+    },
+    {
+      "label": "appearance",
+      "relativeTfIdf": 0.00037129536281698295,
+      "absoluteTfIdf": 0.6497668849297201
+    },
+    {
+      "label": "endeavour",
+      "relativeTfIdf": 0.0003659297969027893,
+      "absoluteTfIdf": 0.6403771445798812
+    },
+    {
+      "label": "prove",
+      "relativeTfIdf": 0.0003659297969027893,
+      "absoluteTfIdf": 0.6403771445798812
+    },
+    {
+      "label": "place",
+      "relativeTfIdf": 0.0003655185932434478,
+      "absoluteTfIdf": 0.6396575381760337
+    },
+    {
+      "label": "ever",
+      "relativeTfIdf": 0.0003611356631744827,
+      "absoluteTfIdf": 0.6319874105553447
+    },
+    {
+      "label": "present",
+      "relativeTfIdf": 0.0003594862091458069,
+      "absoluteTfIdf": 0.6291008660051621
+    },
+    {
+      "label": "possible",
+      "relativeTfIdf": 0.0003501289218567835,
+      "absoluteTfIdf": 0.6127256132493711
+    },
+    {
+      "label": "every",
+      "relativeTfIdf": 0.00034983722131434405,
+      "absoluteTfIdf": 0.612215137300102
+    },
+    {
+      "label": "suppose",
+      "relativeTfIdf": 0.0003457950685091789,
+      "absoluteTfIdf": 0.605141369891063
+    },
+    {
+      "label": "esteem",
+      "relativeTfIdf": 0.00033475323447396956,
+      "absoluteTfIdf": 0.5858181603294467
+    },
+    {
+      "label": "indeed",
+      "relativeTfIdf": 0.000319780450248813,
+      "absoluteTfIdf": 0.5596157879354227
+    },
+    {
+      "label": "philosopher",
+      "relativeTfIdf": 0.000319780450248813,
+      "absoluteTfIdf": 0.5596157879354227
+    },
+    {
+      "label": "species",
+      "relativeTfIdf": 0.000319780450248813,
+      "absoluteTfIdf": 0.5596157879354227
+    },
+    {
+      "label": "general",
+      "relativeTfIdf": 0.00031571814471789505,
+      "absoluteTfIdf": 0.5525067532563163
+    },
+    {
+      "label": "own",
+      "relativeTfIdf": 0.00031571814471789505,
+      "absoluteTfIdf": 0.5525067532563163
+    },
+    {
+      "label": "show",
+      "relativeTfIdf": 0.0003148754538537322,
+      "absoluteTfIdf": 0.5510320442440313
+    },
+    {
+      "label": "become",
+      "relativeTfIdf": 0.0003083209852829036,
+      "absoluteTfIdf": 0.5395617242450813
+    },
+    {
+      "label": "two",
+      "relativeTfIdf": 0.0003083209852829036,
+      "absoluteTfIdf": 0.5395617242450813
+    },
+    {
+      "label": "if",
+      "relativeTfIdf": 0.0003025458600288054,
+      "absoluteTfIdf": 0.5294552550504095
+    },
+    {
+      "label": "must",
+      "relativeTfIdf": 0.0003025458600288054,
+      "absoluteTfIdf": 0.5294552550504095
+    },
+    {
+      "label": "immediately",
+      "relativeTfIdf": 0.0002956659619685979,
+      "absoluteTfIdf": 0.5174154334450463
+    },
+    {
+      "label": "also",
+      "relativeTfIdf": 0.0002864125097312234,
+      "absoluteTfIdf": 0.501221892029641
+    },
+    {
+      "label": "always",
+      "relativeTfIdf": 0.0002864125097312234,
+      "absoluteTfIdf": 0.501221892029641
+    },
+    {
+      "label": "sentiment",
+      "relativeTfIdf": 0.0002816710933924289,
+      "absoluteTfIdf": 0.49292441343675053
+    },
+    {
+      "label": "true",
+      "relativeTfIdf": 0.0002816710933924289,
+      "absoluteTfIdf": 0.49292441343675053
+    },
+    {
+      "label": "still",
+      "relativeTfIdf": 0.00027920203065320663,
+      "absoluteTfIdf": 0.48860355364311153
+    },
+    {
+      "label": "evident",
+      "relativeTfIdf": 0.0002725280411944625,
+      "absoluteTfIdf": 0.4769240720903094
+    },
+    {
+      "label": "strong",
+      "relativeTfIdf": 0.00026801079576182634,
+      "absoluteTfIdf": 0.46901889258319607
+    },
+    {
+      "label": "thus",
+      "relativeTfIdf": 0.00026801079576182634,
+      "absoluteTfIdf": 0.46901889258319607
+    },
+    {
+      "label": "mean",
+      "relativeTfIdf": 0.0002649161303512279,
+      "absoluteTfIdf": 0.46360322811464877
+    },
+    {
+      "label": "subject",
+      "relativeTfIdf": 0.0002649161303512279,
+      "absoluteTfIdf": 0.46360322811464877
+    },
+    {
+      "label": "allow",
+      "relativeTfIdf": 0.0002635289800698115,
+      "absoluteTfIdf": 0.46117571512217015
+    },
+    {
+      "label": "force",
+      "relativeTfIdf": 0.0002635289800698115,
+      "absoluteTfIdf": 0.46117571512217015
+    },
+    {
+      "label": "easily",
+      "relativeTfIdf": 0.0002590820426743515,
+      "absoluteTfIdf": 0.45339357468011515
+    },
+    {
+      "label": "naturally",
+      "relativeTfIdf": 0.0002546694449064028,
+      "absoluteTfIdf": 0.4456715285862049
+    },
+    {
+      "label": "experience",
+      "relativeTfIdf": 0.00025029066048036334,
+      "absoluteTfIdf": 0.4380086558406358
+    },
+    {
+      "label": "give",
+      "relativeTfIdf": 0.00024988372951024573,
+      "absoluteTfIdf": 0.43729652664293006
+    },
+    {
+      "label": "alone",
+      "relativeTfIdf": 0.00024594517511738085,
+      "absoluteTfIdf": 0.43040405645541646
+    },
+    {
+      "label": "never",
+      "relativeTfIdf": 0.0002446662582919465,
+      "absoluteTfIdf": 0.42816595201090646
+    },
+    {
+      "label": "see",
+      "relativeTfIdf": 0.00024163248618287635,
+      "absoluteTfIdf": 0.4228568508200336
+    },
+    {
+      "label": "regard",
+      "relativeTfIdf": 0.00023686914873280763,
+      "absoluteTfIdf": 0.41452101028241334
+    },
+    {
+      "label": "make",
+      "relativeTfIdf": 0.0002345638919634303,
+      "absoluteTfIdf": 0.41048681093600303
+    },
+    {
+      "label": "follow",
+      "relativeTfIdf": 0.00023310354320191882,
+      "absoluteTfIdf": 0.4079312006033579
+    },
+    {
+      "label": "do",
+      "relativeTfIdf": 0.00022309961900003676,
+      "absoluteTfIdf": 0.3904243332500643
+    },
+    {
+      "label": "know",
+      "relativeTfIdf": 0.00022054416793404726,
+      "absoluteTfIdf": 0.3859522938845827
+    },
+    {
+      "label": "instance",
+      "relativeTfIdf": 0.00021232203224713316,
+      "absoluteTfIdf": 0.371563556432483
+    },
+    {
+      "label": "observe",
+      "relativeTfIdf": 0.00020949401613567291,
+      "absoluteTfIdf": 0.3666145282374276
+    },
+    {
+      "label": "thing",
+      "relativeTfIdf": 0.00020949401613567291,
+      "absoluteTfIdf": 0.3666145282374276
+    },
+    {
+      "label": "person",
+      "relativeTfIdf": 0.00020421652653744384,
+      "absoluteTfIdf": 0.3573789214405267
+    },
+    {
+      "label": "since",
+      "relativeTfIdf": 0.00020421652653744384,
+      "absoluteTfIdf": 0.3573789214405267
+    },
+    {
+      "label": "shall",
+      "relativeTfIdf": 0.0001999069836081966,
+      "absoluteTfIdf": 0.349837221314344
+    },
+    {
+      "label": "where",
+      "relativeTfIdf": 0.0001893845739752393,
+      "absoluteTfIdf": 0.3314230044566687
+    },
+    {
+      "label": "who",
+      "relativeTfIdf": 0.00018765111357074428,
+      "absoluteTfIdf": 0.32838944874880244
+    },
+    {
+      "label": "no",
+      "relativeTfIdf": 0.00018139127991383702,
+      "absoluteTfIdf": 0.3174347398492148
+    },
+    {
+      "label": "find",
+      "relativeTfIdf": 0.0001731969947550917,
+      "absoluteTfIdf": 0.30309474082141047
+    },
+    {
+      "label": "though",
+      "relativeTfIdf": 0.0001731969947550917,
+      "absoluteTfIdf": 0.30309474082141047
+    },
+    {
+      "label": "nor",
+      "relativeTfIdf": 0.00016962286299231227,
+      "absoluteTfIdf": 0.29684001023654644
+    },
+    {
+      "label": "into",
+      "relativeTfIdf": 0.00016846323674194562,
+      "absoluteTfIdf": 0.29481066429840486
+    },
+    {
+      "label": "reason",
+      "relativeTfIdf": 0.00016333477481633154,
+      "absoluteTfIdf": 0.2858358559285802
+    },
+    {
+      "label": "concern",
+      "relativeTfIdf": 0.0001541604926414518,
+      "absoluteTfIdf": 0.26978086212254065
+    },
+    {
+      "label": "seem",
+      "relativeTfIdf": 0.0001541604926414518,
+      "absoluteTfIdf": 0.26978086212254065
+    },
+    {
+      "label": "only",
+      "relativeTfIdf": 0.0001512729300144027,
+      "absoluteTfIdf": 0.26472762752520473
+    },
+    {
+      "label": "i",
+      "relativeTfIdf": 0.00014993023770614743,
+      "absoluteTfIdf": 0.262377915985758
+    },
+    {
+      "label": "another",
+      "relativeTfIdf": 0.00014683438496770242,
+      "absoluteTfIdf": 0.25696017369347923
+    },
+    {
+      "label": "certain",
+      "relativeTfIdf": 0.0001432062548656117,
+      "absoluteTfIdf": 0.2506109460148205
+    },
+    {
+      "label": "well",
+      "relativeTfIdf": 0.00013960101532660332,
+      "absoluteTfIdf": 0.24430177682155577
+    },
+    {
+      "label": "all",
+      "relativeTfIdf": 0.0001364650581757373,
+      "absoluteTfIdf": 0.23881385180754025
+    },
+    {
+      "label": "upon",
+      "relativeTfIdf": 0.00013159545636315102,
+      "absoluteTfIdf": 0.23029204863551433
+    },
+    {
+      "label": "great",
+      "relativeTfIdf": 0.00012479919081713372,
+      "absoluteTfIdf": 0.218398583929984
+    },
+    {
+      "label": "or",
+      "relativeTfIdf": 0.00011881285179253844,
+      "absoluteTfIdf": 0.20792249063694226
+    },
+    {
+      "label": "human",
+      "relativeTfIdf": 0.00011498182324871097,
+      "absoluteTfIdf": 0.20121819068524419
+    },
+    {
+      "label": "one",
+      "relativeTfIdf": 0.00011400662101600982,
+      "absoluteTfIdf": 0.19951158677801717
+    },
+    {
+      "label": "without",
+      "relativeTfIdf": 0.00011345469751080202,
+      "absoluteTfIdf": 0.19854572064390355
+    },
+    {
+      "label": "far",
+      "relativeTfIdf": 0.00010813828550773048,
+      "absoluteTfIdf": 0.18924199963852834
+    },
+    {
+      "label": "nature",
+      "relativeTfIdf": 0.00010611446167252847,
+      "absoluteTfIdf": 0.18570030792692482
+    },
+    {
+      "label": "time",
+      "relativeTfIdf": 0.00010474700806783646,
+      "absoluteTfIdf": 0.1833072641187138
+    },
+    {
+      "label": "there",
+      "relativeTfIdf": 0.00010026091374648626,
+      "absoluteTfIdf": 0.17545659905635097
+    },
+    {
+      "label": "what",
+      "relativeTfIdf": 0.0000877303042421007,
+      "absoluteTfIdf": 0.15352803242367621
+    },
+    {
+      "label": "such",
+      "relativeTfIdf": 0.00008572071515371118,
+      "absoluteTfIdf": 0.15001125151899458
+    },
+    {
+      "label": "for",
+      "relativeTfIdf": 0.00007960461726918008,
+      "absoluteTfIdf": 0.13930808022106514
+    },
+    {
+      "label": "they",
+      "relativeTfIdf": 0.00007901250624932123,
+      "absoluteTfIdf": 0.13827188593631215
+    },
+    {
+      "label": "some",
+      "relativeTfIdf": 0.000077739119963073,
+      "absoluteTfIdf": 0.13604345993537775
+    },
+    {
+      "label": "many",
+      "relativeTfIdf": 0.00007657000711071716,
+      "absoluteTfIdf": 0.13399751244375502
+    },
+    {
+      "label": "even",
+      "relativeTfIdf": 0.00007509853071411555,
+      "absoluteTfIdf": 0.1314224287497022
+    },
+    {
+      "label": "will",
+      "relativeTfIdf": 0.00007125413813500613,
+      "absoluteTfIdf": 0.12469474173626073
+    },
+    {
+      "label": "when",
+      "relativeTfIdf": 0.00006963720113732289,
+      "absoluteTfIdf": 0.12186510199031504
+    },
+    {
+      "label": "at",
+      "relativeTfIdf": 0.00006892529224806961,
+      "absoluteTfIdf": 0.12061926143412183
+    },
+    {
+      "label": "can",
+      "relativeTfIdf": 0.00005700331050800491,
+      "absoluteTfIdf": 0.09975579338900858
+    },
+    {
+      "label": "very",
+      "relativeTfIdf": 0.00004997674590204915,
+      "absoluteTfIdf": 0.087459305328586
+    },
+    {
+      "label": "any",
+      "relativeTfIdf": 0.00004548835272524576,
+      "absoluteTfIdf": 0.07960461726918008
+    },
+    {
+      "label": "other",
+      "relativeTfIdf": 0.00003668437790147057,
+      "absoluteTfIdf": 0.0641976613275735
+    },
+    {
+      "label": "so",
+      "relativeTfIdf": 0.00003411626454393432,
+      "absoluteTfIdf": 0.05970346295188506
+    },
+    {
+      "label": "may",
+      "relativeTfIdf": 0.00003394652908358241,
+      "absoluteTfIdf": 0.059406425896269224
+    },
+    {
+      "label": "with",
+      "relativeTfIdf": 0.000025396877008710393,
+      "absoluteTfIdf": 0.04444453476524319
+    },
+    {
+      "label": "on",
+      "relativeTfIdf": 0.00001714414303074224,
+      "absoluteTfIdf": 0.030002250303798914
+    },
+    {
+      "label": "same",
+      "relativeTfIdf": 0.00001137208818131144,
+      "absoluteTfIdf": 0.01990115431729502
+    },
+    {
+      "label": "be",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "the",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "of",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "and",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "we",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "to",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "a",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "that",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "in",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "this",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "it",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "as",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "which",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "by",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "but",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "have",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "not",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    },
+    {
+      "label": "from",
+      "relativeTfIdf": 0,
+      "absoluteTfIdf": 0
+    }
+  ]
+}

@@ -510,6 +510,7 @@ aggravate:
   - aggravating
 aggregate:
   - aggregates
+agile: []
 agility: []
 agitate:
   - agitated
@@ -553,6 +554,8 @@ alarm:
   - alarming
   - alarms
 alas: []
+alcali:
+  - alcalis
 algebra:
   - algebras
 algebraist:
@@ -743,7 +746,7 @@ ancient:
   - antient
   - antients
 and:
-  - '&'
+  - "&"
 anew: []
 angel:
   - angels
@@ -826,6 +829,7 @@ antwerp: []
 anxiety:
   - anxieties
 anxious: []
+anxiously: []
 any: []
 anyone: []
 apart: []
@@ -912,8 +916,8 @@ apprehension:
   - apprehensions
 apprehensive: []
 apprentice:
-  - '''prentice'
-  - '''prentices'
+  - "'prentice"
+  - "'prentices"
   - apprentices
 apprenticeship:
   - appreticeships
@@ -1293,6 +1297,7 @@ a~posteriori:
   - à~posteriori
 a~priori:
   - à~priori
+a~priority: []
 back:
   - backed
   - backing
@@ -1352,6 +1357,10 @@ bank:
   - banked
   - banking
   - banks
+bankrupt:
+  - bankrupts
+  - bankrupted
+  - bankrupting
 bankruptcy: []
 banquet:
   - banquets
@@ -1496,6 +1505,8 @@ behold:
   - beholden
   - beholding
   - beholds
+beholder:
+  - beholders
 belie:
   - belied
   - belies
@@ -1834,6 +1845,8 @@ bribery:
   - briberies
 brick:
   - bricks
+bridal-night:
+  - bridal-nights
 briefly: []
 bright:
   - brighter
@@ -1850,6 +1863,8 @@ bring:
   - bringing
   - brings
   - brought
+brink:
+  - brinks
 briskly: []
 britain:
   - britains
@@ -1911,6 +1926,7 @@ burden:
   - burthens
   - burthening
 burdensome: []
+burlesque: []
 burn:
   - burned
   - burning
@@ -2010,6 +2026,8 @@ canal:
 candid: []
 candidate:
   - candidates
+candle:
+  - candles
 candour:
   - candor
 canker: []
@@ -2145,6 +2163,8 @@ cavern:
   - caverns
 cavil:
   - cavils
+caviller:
+  - cavillers
 cease:
   - ceas'd
   - ceased
@@ -2157,6 +2177,7 @@ celebrate:
   - celebrating
 celebration:
   - celebrations
+celerity: []
 celestial: []
 cement:
   - cemented
@@ -2207,6 +2228,8 @@ challenge:
   - challenged
   - challenges
   - challenging
+chamber:
+  - chambers
 champion:
   - champions
 chance:
@@ -2279,6 +2302,10 @@ check:
   - checks
 cheek:
   - cheeks
+cheer:
+  - cheering
+  - cheers
+  - cheered
 cheerful: []
 chemical:
   - chymical
@@ -2323,6 +2350,8 @@ chimera:
 chimerical: []
 china: []
 chinese: []
+chink:
+  - chinks
 chit-chat: []
 choice:
   - choicer
@@ -2758,6 +2787,7 @@ compute:
   - computed
   - computes
   - computing
+con: []
 conceal:
   - concealed
   - concealing
@@ -3222,6 +3252,7 @@ convulsion:
   - convulsions
 cook:
   - cooks
+cookery: []
 cool:
   - cooler
   - coolest
@@ -3331,6 +3362,8 @@ country:
   - countrys
 country-party:
   - country-parties
+country-seat:
+  - country-seats
 countryman:
   - countrymen
 county:
@@ -3538,7 +3571,10 @@ damn:
   - damned
   - damning
   - damns
-damp: []
+damp:
+  - damps
+  - damped
+  - damping
 dance:
   - danced
   - dances
@@ -3610,6 +3646,7 @@ deaf: []
 deafness: []
 deal:
   - dealing
+  - dealings
   - deals
   - dealt
   - delt
@@ -3880,6 +3917,10 @@ demolish:
   - demolished
   - demolishes
   - demolishing
+demon:
+  - demons
+  - dæmon
+  - dæmons
 demonstrable: []
 demonstrate:
   - demonstrated
@@ -3979,6 +4020,8 @@ descend:
   - descendeth
   - descending
   - descends
+descendant:
+  - descendants
 descent:
   - descents
 describe:
@@ -4236,6 +4279,8 @@ diminution:
   - diminutions
 dinner:
   - dinners
+dint: []
+dire: []
 direct:
   - directed
   - directing
@@ -4436,6 +4481,10 @@ disinterest:
   - disinteresting
   - disinterests
 disinterestedly: []
+disjoint:
+  - disjointed
+  - disjoints
+  - disjointing
 dislike:
   - disliked
   - dislikes
@@ -4551,6 +4600,10 @@ dissatisfy:
   - dissatisfying
 dissension:
   - dissensions
+dissent:
+  - dissented
+  - dissents
+  - dissenting
 dissenter:
   - dissenters
 dissention:
@@ -4561,6 +4614,10 @@ disservice:
   - disservices
 dissimilar:
   - dissimular
+dissimilarity:
+  - dissimilarities
+dissimilitude:
+  - dissimilitudes
 dissimulation:
   - dissimulations
 dissipate:
@@ -4587,6 +4644,7 @@ distant: []
 distasteful: []
 distemper:
   - distempers
+distempered: []
 distill:
   - distilled
   - distills
@@ -4621,6 +4679,10 @@ distribution:
   - distributions
 district:
   - districts
+distrust:
+  - distrusts
+  - distrusting
+  - distrusted
 disturb:
   - disturb'd
   - disturbed
@@ -4687,6 +4749,8 @@ doat:
   - doating
   - doats
 docible: []
+doctor:
+  - doctors
 doctrine:
   - doctrines
 dodecahedron:
@@ -4697,6 +4761,9 @@ dog:
   - dogs
 dogmatic: []
 dogmatical: []
+dogmatism: []
+dogmatist:
+  - dogmatists
 domestic: []
 dominion:
   - dominions
@@ -4706,6 +4773,7 @@ doom:
   - dooming
 door:
   - doors
+dotage: []
 double: []
 doubly: []
 doubt:
@@ -4750,6 +4818,8 @@ dream:
   - dreaming
   - dreams
   - dreamt
+dreg:
+  - dregs
 dress:
   - dressed
   - dresses
@@ -4778,6 +4848,7 @@ drop:
   - dropping
   - drops
 dropsy: []
+drought: []
 drub:
   - drubbed
   - drubs
@@ -4813,6 +4884,7 @@ duly: []
 dunghill:
   - dunghills
 durable: []
+durableness: []
 duration:
   - durations
 during: []
@@ -4839,6 +4911,8 @@ each: []
 eager: []
 eagerly: []
 eagerness: []
+eagle:
+  - eagles
 ear:
   - ears
 earl:
@@ -4847,6 +4921,7 @@ early:
   - earlier
   - earliest
 earnest: []
+earnestness: []
 earth:
   - earths
 earthly: []
@@ -4894,6 +4969,7 @@ ecstasy:
   - ecstasies
   - extasy
   - extasys
+ectypal: []
 edge:
   - edges
 edification:
@@ -4932,6 +5008,8 @@ effluvium:
   - effluviums
 effort:
   - efforts
+egg:
+  - eggs
 egregious: []
 egypt:
   - ægypt
@@ -4954,6 +5032,7 @@ elaborate:
   - elaborated
   - elaborates
   - elaborating
+elasticity: []
 elate:
   - elated
   - elates
@@ -4970,10 +5049,14 @@ elective:
   - electives
 elector:
   - electors
+electricity: []
 elegance: []
 elegant: []
 element:
   - elements
+elementary: []
+elephant:
+  - elephants
 elevate:
   - elevated
   - elevates
@@ -5034,6 +5117,10 @@ embrace:
   - embraced
   - embraces
   - embracing
+embryo:
+  - embryos
+embryo-state:
+  - embryo-states
 emergence:
   - emergences
 emetic:
@@ -5047,6 +5134,7 @@ emotion:
   - emotions
 emperor:
   - emperors
+emphasis: []
 emphatic:
   - emphatick
 emphatically: []
@@ -5178,6 +5266,10 @@ endow:
   - endows
 endowment:
   - endowments
+endue:
+  - endued
+  - enduing
+  - endues
 endure:
   - endur'd
   - endured
@@ -5344,6 +5436,10 @@ ensue:
   - ensued
   - ensues
   - ensuing
+ensure:
+  - ensured
+  - ensures
+  - ensuring
 entail:
   - entail'd
   - entailed
@@ -5359,6 +5455,7 @@ enter:
   - entering
   - enters
   - entring
+enterprising: []
 enterprize:
   - enterprizes
 entertain:
@@ -5441,6 +5538,7 @@ epidemical: []
 epigram:
   - epigrams
 epigrammatic: []
+epilepsy: []
 epilogue:
   - epilogies
 episcopacy:
@@ -5452,6 +5550,7 @@ epistolary:
   - epistolaries
 epithet:
   - epithets
+equable: []
 equal:
   - equalled
   - equalling
@@ -5502,15 +5601,19 @@ erudition: []
 eruption:
   - eruptions
 escape:
-  - '''scap''d'
+  - "'scap'd"
   - escap'd
   - escaped
   - escapes
   - escaping
 especial: []
 especially: []
+espouse:
+  - espoused
+  - espouses
+  - espousing
 esquire:
-  - '''squire'
+  - "'squire"
 essay:
   - essays
 essence:
@@ -5538,10 +5641,11 @@ estimate:
   - estimating
 etcetera:
   - etc.
-  - '&c.'
+  - "&c."
 eternal: []
 eternally: []
-eternity: []
+eternity:
+  - eternities
 ethereal: []
 ethics: []
 eucharist: []
@@ -5580,6 +5684,7 @@ evil:
   - evils
 exact:
   - exacted
+  - exacter
   - exacts
   - exacting
 exaction: []
@@ -5660,7 +5765,7 @@ execrable: []
 execute:
   - executed
   - executes
-  - exectuing
+  - executing
 execution:
   - executions
 executive: []
@@ -5674,6 +5779,8 @@ exempt:
   - exempted
   - exempting
   - exempts
+exemption:
+  - exemptions
 exercise:
   - exercis'd
   - exercised
@@ -5710,6 +5817,7 @@ exist:
   - exists
 existence:
   - existences
+existent: []
 exit:
   - exited
   - exiting
@@ -5771,6 +5879,7 @@ explain:
   - explains
 explanation:
   - explanations
+explicable: []
 explication:
   - explications
 explicitly: []
@@ -5789,6 +5898,10 @@ expose:
   - exposing
 expositor:
   - expositors
+expostulate:
+  - expostulated
+  - expostulates
+  - expostulating
 expostulation:
   - expostulations
 express:
@@ -5814,8 +5927,13 @@ extensive: []
 extent: []
 exterior:
   - exteriors
+exterminate:
+  - exterminated
+  - exterminating
+  - exterminates
 external: []
 extinct: []
+extinction: []
 extinguish:
   - extinguish'd
   - extinguished
@@ -5825,6 +5943,14 @@ extirpate:
   - extirpated
   - extirpates
   - extirpating
+extol:
+  - extols
+  - extolled
+  - extolling
+extort:
+  - extorted
+  - extorts
+  - extorting
 extract:
   - extracted
   - extracts
@@ -5863,6 +5989,8 @@ eyelid:
   - eye-lid
   - eye-lids
 eyesight: []
+fable:
+  - fables
 fabric:
   - fabircs
 fabulous: []
@@ -5878,6 +6006,7 @@ fact:
   - facts
 faction:
   - factions
+factious: []
 factitious: []
 faculty:
   - faculties
@@ -5918,7 +6047,7 @@ fallacious: []
 fallacy:
   - fallacies
 fallow: []
-'false': []
+"false": []
 falsehood:
   - falsehoods
   - falshood
@@ -5931,6 +6060,9 @@ familiar: []
 familiarity:
   - familiarities
 familiarize:
+  - familiarised
+  - familiarises
+  - familiarising
   - familiarized
   - familiarizes
   - familiarizing
@@ -5938,6 +6070,8 @@ familiarly: []
 family:
   - families
   - family's
+famine:
+  - famines
 famous: []
 fan:
   - fanned
@@ -5999,6 +6133,7 @@ fate:
   - fates
 father:
   - fathers
+  - father's
 fatherless: []
 fatigue:
   - fatigued
@@ -6008,6 +6143,7 @@ fault:
   - faulted
   - faulting
   - faults
+faultless: []
 faulty: []
 favour:
   - favor
@@ -6021,6 +6157,8 @@ favourably: []
 favourer:
   - favourers
 favourite:
+  - favorite
+  - favorites
   - favourites
 fawn:
   - fawned
@@ -6035,12 +6173,15 @@ feast:
   - feasted
   - feasting
   - feasts
+feat:
+  - feats
 feather:
   - feathers
 feature:
   - featured
   - features
   - featuring
+fecundity: []
 feeble: []
 feed:
   - fed
@@ -6064,8 +6205,12 @@ fellow-citizen:
   - fellow-citizens
 fellow-creature:
   - fellow-creatures
+fellow-soldier:
+  - fellow-soldiers
 fellow-subject:
   - fellow-subjects
+fellow-traveller:
+  - fellow-travellers
 female:
   - females
 feminine: []
@@ -6082,6 +6227,7 @@ fermentation:
 ferocity:
   - ferocities
 fertile: []
+fertility: []
 fervent: []
 fervor:
   - fervors
@@ -6112,6 +6258,7 @@ fibre:
 fickle: []
 fiction:
   - fictions
+fictitious: []
 fidelity: []
 field:
   - fields
@@ -6149,8 +6296,13 @@ find:
 fine:
   - finer
   - finest
+finely: []
 fineness: []
 finess:
+  - finessed
+  - finesses
+  - finessing
+finesse:
   - finessed
   - finesses
   - finessing
@@ -6161,12 +6313,14 @@ finish:
   - finishes
   - finishing
 finite: []
+finitely: []
 fire:
   - fires
 firm:
   - firmer
   - firmest
 firmly: []
+firmness: []
 first: []
 fish:
   - fished
@@ -6178,6 +6332,7 @@ fit:
   - fitter
   - fittest
   - fitting
+fitness: []
 five: []
 fix:
   - fix'd
@@ -6214,8 +6369,11 @@ flee:
   - flees
 fleet:
   - fleets
+fleeting: []
+flemish: []
 flesh: []
 fleshly: []
+flexibility: []
 flight:
   - flights
 fling:
@@ -6247,8 +6405,14 @@ fluctuate:
   - fluctuated
   - fluctuates
   - fluctuating
+fluctuation:
+  - fluctations
 fluid:
   - fluids
+flush:
+  - flushed
+  - flushes
+  - flushing
 flutter:
   - fluttered
   - fluttering
@@ -6265,6 +6429,8 @@ foam:
   - foamed
   - foaming
   - foams
+foe:
+  - foes
 foil:
   - foiled
   - foiling
@@ -6311,6 +6477,7 @@ forbear:
   - forbears
   - forbore
   - forborne
+forbearance: []
 forbid:
   - forbad
   - forbade
@@ -6367,6 +6534,7 @@ forfeit:
   - forfeited
   - forfeiting
   - forfeits
+forfeiture: []
 forget:
   - forgot
   - forgets
@@ -6396,6 +6564,7 @@ formation:
   - formations
 former: []
 formerly: []
+formidable: []
 forsake:
   - forsaken
   - forsakes
@@ -6435,8 +6604,11 @@ fourth: []
 fourthly: []
 fowl:
   - fowls
+fragrancy: []
 fragrant: []
-frail: []
+frail:
+  - frailer
+  - frailest
 frailty:
   - frailties
 frame:
@@ -6453,8 +6625,11 @@ free:
   - freed
   - freeing
   - frees
+  - freer
 free-thinker:
   - free-thinkers
+  - freethinker
+  - freethinkers
 free-will: []
 freedom: []
 freely: []
@@ -6487,6 +6662,8 @@ frighten:
   - frightens
 frightful: []
 frivolous: []
+frog:
+  - frogs
 frolic:
   - frolicked
   - frolics
@@ -6529,6 +6706,13 @@ fume:
   - fumed
   - fumes
   - fuming
+function:
+  - functions
+  - functioning
+fund:
+  - funded
+  - funds
+  - funding
 fundamental:
   - fundamentals
 furious: []
@@ -6537,6 +6721,7 @@ furnish:
   - furnished
   - furnishes
   - furnishing
+furniture: []
 further`:
   - furthered
   - furthereth
@@ -6546,6 +6731,8 @@ fury: []
 fustian: []
 future:
   - futures
+futurity: []
+fœtus: fœtuses
 gaiety:
   - gaieties
 gain:
@@ -6586,6 +6773,8 @@ garniture:
   - garnitures
 garrison:
   - garrisons
+garter:
+  - garters
 gather:
   - gathered
   - gathers
@@ -6614,6 +6803,7 @@ generalize:
 generally: []
 generation:
   - generations
+generative: []
 generosity: []
 generous: []
 generously: []
@@ -6684,6 +6874,8 @@ glance:
   - glanced
   - glances
   - glancing
+glandule:
+  - glandules
 glare:
   - glared
   - glares
@@ -6699,6 +6891,8 @@ glide:
   - glided
   - glides
   - gliding
+glimpse:
+  - glimpses
 glister:
   - glistered
   - glisters
@@ -6757,6 +6951,7 @@ good:
   - bettering
   - betters
   - goods
+good-humour: []
 good-manners: []
 good-nature: []
 good-natured: []
@@ -6771,6 +6966,8 @@ goth:
 gothic: []
 gourd:
   - gourds
+gout:
+  - gouts
 govern:
   - govern'd
   - governed
@@ -6818,6 +7015,7 @@ gratify:
   - gratifies
   - gratifying
 gratitude: []
+gratuitous: []
 grave:
   - graved
   - graver
@@ -6825,7 +7023,10 @@ grave:
   - gravest
   - graving
   - gravings
+gravel:
+  - gravels
 gravely: []
+gravitation: []
 gravity: []
 great:
   - greater
@@ -6963,6 +7164,10 @@ happiness: []
 happy:
   - happier
   - happiest
+harangue:
+  - harangued
+  - harangues
+  - haranguing
 harbour:
   - harbour'd
   - harboured
@@ -7003,6 +7208,10 @@ hasten:
   - hastens
 hastily: []
 hasty: []
+hatch:
+  - hatched
+  - hatches
+  - hatching
 hate:
   - hated
   - hates
@@ -7024,6 +7233,10 @@ have:
   - hast
   - hath
   - having
+hazard:
+  - hazards
+  - hazarded
+  - hazarding
 hazzard:
   - hazzards
 he:
@@ -7035,12 +7248,16 @@ he:
   - his
 head:
   - heads
+headache:
+  - head-ach
+  - headaches
 headlong: []
 heal:
   - healed
   - healing
   - heals
 health: []
+healthful: []
 heap:
   - heaped
   - heaping
@@ -7096,6 +7313,8 @@ heighten:
   - heightened
   - heightening
   - heightens
+heir:
+  - heirs
 heiress:
   - heiresses
 hell:
@@ -7205,6 +7424,7 @@ homage:
   - homages
 home:
   - homes
+homogeneous: []
 honest: []
 honesty: []
 honour:
@@ -7238,13 +7458,20 @@ horror:
   - horrors
 horse:
   - horses
+hospital:
+  - hospitals
 host:
   - hosted
   - hosting
   - hosts
+hostile: []
 hot:
   - hotter
   - hottest
+hound:
+  - hounds
+  - hounding
+  - hounded
 hour:
   - hours
 house:
@@ -7281,6 +7508,8 @@ humanize:
   - humanizing
   - humanizes
 humble: []
+humiliation:
+  - humiliations
 humility: []
 humorist:
   - humorists
@@ -7300,6 +7529,8 @@ hunt:
   - hunts
 hunter:
   - hunters
+hurricane:
+  - hurricanes
 hurry:
   - hurried
   - hurries
@@ -7311,6 +7542,7 @@ husband:
   - husbands
   - husband's
 hydrophoby: []
+hydrostatics: []
 hymn:
   - hymns
 hyperbole:
@@ -7335,6 +7567,8 @@ ibid: []
 idea:
   - idea's
   - ideas
+ideal:
+  - ideals
 identity:
   - identities
 idiom:
@@ -7345,6 +7579,8 @@ idle: []
 idleness: []
 idol:
   - idols
+idolater:
+  - idolaters
 idolatry:
   - idolatries
 if: []
@@ -7353,11 +7589,13 @@ ignominious: []
 ignorance: []
 ignorant: []
 ignorantly: []
-ill: []
+ill:
+  - ills
 ill-bred: []
 ill-grounded: []
 ill-judging: []
 ill-nature: []
+ill-will: []
 illiberal: []
 illiterate:
   - illiterates
@@ -7369,6 +7607,7 @@ illumination:
   - illuminations
 illusion:
   - illusions
+illusive: []
 illustrate:
   - illustrated
   - illustrates
@@ -7378,6 +7617,7 @@ illustration:
 illustrious: []
 image:
   - images
+imagery: []
 imaginable: []
 imaginary: []
 imagination:
@@ -7407,6 +7647,7 @@ imitative: []
 immane: []
 immaterial: []
 immateriality: []
+immeasurable: []
 immediate: []
 immediately: []
 immense: []
@@ -7419,6 +7660,7 @@ immorality:
   - immoralities
 immortal: []
 immortality: []
+immutability: []
 immutable: []
 impair:
   - impaired
@@ -7431,6 +7673,7 @@ impart:
   - imparts
 impartial: []
 impartially: []
+impassable: []
 impatience: []
 impatient: []
 impeachment:
@@ -7455,7 +7698,10 @@ impertinently: []
 impetuosity: []
 impetuous: []
 impetus: []
+impiety:
+  - impieties
 impious: []
+impiously: []
 implacable: []
 implant:
   - implanted
@@ -7494,6 +7740,10 @@ impotence: []
 impotent: []
 impotently: []
 impracticable: []
+impregnate:
+  - impregnated
+  - impregnates
+  - impregnating
 impress:
   - impress'd
   - impressed
@@ -7501,6 +7751,10 @@ impress:
   - impressing
 impression:
   - impressions
+imprint:
+  - imprints
+  - imprinted
+  - imprinting
 imprison:
   - imprisoned
   - imprisoning
@@ -7517,6 +7771,7 @@ improve:
 improveable: []
 improvement:
   - improvements
+imprudence: []
 imprudent: []
 impudence: []
 impulse:
@@ -7575,6 +7830,7 @@ include:
   - includes
   - including
 incogitancy: []
+incoherence: []
 income:
   - incomes
 incommode:
@@ -7588,7 +7844,13 @@ incompatibility:
   - incompatibilities
 incompatible: []
 incompetent: []
+incomplete: []
+incomprehensibility: []
+incomprehensible: []
 inconceivable: []
+inconceivably: []
+inconclusive: []
+incongruity: []
 incongruous: []
 inconsiderable: []
 inconsiderate: []
@@ -7610,6 +7872,7 @@ incorporate:
   - incorporated
   - incorporates
   - incorporating
+incorruptible: []
 increase:
   - increas'd
   - increased
@@ -7623,6 +7886,7 @@ inculcate:
 incumbrance:
   - incubrances
 incurable: []
+incurably: []
 incursion:
   - incursions
 indecency:
@@ -7684,12 +7948,15 @@ inebriate:
   - inebriated
   - inebriates
   - inebriating
+ineffable: []
+ineligible: []
 inequality:
   - inequalities
 inevitable: []
 inevitably: []
 inexcusable: []
 inexhaustible: []
+inexplicable: []
 inextricable: []
 infallible: []
 infallibly: []
@@ -7733,6 +8000,7 @@ infinity:
 infirm: []
 infirmity:
   - infirmities
+infix: []
 inflame:
   - inflam'd
   - inflamed
@@ -7765,6 +8033,7 @@ infuse:
   - infuses
 infusion:
   - infusions
+ingenerable: []
 ingenious: []
 ingeniously: []
 ingenuity: []
@@ -7773,6 +8042,10 @@ inglorious: []
 ingrateful: []
 ingratitude:
   - ingratitudes
+ingrave:
+  - ingraved
+  - ingraves
+  - ingraving
 ingredient:
   - ingredients
 inhabit:
@@ -7812,6 +8085,7 @@ inlist:
   - inlisted
   - inlisting
   - inlists
+inmost: []
 innate: []
 innocence: []
 innocency: []
@@ -7824,6 +8098,10 @@ inordinately: []
 inquisition:
   - inquisitions
 inquisitive: []
+inquisitor:
+  - inquisitors
+inroad:
+  - inroads
 insatiable: []
 inscribe:
   - inscribed
@@ -7842,6 +8120,8 @@ insert:
   - inserted
   - inserting
   - inserts
+insertion:
+  - insertions
 insight:
   - insights
 insignificant: []
@@ -7859,6 +8139,7 @@ insist:
   - insisting
   - insists
 insolence: []
+insolvable: []
 insomuch: []
 inspect:
   - inspected
@@ -7908,15 +8189,20 @@ instructor:
 instrument:
   - instruments
 instrumental: []
+insufficiency:
+  - insufficiencies
 insufficient: []
 insult:
   - insulted
   - insulting
   - insults
+insuperable: []
 insupportable: []
 insurrection:
   - insurrections
 integrity: []
+intellect:
+  - intellects
 intellectual:
   - intellectuals
 intelligence:
@@ -7954,6 +8240,10 @@ interior:
   - interiors
   - interiour
   - interiours
+interlard:
+  - interlards
+  - interlarded
+  - interlarding
 intermeddle:
   - intermeddled
   - intermeddles
@@ -7962,6 +8252,8 @@ intermingle:
   - intermingled
   - intermingling
   - intermingles
+intermission:
+  - intermissions
 intermix:
   - intermixed
   - intermixing
@@ -8021,6 +8313,8 @@ intoxicate:
   - intoxicating
   - intoxicates
 intractable: []
+intreaty: []
+intrenchment: []
 intricacy:
   - intricacies
 intricate: []
@@ -8028,6 +8322,7 @@ intrigue:
   - intrigued
   - intriguing
   - intrigues
+intrinsic: []
 introduce:
   - introduced
   - introduces
@@ -8062,6 +8357,11 @@ invader:
 invaluable: []
 invariable: []
 invariably: []
+invective: []
+inveigh:
+  - inveighed
+  - inveighs
+  - inveighing
 inveigle:
   - inveigled
   - inveigles
@@ -8089,12 +8389,18 @@ invigorate:
   - invigorates
   - invigorating
 invincible: []
+inviolable: []
 invisible: []
 invite:
   - invited
   - invites
   - invitest
   - inviting
+invoke:
+  - invoked
+  - invokes
+  - invoking
+  - invok'd
 involuntarily: []
 involuntary: []
 involve:
@@ -8110,6 +8416,7 @@ ipso~facto: []
 ireland: []
 iris:
   - irises
+irish: []
 iron: []
 irony:
   - ironies
@@ -8128,6 +8435,10 @@ irresolution:
   - irresolutions
 irretrievable: []
 irrevocable: []
+irritate:
+  - irritated
+  - irritates
+  - irritating
 island:
   - islands
 isosceles: []
@@ -8139,12 +8450,12 @@ issue:
   - issues
   - issuing
 it:
-  - '''tis'
-  - '''twas'
-  - '''twere'
-  - '''twill'
-  - '''twou''d'
-  - '''twould'
+  - "'tis"
+  - "'twas"
+  - "'twere"
+  - "'twill"
+  - "'twou'd"
+  - "'twould"
   - is't
   - it's
   - its
@@ -8157,12 +8468,16 @@ itch:
   - itches
   - itching
 itself: []
+jargon: []
+jarring: []
 jealous: []
 jealousy:
   - jealousie
   - jealousies
 jest:
   - jests
+jester:
+  - jesters
 jew:
   - jews
 jewel:
@@ -8189,6 +8504,7 @@ jot:
   - jots
 joy:
   - joys
+joyful: []
 joyous: []
 judge:
   - judg
@@ -8203,13 +8519,17 @@ judgment:
 judicature: []
 judicious: []
 judiciously: []
+juice:
+  - juices
 jump:
   - jumped
   - jumping
   - jumps
 juncture:
   - junctures
-just: []
+jupiter: []
+just:
+  - juster
 justice: []
 justifiably: []
 justification:
@@ -8247,8 +8567,10 @@ kindle:
 kindly: []
 kindness:
   - kindnesses
+kindred: []
 king:
   - kings
+  - king's
 kingdom:
   - kingdoms
 kiss:
@@ -8263,6 +8585,8 @@ knee:
   - knees
 knight:
   - knights
+knitting-loom:
+  - knitting-looms
 knock:
   - knock'd
   - knocked
@@ -8316,6 +8640,12 @@ languid: []
 languish:
   - languished
   - languishes
+  - languishing
+languor: []
+lap:
+  - lapped
+  - laps
+  - lapping
 large:
   - larger
   - largest
@@ -8346,6 +8676,7 @@ laugh:
   - laugheth
   - laughing
   - laughs
+laughter: []
 lavish:
   - lavish'd
   - lavished
@@ -8357,6 +8688,10 @@ law:
 lawful: []
 lawfully: []
 lawfulness: []
+lawsuit:
+  - lawsuits
+  - law-suit
+  - law-suits
 lay:
   - laid
   - lain
@@ -8368,6 +8703,7 @@ lead:
   - led
 leaf:
   - leaves`
+  - leaf's
 lean: []
 leap:
   - leaping
@@ -8388,6 +8724,7 @@ lecture:
 left`: []
 leg:
   - legs
+legitimate: []
 leisure:
   - leisures
 lend:
@@ -8412,6 +8749,7 @@ lest: []
 let:
   - let's
   - lets
+lethargy: []
 letter:
   - letters
 level:
@@ -8421,12 +8759,20 @@ level:
   - levels
 levity: []
 liable: []
+liar:
+  - liars
 liberal: []
+libertine:
+  - libertines
 liberty:
   - liberties
 library:
   - libraries
   - librarys
+licence:
+  - licenced
+  - licences
+  - licencing
 license:
   - licenced
   - licences
@@ -8441,6 +8787,8 @@ lie:
   - lying
 life:
   - lives`
+ligament:
+  - ligaments
 light:
   - lighted
   - lighter
@@ -8455,6 +8803,7 @@ lighten:
   - lightens
 like:
   - liked
+  - liker
   - likes
   - liking
 likelihood: []
@@ -8474,13 +8823,26 @@ line:
   - lined
   - lines
   - lining
+linger:
+  - lingering
+  - lingers
+  - lingered
 link:
   - linked
   - linking
   - links
   - linkt
+lion:
+  - lions
+lip:
+  - lips
+liquid:
+  - liquids
+liquor:
+  - liquors
 listlessness: []
 literal: []
+literature: []
 little: []
 live:
   - liv'd
@@ -8495,6 +8857,8 @@ load:
   - loaded
   - loading
   - loads
+loadstone:
+  - loadstones
 loath:
   - loathed
   - loathing
@@ -8514,6 +8878,9 @@ logic:
   - logick
   - logicks
   - logics
+logical: []
+loin:
+  - loins
 long:
   - longed
   - longer
@@ -8528,6 +8895,7 @@ look:
   - looking
   - looks
   - lookt
+looking-glass: []
 loose:
   - looser
   - loosest
@@ -8552,6 +8920,7 @@ lot:
 loud:
   - louder
   - loudest
+loudness: []
 love:
   - lov'd
   - loved
@@ -8569,9 +8938,11 @@ lozenge:
   - lozenges
 lucid: []
 luck: []
+luckily: []
 ludicrous: []
 luminary:
   - luminaries
+lunar: []
 lurk:
   - lurked
   - lurking
@@ -8579,6 +8950,7 @@ lurk:
 lust:
   - lusts
 lustre: []
+luxuriant: []
 luxuriously: []
 luxury:
   - luxuries
@@ -8590,6 +8962,7 @@ lymphatic:
   - lymphatics
 machine:
   - machines
+machinery: []
 madam: []
 madman:
   - madmen
@@ -8600,6 +8973,8 @@ magistrate:
   - magistrates
 magnet:
   - magnets
+magnificence: []
+magnificent: []
 magnify:
   - magnifie
   - magnified
@@ -8610,6 +8985,10 @@ magnitude:
   - magnitudes
 maid:
   - maids
+maim:
+  - maimed
+  - maims
+  - maiming
 main: []
 mainly: []
 maintain:
@@ -8626,6 +9005,13 @@ make:
 maker:
   - maker's
   - makers
+malady:
+  - maladies
+male:
+  - males
+malefactor:
+  - malefactors
+malevolent: []
 malice: []
 malicious: []
 malignant: []
@@ -8659,6 +9045,10 @@ manner:
   - manners
 mansion:
   - mansions
+manufacture:
+  - manufactured
+  - manufactures
+  - manufacturing
 many:
   - more
   - most
@@ -8669,6 +9059,10 @@ mar:
   - marring
   - marrs
   - mars
+march:
+  - marched
+  - marches
+  - marching
 mark:
   - mark'd
   - marked
@@ -8680,6 +9074,7 @@ marry:
   - married
   - marries
   - marrying
+martial: []
 martyr:
   - martyrs
 martyrdom: []
@@ -8741,6 +9136,8 @@ measure:
   - measuring
 meat:
   - meats
+mechanic:
+  - mechanics
 mechanical: []
 mechanically: []
 mechanism:
@@ -8792,6 +9189,7 @@ mend:
   - mended
   - mending
   - mends
+mensuration: []
 mental: []
 mention:
   - mention'd
@@ -8821,9 +9219,15 @@ metaphysic:
   - metaphysicks
   - metaphysics
 metaphysical: []
+metaphysician:
+  - metaphysicians
 method:
   - methods
+methodical: []
+microscope:
+  - microscopes
 middle: []
+midst: []
 mien: []
 might`: []
 mightily: []
@@ -8836,6 +9240,8 @@ militant: []
 milk: []
 milliner:
   - milliners
+million:
+  - millions
 mince:
   - minced
   - minces
@@ -8940,6 +9346,7 @@ moderation:
   - moderations
 modern:
   - moderns
+modest: []
 modesty:
   - modesties
 modification:
@@ -8950,12 +9357,15 @@ modify:
   - modifies
   - modifying
 modish: []
+moist: []
+moisture: []
 molest:
   - molested
   - molesting
   - molests
 moment:
   - moments
+momentary: []
 monarch:
   - monarchs
 monastry:
@@ -8967,6 +9377,8 @@ monitor:
   - monitored
   - monitoring
   - monitors
+monk:
+  - monks
 monopolize:
   - monopoliz'd
   - monopolized
@@ -8979,6 +9391,12 @@ month:
   - months
 mood:
   - moods
+moon:
+  - moons
+moon-struck: []
+mope:
+  - mopes
+  - moping
 moral:
   - morals
 moralist:
@@ -8993,6 +9411,7 @@ morose: []
 moroseness: []
 mortal:
   - mortals
+mortar: []
 mortification:
   - mortifications
 mortify:
@@ -9006,6 +9425,7 @@ mosque:
 mostly: []
 mother:
   - mothers
+  - mother's
 motion:
   - motions
 motive:
@@ -9027,6 +9447,8 @@ move:
   - moving
 movement:
   - movements
+mover:
+  - movers
 much: []
 muddy: []
 mulct:
@@ -9042,6 +9464,7 @@ multiply:
   - multiplying
 multitude:
   - multitudes
+mundane: []
 murmur:
   - murmurs
 muscle:
@@ -9058,11 +9481,22 @@ musician:
   - musicians
 must: []
 mutable: []
+mute:
+  - muted
+  - mutes
+  - muting
 mutual: []
+mutually: []
 mysterious: []
+mysteriousness: []
 mystery:
   - mysteries
+mystic:
+  - mystics
 mystical: []
+mysticism: []
+mythologist:
+  - mythologists
 nail:
   - nailed
   - nailing
@@ -9079,18 +9513,22 @@ narration:
 narrow: []
 narrow-souled:
   - narrow-soul'd
+narrowly: []
 narrowness: []
 nation:
   - nations
 national: []
 native: []
 natural: []
+naturalist:
+  - naturalists
 naturally: []
 nature:
   - natur'd
   - natured
   - natures
   - naturing
+navigation: []
 nay: []
 near:
   - nearer
@@ -9098,8 +9536,14 @@ near:
 nearly: []
 nearness: []
 necessarily: []
+necessarily-existent: []
 necessary:
   - necessaries
+necessitate:
+  - necessitates
+  - necessitated
+  - necessitating
+necessitous: []
 necessity:
   - necessities
   - necessitys
@@ -9123,13 +9567,25 @@ neighbour:
   - neighbours
 neighbourhood:
   - neighbourhoods
+neighbouring: []
 neither: []
+nerve:
+  - nerves
+nest:
+  - nested
+  - nests
+  - nesting
 net:
   - nets
 never: []
+never-ceasing: []
 never-failing: []
 nevertheless: []
-new: []
+new:
+  - newer
+  - newest
+newborn:
+  - new-born
 newly: []
 newness: []
 next: []
@@ -9137,10 +9593,14 @@ nice:
   - nicer
   - nicest
 nicely: []
+nickname:
+  - nicknames
+  - nick-name
+  - nick-names
 night:
   - nights
 nine: []
-'no': []
+"no": []
 nobility:
   - nobilities
 noble:
@@ -9155,7 +9615,10 @@ noisome:
   - noisom
 noisy: []
 nominal: []
+nominally: []
 non: []
+non-existence: []
+non-existent: []
 non-improvement:
   - non-improvements
 none: []
@@ -9172,6 +9635,7 @@ note:
   - noting
 nothing:
   - nothings
+  - nothing's
 notice:
   - noticed
   - notices
@@ -9193,6 +9657,8 @@ novelty:
 novice:
   - novices
 now: []
+now-a-days: []
+nowise: []
 noxious: []
 nuisance:
   - nuisances
@@ -9205,9 +9671,15 @@ nurse:
   - nursed
   - nurses
   - nursing
+nutritive: []
 nymph:
   - nymphs
 o: []
+oar:
+  - oars
+oath:
+  - oaths
+obdurate: []
 obedience: []
 obedient: []
 obelisk:
@@ -9235,6 +9707,10 @@ oblige:
   - obliging
 obliquangular: []
 oblique: []
+obliterate:
+  - obliterated
+  - obliterates
+  - obliterating
 obscure:
   - obscured
   - obscures
@@ -9251,8 +9727,11 @@ observe:
   - observed
   - observes
   - observing
+observer:
+  - observers
 obstacle:
   - obstacles
+obstinacy: []
 obstinate: []
 obstinately: []
 obstruct:
@@ -9269,6 +9748,7 @@ obviate:
   - obviates
   - obviating
 obvious: []
+obviously: []
 occasion:
   - occasion'd
   - occasioned
@@ -9276,6 +9756,7 @@ occasion:
   - occasions
 occasional: []
 occasionally: []
+occult: []
 occupy:
   - occupied
   - occupies
@@ -9297,13 +9778,14 @@ odd:
   - odder
   - oddest
 odds: []
+odious: []
 odoriferous: []
 odour:
   - odor
   - odors
   - odours
 of: []
-'off':
+"off":
   - off's
 offence:
   - offences
@@ -9328,7 +9810,13 @@ offspring:
   - off-spring
 often:
   - oft
+  - oftener
+  - oftenest
 oftentimes: []
+oil:
+  - oiled
+  - oils
+  - oiling
 ointment:
   - ointments
   - oyntment
@@ -9343,7 +9831,8 @@ omit:
   - omitting
 omnipotence: []
 omnipotent: []
-'on':
+omniscient: []
+"on":
   - on't
 once: []
 one:
@@ -9357,6 +9846,8 @@ open:
   - opening
   - opens
 openly: []
+opera:
+  - operas
 operate:
   - operated
   - operates
@@ -9383,12 +9874,14 @@ oppress:
   - oppressed
   - oppresses
   - oppressing
+oppression: []
 optic:
   - optick
   - opticks
   - optics
 option:
   - options
+opulence: []
 or: []
 orator:
   - orators
@@ -9411,10 +9904,14 @@ ore:
   - ores
 organ:
   - organs
+organization:
+  - organizations
 organize:
   - organized
   - organizes
   - organizing
+origin:
+  - origins
 original: []
 originally: []
 ornament:
@@ -9423,12 +9920,15 @@ orthodox: []
 orthodoxy:
   - orthodoxies
 ostentation: []
+ostrich:
+  - ostriches
 other:
   - other's
   - others
 otherwise: []
 ought: []
 out: []
+out-of-the-way: []
 outdo:
   - out-do
   - out-does
@@ -9464,21 +9964,13 @@ outweigh:
   - outweighing
   - outweighs
 over: []
-overweigh:
-  - overweighed
-  - overweigheth
-  - overweighing
-  - overweighs
-  - over-weigh
-  - over-weighed
-  - over-weigheth
-  - over-weighing
-  - over-weighs
 over-careful: []
 over-pay:
   - over-paid
   - over-paying
   - over-pays
+overbalanced:
+  - over-balanced
 overballance:
   - overballanc'd
   - overballanced
@@ -9492,9 +9984,13 @@ overflow:
   - overflowed
   - overflowing
   - overflows
+overflowing:
+  - overflowings
 overforward: []
 overgreat: []
 overlook: []
+overlooked:
+  - over-looked
 overrate:
   - over-rate
   - over-rated
@@ -9539,6 +10035,16 @@ overturn:
   - overturning
   - overturns
 overweaning: []
+overweigh:
+  - overweighed
+  - overweigheth
+  - overweighing
+  - overweighs
+  - over-weigh
+  - over-weighed
+  - over-weigheth
+  - over-weighing
+  - over-weighs
 owe:
   - owed
   - owes
@@ -9548,10 +10054,14 @@ own:
   - owned
   - owning
   - owns
+ox:
+  - oxen
 pace:
   - paced
   - paces
   - pacing
+pagan:
+  - pagans
 pageantry:
   - pageantries
 pain:
@@ -9565,10 +10075,13 @@ painter:
   - painters
 pair:
   - pairs
+palace:
+  - palaces
 pall:
   - palled
   - palling
   - palls
+palpable: []
 palsie: []
 panegyric:
   - panegyrick
@@ -9591,6 +10104,7 @@ parade:
 paradise: []
 paradox:
   - paradoxes
+paradoxical: []
 parallel:
   - parallelled
   - parallelling
@@ -9609,9 +10123,13 @@ pardon:
   - pardoned
   - pardoning
   - pardons
+pardonable: []
 parent:
   - parents
+parental: []
 paris: []
+parish:
+  - parishes
 part:
   - parts
 partake:
@@ -9669,6 +10187,10 @@ patroness:
 pattern:
   - patterns
 paultry: []
+pause:
+  - paused
+  - pauses
+  - pausing
 pay:
   - paid
   - paying
@@ -9677,14 +10199,20 @@ payment:
   - payments
 peace: []
 peaceably: []
+peaceful: []
 peach:
   - peaches
+peasant:
+  - peasants
 pebble:
   - pebbles
 peccant: []
 peculiar: []
-peculiarity: []
+peculiarity:
+  - peculiarities
 peculiarly: []
+pedagogue:
+  - pedagogues
 pen:
   - pens
 penalty:
@@ -9700,6 +10228,7 @@ penitent: []
 pentagon:
   - pentagons
 people:
+  - peopled
   - peoples
 peradventure: []
 perceivable: []
@@ -9731,6 +10260,8 @@ perhaps: []
 perilous: []
 period:
   - periods
+peripatetic:
+  - peripatetics
 perish:
   - perish'd
   - perished
@@ -9746,6 +10277,14 @@ pernitious: []
 perpendicular: []
 perpetual: []
 perpetually: []
+perpetuate:
+  - perpetuated
+  - perpetuates
+  - perpetuating
+perplex:
+  - perplexes
+  - perplexed
+  - perplexing
 perplexity:
   - perplexities
 persecute:
@@ -9754,12 +10293,22 @@ persecute:
   - persecuting
 persecution:
   - persecutions
+perseverance:
+  - perseverances
 persevere:
   - persevered
   - perseveres
   - persevering
+persian:
+  - persians
+persist:
+  - persisted
+  - persits
+  - persisting
 person:
   - persons
+personage:
+  - personages
 personal: []
 personally: []
 persuade:
@@ -9774,6 +10323,7 @@ persuasion:
 persuasive:
   - persuasives
 pert: []
+pertinacious: []
 pertinent: []
 peruke:
   - perukes
@@ -9784,6 +10334,7 @@ peruse:
   - peruses
   - perusing
 perverse: []
+pestilence: []
 petition:
   - petitions
 petty: []
@@ -9807,8 +10358,13 @@ philosopher:
 philosophic:
   - philosophick
 philosophical: []
+philosophise:
+  - philosophised
+  - philosophises
+  - philosophising
 philosophy:
   - philosophies
+phlegm: []
 phoenix:
   - phenix
   - phenixes
@@ -9836,7 +10392,12 @@ pierce:
 piety: []
 pilgrim:
   - pilgrims
+pine:
+  - pined
+  - pines
+  - pining
 pious: []
+piously: []
 pipe:
   - pipes
 pique:
@@ -9878,6 +10439,7 @@ plan:
   - plans
 planet:
   - planets
+planetary: []
 plant:
   - planted
   - planting
@@ -9888,6 +10450,8 @@ plastic:
   - plastics
 platonic:
   - platonick
+platonist:
+  - platonists
 plaudit:
   - plaudits
 plausible: []
@@ -9916,6 +10480,8 @@ please:
 pleasurable: []
 pleasure:
   - pleasures
+plebeian:
+  - plebians
 pledge:
   - pledged
   - pledges
@@ -9928,6 +10494,10 @@ pluck:
   - plucking
   - plucks
   - pluckt
+plunge:
+  - plunged
+  - plunges
+  - plunging
 poem:
   - poems
 poet:
@@ -9947,6 +10517,7 @@ poison:
   - poyson
   - poysons
 poisonous: []
+poized: []
 policy:
   - policies
 polish:
@@ -9962,24 +10533,36 @@ politic:
   - politick
   - politicks
   - politics
+political: []
 politician:
   - politicians
 polity:
   - polities
+pollute:
+  - polluted
+  - pollutes
+  - polluting
 polygon:
   - polygons
+polytheism: []
 pomp:
   - pomps
 pompous: []
 poor:
   - poorer
   - poorest
+pope:
+  - popes
 popery: []
 popular: []
 port:
   - ports
 portion:
   - portions
+position:
+  - positioned
+  - positions
+  - positioning
 positive: []
 positively: []
 possess:
@@ -9992,6 +10575,10 @@ possibility: []
 possible: []
 possibly: []
 posterity: []
+postpone:
+  - postponed
+  - postpones
+  - postponing
 postscript:
   - postscripts
 potent: []
@@ -9999,6 +10586,11 @@ potion:
   - potions
 pound:
   - pounds
+pour:
+  - poured
+  - pours
+  - pouring
+poverty: []
 power:
   - powered
   - powering
@@ -10043,11 +10635,16 @@ preach:
   - preached
   - preaches
   - preaching
+preacher:
+  - preachers
 precarious: []
+precaution:
+  - precautions
 precede:
   - preceded
   - precedes
   - preceding
+precedence: []
 precedency:
   - precedencies
 precedent:
@@ -10056,12 +10653,25 @@ precept:
   - precepts
 preceptive: []
 precious: []
+precipice:
+  - precipices
+precipitate:
+  - precipitated
+  - precipitates
+  - precipitating
 precise: []
+precisely: []
+precision: []
 preclude:
   - preludes
 predecessor:
   - predecessors
 predestinarian: []
+predominant: []
+predominate:
+  - predominated
+  - predominates
+  - predominating
 preeminence: []
 preface:
   - prefaces
@@ -10071,6 +10681,10 @@ prefer:
   - prefered
   - preferring
   - prefers
+preferable: []
+preferably: []
+preference:
+  - preferences
 preferment:
   - preferments
 prejudice:
@@ -10137,6 +10751,8 @@ presume:
   - presuming
 presumption:
   - presumptions
+presumptuous: []
+presumptuously: []
 presuppose:
   - presupposed
   - presupposes
@@ -10159,6 +10775,7 @@ prevail:
   - prevailed
   - prevailing
   - prevails
+prevalence: []
 prevalency: []
 prevalent: []
 prevent:
@@ -10168,6 +10785,7 @@ prevent:
 prevention:
   - preventions
 previous: []
+previously: []
 prey: []
 price:
   - priced
@@ -10176,6 +10794,9 @@ price:
 pride: []
 priest:
   - priests
+priestcraft:
+  - priest-craft
+primarily: []
 primary:
   - primaries
 prime: []
@@ -10196,11 +10817,17 @@ prior: []
 priority: []
 prism:
   - prisms
+prison:
+  - prisons
 private: []
 privation:
   - privations
 priviledge: []
-privilege: []
+privilege:
+  - privileges
+  - privileged
+  - privileging
+pro: []
 probability:
   - probabilities
 probable: []
@@ -10239,6 +10866,7 @@ production:
   - productions
 productive: []
 profane: []
+profaneness: []
 profess:
   - profess'd
   - professed
@@ -10261,6 +10889,8 @@ progress:
   - progressed
   - progresses
   - progressing
+progression:
+  - progressions
 project:
   - projected
   - projecting
@@ -10269,6 +10899,10 @@ prolific:
   - prolifick
 prolix: []
 prolixity: []
+prolong:
+  - prolonged
+  - prolongs
+  - prolonging
 promise:
   - promised
   - promises
@@ -10277,8 +10911,15 @@ promote:
   - promoted
   - promotes
   - promoting
-prompt: []
+prompt:
+  - prompted
+  - prompting
+  - prompts
 prone: []
+pronounce:
+  - pronounced
+  - pronounces
+  - pronouncing
 proof:
   - proofs
 prop: []
@@ -10312,6 +10953,8 @@ proportion:
   - proportioning
   - proportions
 proportionable: []
+proportionably: []
+proportional: []
 proposal:
   - proposals
 propose:
@@ -10322,16 +10965,24 @@ propose:
 proposition:
   - propositions
 proprietary: []
+proprietor:
+  - proprietors
+propriety: []
 prosecution:
   - prosecutions
 proselyte:
   - proselytes
 prospect:
   - prospects
-prosperity: []
+prosperity:
+  - prosperities
 prosperous: []
 protection:
   - protections
+protest:
+  - protests
+  - protested
+  - protesting
 protestant:
   - protestants
 proud: []
@@ -10340,6 +10991,7 @@ prove:
   - proved
   - proves
   - proving
+proverbial: []
 provide:
   - provided
   - provides
@@ -10358,17 +11010,23 @@ provoke:
   - provoked
   - provokes
   - provoking
+proximity: []
 proxy:
   - proxies
 prudence: []
 prudent: []
 prudently: []
+pry:
+  - prying
+  - pried
+  - pries
 psalmist:
   - psalmists
 public:
   - publick
 publication:
   - publications
+publicly: []
 publish:
   - publish'd
   - published
@@ -10388,6 +11046,7 @@ pulse:
 punctilio:
   - punctilios
 punctually: []
+punic: []
 punish:
   - punished
   - punishes
@@ -10406,6 +11065,7 @@ pure:
   - purer
   - purest
 purely: []
+purgative: []
 purge:
   - purged
   - purges
@@ -10447,7 +11107,9 @@ puzzle:
   - puzzling
 pyramid:
   - pyramids
-pyrrhonian: []
+pyrrhonian:
+  - pyrrhonians
+pyrrhonism: []
 pythagorean: []
 quake:
   - quak'd
@@ -10455,6 +11117,9 @@ quake:
   - quakes
   - quaking
   - quakings
+quaker:
+  - quakers
+  - quaker's
 qualification:
   - qualifications
 qualify:
@@ -10487,7 +11152,9 @@ query:
   - queries
   - querying
 question:
+  - questioned
   - questions
+  - questioning
 quick:
   - quicker
   - quickest
@@ -10511,6 +11178,10 @@ race:
   - raced
   - races
   - racing
+rack:
+  - racked
+  - racks
+  - racking
 radiant: []
 radius: []
 rage:
@@ -10525,15 +11196,27 @@ rail:
   - rails
 raillery:
   - railleries
+rain:
+  - rains
+  - rained
+  - raining
+rainbow:
+  - rainbows
 raise:
   - rais'd
   - raised
   - raises
   - raising
+rallier:
+  - ralliers
 rally:
   - rallied
   - rallies
   - rallying
+ramble:
+  - rambled
+  - rambles
+  - rambling
 random: []
 range:
   - ranged
@@ -10552,10 +11235,12 @@ rapsody:
 rapt: []
 rapture:
   - raptures
+rapturous: []
 rare:
   - rarer
   - rarest
 rarely: []
+rarity: []
 rate:
   - rated
   - rates
@@ -10608,6 +11293,8 @@ reason:
 reasonable: []
 reasonableness: []
 reasonably: []
+reasoner:
+  - reasoners
 rebel:
   - rebelled
   - rebelling
@@ -10622,11 +11309,14 @@ receive:
   - received
   - receives
   - receiving
+recent: []
 reception:
   - receptions
 recess:
   - recesses
 reciprocal: []
+recital:
+  - recitals
 reckon:
   - reckon't
   - reckoned
@@ -10657,6 +11347,7 @@ recommend:
   - recommends
 recommendation:
   - recommendations
+reconcilable: []
 reconcile:
   - reconcil'd
   - reconciled
@@ -10673,10 +11364,14 @@ recover:
   - recovered
   - recovering
   - recovers
+recovery:
+  - recoveries
 recreate:
   - recreated
   - recreates
   - recreating
+recreation:
+  - recreations
 rectify:
   - rectifie
   - rectified
@@ -10704,6 +11399,7 @@ reduce:
   - reduces
   - reducing
 reducible: []
+redundant: []
 refer:
   - referr'd
   - referred
@@ -10815,6 +11511,13 @@ relation:
   - relations
 relative: []
 relatively: []
+relax:
+  - relaxes
+  - relaxing
+  - relaxed
+relaxation:
+  - relaxations
+reliance: []
 relic:
   - relick
   - relicks
@@ -10838,7 +11541,9 @@ relish:
   - relished
   - relishes
   - relishing
+reluctance: []
 reluctancy: []
+reluctant: []
 rely:
   - relie
   - relied
@@ -10876,7 +11581,11 @@ remissness: []
 remit: []
 remorse:
   - remorses
-remote: []
+remote:
+  - remoter
+  - remotest
+removal:
+  - removals
 remove:
   - remov'd
   - removed
@@ -10899,6 +11608,10 @@ renounce:
   - renounces
   - renouncing
 renown: []
+repair:
+  - repaired
+  - repairs
+  - repairing
 repay:
   - repaid
   - repaying
@@ -10913,6 +11626,8 @@ repent:
   - repents
 repentance:
   - repentances
+repetition:
+  - repetitions
 repine: []
 replenish:
   - replenish'd
@@ -10951,7 +11666,11 @@ reproof:
   - reproofs
 republic:
   - republics
-repugnancy: []
+repugnancy:
+  - repugnancies
+repugnant: []
+repulsion:
+  - repulsions
 reputation:
   - reputations
 repute: []
@@ -10997,10 +11716,15 @@ reside:
   - resided
   - resides
   - residing
+resign:
+  - resigned
+  - resigns
+  - resigning
 resignation:
   - resignations
 resolution:
   - resolutions
+resolvable: []
 resolve:
   - resolv'd
   - resolved
@@ -11010,22 +11734,35 @@ resound:
   - resounded
   - resounding
   - resounds
+resource:
+  - resources
 respect:
   - respected
   - respecting
   - respects
+respectful: []
 respective: []
 rest:
   - rested
   - resting
   - rests
+restive: []
 restless: []
+restlessness: []
+restore:
+  - restored
+  - restores
+  - restoring
 restrain:
   - restrained
   - restraining
   - restrains
 restrainer:
   - restrainers
+restraint:
+  - restraints
+restriction:
+  - restrictions
 result:
   - resulted
   - resulting
@@ -11051,6 +11788,14 @@ retire:
   - retiring
 retirement:
   - retirements
+retort:
+  - retorted
+  - retorts
+  - retorting
+retract:
+  - retracted
+  - retracts
+  - retracting
 retreat:
   - retreated
   - retreating
@@ -11127,6 +11872,11 @@ reward:
   - rewards
 rhetoric:
   - rhetorick
+rheumatism:
+  - rheumatisms
+rheums: []
+rhinoceros:
+  - rhinoceroses
 rhomboid:
   - rhomboides
   - rhomboids
@@ -11163,13 +11913,19 @@ ridicule:
   - ridiculing
 ridiculous: []
 ridiculousness: []
-right: []
+right:
+  - rights
 righteousness: []
 rightly: []
+rigid: []
 rigorous: []
 rigour: []
 ringleader:
   - ringleaders
+ripen:
+  - ripened
+  - ripens
+  - ripening
 rise:
   - risen
   - rises
@@ -11184,6 +11940,12 @@ rival:
   - rivalled
   - rivalling
   - rivals
+rivalship:
+  - rivalships
+rivet:
+  - riveted
+  - rivets
+  - riveting
 road:
   - roads
 rob:
@@ -11215,6 +11977,10 @@ root:
   - rooted
   - rooting
   - roots
+rot:
+  - rots
+  - rotten
+  - rotting
 rough: []
 roughly: []
 round: []
@@ -11253,11 +12019,16 @@ rustic:
   - rustick
   - rusticks
   - rustics
+sack:
+  - sacked
+  - sacks
+  - sacking
 sacrament:
   - sacraments
 sacred: []
 sacredness: []
 sacrifice:
+  - sacrificed
   - sacrifices
 sad:
   - sadder
@@ -11286,11 +12057,29 @@ salve:
   - salved
   - salves
   - salving
+salvo:
+  - salvos
 same: []
+sameness: []
+sample:
+  - samples
+sanctify:
+  - sanctifies
+  - sanctifying
+  - sanctified
 sanctity: []
+sanctuary:
+  - sanctuaries
+sand:
+  - sands
 sandy: []
+sap: []
 sapid: []
+satellite:
+  - satellites
 satiety: []
+satire:
+  - satires
 satisfaction:
   - satisfactions
 satisfactory: []
@@ -11300,6 +12089,9 @@ satisfy:
   - satisfies
   - satisfy'd
   - satisfying
+saturn: []
+savage:
+  - savages
 save:
   - saved
   - saves
@@ -11322,14 +12114,25 @@ scale:
   - scales
   - scaling
 scalenum: []
+scandalise:
+  - scandalised
+  - scandalises
+  - scandalising
 scandalize:
   - scandaliz'd
   - scandalized
   - scandalizes
   - scandalizing
 scarce: []
+scarcely: []
+scatter:
+  - scattered
+  - scatters
+  - scattering
 scene:
   - scenes
+sceptic:
+  - sceptics
 sceptical: []
 scepticism:
   - scepticisms
@@ -11414,6 +12217,8 @@ secondary: []
 secondly: []
 secret:
   - secrets
+secretion:
+  - secretions
 secretly: []
 sect:
   - sects
@@ -11427,6 +12232,7 @@ secure:
 security: []
 sedate: []
 sedately: []
+sedition: []
 seduce:
   - seduc'd
   - seduced
@@ -11466,8 +12272,14 @@ seize:
   - seizes
   - seizing
 seldom: []
+select:
+  - selected
+  - selects
+  - selecting
 self:
   - selves
+self-annihilation: []
+self-applause: []
 self-centre:
   - self-center
   - self-centered
@@ -11476,15 +12288,22 @@ self-centre:
   - self-centred
   - self-centres
   - self-centring
+self-conceit: []
 self-conscious: []
+self-diffidence: []
 self-esteem: []
 self-evident: []
 self-love: []
+self-preservation: []
+self-satisfaction: []
+self-sufficiency: []
+self-value: []
 selfishness: []
 sell:
   - selling
   - sells
   - sold
+seminal: []
 seminary:
   - seminaries
 senate:
@@ -11494,10 +12313,13 @@ send:
   - sending
   - sends
   - sent
+senna: []
 sensation:
   - sensations
 sense:
   - senses
+sensibility:
+  - sensibilities
 sensible: []
 sensibly: []
 sensitive: []
@@ -11514,6 +12336,8 @@ separate:
   - separates
   - separating
 separately: []
+separation:
+  - separations
 sepulchre: []
 seraphic:
   - seraphick
@@ -11552,6 +12376,7 @@ several: []
 severe:
   - severer
   - severest
+severely: []
 severity:
   - severities
 sex:
@@ -11601,8 +12426,11 @@ she:
 shed:
   - shedding
   - sheds
+sheep: []
 shell:
   - shells
+shelter:
+  - shelters
 shepherd:
   - shepherds
 shepherdess:
@@ -11616,6 +12444,8 @@ shine:
   - shines
   - shining
   - shone
+ship:
+  - ships
 shock:
   - shocked
   - shocking
@@ -11633,6 +12463,10 @@ shorten:
   - shortens
 shortly: []
 shortness: []
+shove:
+  - shoved
+  - shoves
+  - shoving
 show:
   - shew
   - shewed
@@ -11657,6 +12491,7 @@ shun:
 shut:
   - shuts
   - shutting
+shy: []
 sick: []
 sickness:
   - sicknesses
@@ -11696,6 +12531,8 @@ silent: []
 silken: []
 silly: []
 similar: []
+similarity:
+  - similarities
 similitude:
   - similitudes
 simple:
@@ -11803,6 +12640,7 @@ slumber:
 small:
   - smaller
   - smallest
+smallness: []
 smatter:
   - smattered
   - smattering
@@ -11816,9 +12654,13 @@ smile:
   - smiled
   - smiles
   - smiling
+smit:
+  - smits
+  - smitten
 smooth:
   - smoother
   - smoothest
+smoothly: []
 smoothness: []
 snappish: []
 sneak:
@@ -11838,9 +12680,11 @@ soar:
   - soaring
   - soars
 sober: []
+sobriety: []
 sociable: []
 social: []
-society: []
+society:
+  - societies
 soever: []
 soft:
   - softer
@@ -11854,10 +12698,18 @@ sojourn:
   - sojourns
 solace:
   - solaces
+soldier:
+  - soldiers
 sole: []
 solely: []
 solemn: []
 solemnity: []
+solicit:
+  - solicited
+  - solicits
+  - soliciting
+solicitation:
+  - solitications
 solicitous: []
 solicitude: []
 solid:
@@ -11875,11 +12727,14 @@ solve:
   - solving
 some: []
 something: []
+sometime: []
 sometimes: []
+someway: []
 somewhat: []
 somewhere: []
 son:
   - sons
+  - son's
 soon:
   - sooner
   - soonest
@@ -11888,6 +12743,10 @@ sooth:
   - soothed
   - soothes
   - soothing
+sophism:
+  - sophisms
+sorcery:
+  - sorceries
 sordid: []
 sorrow:
   - sorrows
@@ -11911,6 +12770,15 @@ source:
 sourness: []
 sovereign:
   - sovereigns
+sow:
+  - sows
+  - sowed
+  - sowing
+space:
+  - spaced
+  - spaces
+  - spacing
+spain: []
 span:
   - span'd
   - spanned
@@ -11933,9 +12801,12 @@ speak:
   - speaks
   - spoke
   - spoken
+speaker:
+  - speakers
 special: []
 specially: []
 species: []
+specific: []
 specimen:
   - specimens
 specious: []
@@ -11966,6 +12837,8 @@ sphere:
 spherical: []
 spheroid:
   - spheroids
+spider:
+  - spiders
 spin:
   - spinning
   - spins
@@ -11997,6 +12870,7 @@ spot:
 spread:
   - spreading
   - spreads
+sprightly: []
 spring:
   - sprang
   - springing
@@ -12020,8 +12894,12 @@ squander:
   - squandring
 square:
   - squares
+stability:
+  - stabilities
 stable:
   - stables
+stag:
+  - stags
 stage:
   - staged
   - stages
@@ -12029,6 +12907,8 @@ stage:
 stager:
   - stagers
 stagger: []
+stair:
+  - stairs
 stale: []
 stalk:
   - stalked
@@ -12074,6 +12954,8 @@ steadfast:
   - stedfast
 steadily:
   - steddily
+steadiness: []
+steady: []
 steal:
   - stealing
   - steals
@@ -12083,6 +12965,7 @@ steam:
   - steamed
   - steaming
   - steams
+steel: []
 stem:
   - stem'd
   - stemmed
@@ -12093,13 +12976,23 @@ step:
   - stepped
   - stepping
   - steps
-stick: []
+stick:
+  - sticks
+  - stuck
+  - sticking
 stifle:
   - stifled
   - stifles
   - stifling
 still: []
-sting: []
+stimulate:
+  - stimulates
+  - stimulated
+  - stimulating
+sting:
+  - stings
+  - stung
+  - stinging
 stir:
   - stirred
   - stirring
@@ -12109,11 +13002,16 @@ stock:
   - stocked
   - stocking
   - stocks
+stocking:
+  - stockings
 stoic:
   - stoick
   - stoicks
   - stoics
+  - stoic's
+  - stoick's
 stoical: []
+stoicism: []
 stomach: []
 stone:
   - stoned
@@ -12163,6 +13061,7 @@ strengthen:
   - strengthened
   - strengthening
   - strengthens
+strenuously: []
 stress:
   - stress'd
   - stressed
@@ -12186,10 +13085,13 @@ string:
   - stringing
   - strings
   - strung
+string-instrument:
+  - string-instruments
 stripe:
   - stripes
 strive:
   - strived
+  - striven
   - strives
   - striving
 stroke:
@@ -12202,18 +13104,33 @@ strong:
   - stronger
   - strongest
 strongly: []
+strow:
+  - strowed
+  - strows
+  - strowing
 structure:
   - structured
   - structures
   - structuring
+struggle:
+  - struggles
+  - struggled
+  - struggling
 stubborn: []
 stuck: []
+student:
+  - students
 study:
   - studied
   - studies
   - studying
   - studys
 stuff: []
+stumble:
+  - stumbles
+  - stumbled
+  - stumbling
+stupid: []
 stupidity: []
 style:
   - styles
@@ -12221,6 +13138,12 @@ suasive:
   - suasives
   - swasive
   - swasives
+subdivide:
+  - subdivided
+  - subdivides
+  - subdividing
+subdivision:
+  - subdivisions
 subject:
   - subjected
   - subjecting
@@ -12241,6 +13164,7 @@ sublimate:
 sublime:
   - sublimer
   - sublimest
+sublimity: []
 submission:
   - submissions
 submit:
@@ -12256,10 +13180,18 @@ subscribe:
   - subscribing
 subsequent: []
 subserviency: []
+subservient: []
+subshine:
+  - sun-shine
+subside:
+  - subsides
+  - subsiding
+  - subsided
 subsist:
   - subsisted
   - subsisting
   - subsists
+subsistence: []
 substance:
   - substances
 substantial: []
@@ -12267,15 +13199,26 @@ substitute:
   - substituted
   - substitutes
   - substituting
+subterfuge:
+  - subterfuges
 subtil: []
+subtilty:
+  - subtilties
 subtle:
   - subtile
+subversion:
+  - subversions
+subvert:
+  - subverted
+  - subverts
+  - subverting
 succeed:
   - succeeded
   - succeeding
   - succeeds
 success:
   - successes
+successful: []
 successfully: []
 succession:
   - successions
@@ -12298,11 +13241,15 @@ sufficiciently: []
 sufficiency: []
 sufficient: []
 sufficiently: []
+suffrage:
+  - suffrages
 suggest:
   - suggested
   - suggesteth
   - suggesting
   - suggests
+suggestion:
+  - suggestions
 suit:
   - suited
   - suiting
@@ -12322,6 +13269,11 @@ sum:
   - sums
 summer:
   - summers
+summer-season: []
+summon:
+  - summoned
+  - summons
+  - summoning
 sun:
   - sun's
   - suns
@@ -12337,6 +13289,7 @@ supercede:
   - superceded
   - supercedes
   - superceding
+superficial: []
 superficie:
   - superficies
 superfluity:
@@ -12346,9 +13299,12 @@ superinduce:
   - superinduced
   - superinduces
   - superinducing
-superior: []
+superiority: []
 superiour:
+  - superior
+  - superiors
   - superiours
+superlatively: []
 supernatural: []
 superscription:
   - superscriptions
@@ -12408,6 +13364,7 @@ surprise:
   - suprises
   - surprised
   - surprising
+  - surprize
   - surpriz'd
   - surprized
   - surprizes
@@ -12434,10 +13391,12 @@ suspend:
   - suspended
   - suspending
   - suspends
+suspense: []
 suspicion:
   - suspicions
   - suspition
   - suspitions
+suspicious: []
 sustain:
   - sustained
   - sustaining
@@ -12474,6 +13433,7 @@ swim:
   - swimming
   - swims
   - swum
+swine: []
 sword:
   - swords
 sycophant:
@@ -12483,6 +13443,8 @@ syllogism:
   - sillogisms
   - syllogisms
 symbolical: []
+symmetry:
+  - symmetries
 sympathize:
   - sympathized
   - sympathizes
@@ -12493,9 +13455,11 @@ symptom:
   - symptoms
 synagogue:
   - synagogues
+synonymous: []
 system:
   - systeme
   - systems
+systematical: []
 table:
   - tables
 tacitly: []
@@ -12530,6 +13494,10 @@ talkativeness: []
 tall:
   - taller
   - tallest
+tame:
+  - tamed
+  - tames
+  - taming
 tamely: []
 tamper:
   - tampered
@@ -12570,15 +13538,24 @@ tell:
   - telling
   - tells
   - told
+temerity: []
 temper:
+  - tempering
   - tempers
+  - tempered
+temperament:
+  - temperaments
+temperance: []
 temperate: []
+temperature:
+  - temperatures
 tempest:
   - tempests
 temple:
   - temples
 temporal:
   - temporals
+temporary: []
 tempt:
   - tempted
   - tempting
@@ -12587,6 +13564,7 @@ temptation:
   - temptations
 tempter:
   - tempters
+ten: []
 tend:
   - tended
   - tending
@@ -12597,6 +13575,8 @@ tender: []
 tenderness: []
 tenement:
   - tenements
+tenet:
+  - tenets
 tenor:
   - tenors
 tenour:
@@ -12609,6 +13589,7 @@ terminate:
   - terminated
   - terminates
   - terminating
+terrestrial: []
 terrible: []
 terrify:
   - terrified
@@ -12648,9 +13629,14 @@ theme:
   - themes
 then: []
 thence: []
+thenceforward: []
+theogony:
+  - theogonies
+theologian:
+  - theologians
+theological: []
 theology:
   - theologies
-theological: []
 theorem:
   - theorems
 theory:
@@ -12665,7 +13651,7 @@ thereof: []
 thereunto: []
 therewith: []
 they:
-  - '''em'
+  - "'em"
   - their
   - theirs
   - them
@@ -12682,6 +13668,8 @@ think:
   - thinking
   - thinks
   - thought
+thinker:
+  - thinkers
 third:
   - thirds
 thirst:
@@ -12759,10 +13747,15 @@ tie:
   - tied
   - ties
   - tying
+tiger:
+  - tigers
+  - tyger
+  - tygers
 till: []
 time:
   - times
 time-serving: []
+timid: []
 tincture:
   - tinctured
   - tinctures
@@ -12803,6 +13796,10 @@ tongue:
 too: []
 tooth:
   - teeth
+toothache:
+  - toothaches
+  - tooth-ache
+  - tooth-achs
 top:
   - topped
   - topping
@@ -12817,6 +13814,8 @@ torment:
   - tormented
   - tormenting
   - torments
+tormentor:
+  - tormentors
 torrent:
   - torrents
 torture:
@@ -12824,11 +13823,18 @@ torture:
   - tortures
   - torturing
 toss:
+  - tost
   - tossed
   - tosses
   - tossing
   - tossings
+total:
+  - totals
 totally: []
+totter:
+  - tottered
+  - totters
+  - tottering
 touch:
   - touch'd
   - touched
@@ -12850,6 +13856,8 @@ tract:
   - tracts
 trade:
   - trades
+tradition:
+  - traditions
 traditional: []
 traduce:
   - traduc'd
@@ -12873,6 +13881,7 @@ trample:
   - tramples
   - trampling
 tranquill: []
+tranquillity: []
 transact:
   - transacted
   - transacting
@@ -12889,10 +13898,14 @@ transfer:
   - transferred
   - transferring
   - transfers
+transformation:
+  - transformations
 transfuse:
   - transfused
   - transfuses
   - transfusing
+transfusion:
+  - transfusions
 transgress:
   - transgressed
   - transgresses
@@ -12906,6 +13919,8 @@ translate:
   - translated
   - translates
   - translating
+transmission:
+  - transmissions
 transmit:
   - transmits
   - transmitted
@@ -12925,12 +13940,18 @@ transpose:
   - transposed
   - transposes
   - transposing
+transposition:
+  - transpositions
 trapezium:
   - trapezia
 travel:
   - travelled
   - travelling
   - travels
+traveller:
+  - travellers
+treachery:
+  - treacheries
 tread:
   - treaded
   - treading
@@ -12956,6 +13977,8 @@ tremble:
   - trembles
   - trembling
   - tremblings
+tremendous: []
+tremulous: []
 trespass:
   - trespass'd
   - trespassed
@@ -12967,6 +13990,8 @@ trial:
   - tryals
 triangle:
   - triangles
+tribe:
+  - tribes
 tribunal:
   - tribunals
 tribute:
@@ -12977,16 +14002,22 @@ trifle:
   - trifling
 trinity:
   - trinities
+triple:
+  - tripled
+  - triples
+  - tripling
 trite: []
+triteness: []
 triumph:
   - triumphs
+triumphant: []
 triumphantly: []
 trouble:
   - troubled
   - troubles
   - troubling
 troublesome: []
-'true':
+"true":
   - truer
   - truest
 truly:
@@ -13004,6 +14035,10 @@ try:
   - tries
   - try'd
   - trying
+tug:
+  - tugs
+  - tugged
+  - tugging
 tuition:
   - tuitions
 tulip:
@@ -13018,6 +14053,7 @@ tune:
   - tunes
   - tuning
   - tunings
+turbulent: []
 turk:
   - turks
 turn:
@@ -13025,11 +14061,14 @@ turn:
   - turned
   - turning
   - turns
+turnip:
+  - turnips
 turpitude:
   - turpitudes
 tutor:
   - tutors
 twenty: []
+twice: []
 two: []
 twofold: []
 tye:
@@ -13040,7 +14079,11 @@ tyranny: []
 tyrant:
   - tyrants
 ugly: []
+ulcer:
+  - ulcers
 ultimate: []
+ultimately: []
+umbrage: []
 unable: []
 unaccountable: []
 unacquainted: []
@@ -13048,11 +14091,17 @@ unadorned:
   - unadorn'd
 unaffected: []
 unaffectedness: []
+unalterable: []
 unaltered: []
 unanswerable: []
+unanswered: []
 unapt: []
 unassisted: []
+unattended: []
 unavoidable: []
+unavoidably: []
+unaware:
+  - unawares
 unbecoming: []
 unblameable: []
 unblemished: []
@@ -13066,13 +14115,17 @@ uncircumscribedly: []
 unclean: []
 uncommon: []
 uncompounded: []
+unconcern: []
 unconcerned: []
 unconcernedly: []
 unconcerning: []
 unconquerable: []
+uncontrollable: []
+uncontroverted: []
 uncouthness: []
 uncreated: []
 undefiled: []
+undefined: []
 undeniable: []
 under: []
 undergo:
@@ -13102,6 +14155,9 @@ undervalue:
   - undervalues
   - undervaluing
 undeserved: []
+undeterminate: []
+undisputed: []
+undistinguished: []
 undisturbed:
   - undisturb'd
 undisturbing: []
@@ -13118,15 +14174,22 @@ uneasy:
   - uneasie
 unemployed:
   - unemploy'd
+unequal: []
+unexpected: []
 unexpectedly: []
 unfaithful: []
 unfashionable: []
 unfeigned: []
 unfit: []
+unfixed: []
+unformed: []
+unfortunate: []
 ungodly: []
 ungovernable: []
 ungrateful: []
+unguided: []
 unhappily: []
+unhappiness: []
 unhappy: []
 unheard: []
 unhinged: []
@@ -13138,6 +14201,7 @@ uniformity:
 uniformly: []
 uninstructed: []
 unintelligible: []
+uninterrupted: []
 union:
   - unions
 unite:
@@ -13158,9 +14222,12 @@ unkindness: []
 unknown: []
 unlawful: []
 unless: []
+unlimited: []
 unmannerly: []
 unmarried: []
-unmixed: []
+unmeaning: []
+unmixed:
+  - unmixt
 unmortified: []
 unmoveably: []
 unmoved: []
@@ -13173,6 +14240,7 @@ unperplexed:
   - unperplext
 unphilosophical: []
 unpleasant: []
+unpliableness: []
 unprejudiced: []
 unprepared:
   - unprepar'd
@@ -13183,6 +14251,7 @@ unquestionable: []
 unreasonable: []
 unreasonableness: []
 unreasonably: []
+unreserved: []
 unrivaled:
   - unrival'd
 unruly: []
@@ -13191,6 +14260,11 @@ unsatisfactoriness: []
 unsatisfactory: []
 unsatisfied: []
 unseemly: []
+unsettle:
+  - unsettled
+  - unsettling
+  - unsettles
+unsettled: []
 unshaken: []
 unskilful: []
 unsound: []
@@ -13208,12 +14282,14 @@ unsupportable: []
 unthinking: []
 unthought: []
 until:
-  - '''till'''
+  - "'till"
   - untill
 unto: []
+untoward: []
 untowardness: []
 untranslated: []
 unuseful: []
+unusual: []
 unwearied: []
 unwholesomeness: []
 unwilling: []
@@ -13227,7 +14303,12 @@ upbraid:
   - upbraided
   - upbraiding
   - upbraids
+uphold:
+  - upholds
+  - upholding
+  - upheld
 upon: []
+upper: []
 uppermost: []
 uproar: []
 upstart: []
@@ -13263,6 +14344,7 @@ utter:
 utterance:
   - utterances
 utterly: []
+vague: []
 vain: []
 vale: []
 validity: []
@@ -13285,6 +14367,7 @@ vapour:
   - vapours
 variable:
   - variables
+variance: []
 variation:
   - variations
 variety:
@@ -13296,6 +14379,7 @@ vary:
   - varies
   - varying
 vast: []
+vastly: []
 vastness: []
 vaunt:
   - vaunted
@@ -13303,8 +14387,14 @@ vaunt:
   - vaunts
 vegetable:
   - vegetables
+vegetate:
+  - vegetates
+  - vegetated
+  - vegetating
+vegetation: []
 vegetative: []
 vehemence: []
+vehement: []
 veil:
   - veils
 vein:
@@ -13324,8 +14414,11 @@ venture:
   - ventured
   - ventures
   - venturing
+venus: []
+verbal: []
 verdict:
   - verdicts
+verdure: []
 verge:
   - verges
 verily: []
@@ -13342,6 +14435,7 @@ vessel:
   - vessels
 vexation:
   - vexations
+vexatious: []
 viand:
   - viands
 vibration:
@@ -13354,6 +14448,8 @@ vicissitude:
   - vicissitudes
 victory:
   - victories
+victual:
+  - victuals
 vie:
   - vied
   - vies
@@ -13368,6 +14464,7 @@ view:
   - views
 vigil:
   - vigils
+vigilant: []
 vigorous: []
 vigorously: []
 vigour:
@@ -13383,6 +14480,9 @@ vindicate:
   - vindicated
   - vindicates
   - vindicating
+vine:
+  - vines
+vinegar: []
 violence:
   - violences
 violent: []
@@ -13414,7 +14514,12 @@ vitiate:
   - vitiated
   - vitiates
   - vitiating
+vivacity: []
 vivid: []
+vivify:
+  - vivifying
+  - vivifies
+  - vivified
 viz: []
 vogue: []
 voice:
@@ -13462,6 +14567,8 @@ walk:
   - walked
   - walking
   - walks
+wall:
+  - walls
 wander:
   - wandered
   - wandering
@@ -13472,6 +14579,7 @@ want:
   - wanted
   - wanting
   - wants
+wantonness: []
 war:
   - wars
 ware:
@@ -13509,6 +14617,14 @@ watch:
 watchfulness: []
 water:
   - waters
+wave:
+  - waves
+  - waved
+  - waving
+waver:
+  - wavers
+  - wavered
+  - wavering
 wax:
   - waxed
   - waxes
@@ -13545,8 +14661,12 @@ wear:
   - wears
   - wore
   - worn
+weariness: []
+weather: []
 weed:
   - weeds
+week:
+  - weeks
 weigh:
   - weighed
   - weigheth
@@ -13564,10 +14684,14 @@ well: []
 well-being:
   - wellbeing
 well-chosen: []
+well-disposed: []
 well-ordered:
   - well-order'd
+well-proportioned: []
 well-wisher:
   - well-wishers
+welsh: []
+western: []
 what:
   - what's
   - whats
@@ -13577,6 +14701,7 @@ wheel:
   - wheels
 when: []
 whence: []
+whence-ever: []
 whenever: []
 whensoever: []
 where: []
@@ -13592,10 +14717,17 @@ wherever:
 wherewith: []
 whether: []
 which: []
+whichever: []
 while:
   - whilst
+whimsy:
+  - whimsies
 whisper:
   - whispers
+whistle:
+  - whistled
+  - whistles
+  - whistling
 whit: []
 whiten:
   - whitened
@@ -13617,9 +14749,12 @@ wickedness: []
 wide:
   - wider
   - widest
+wide-wasting: []
+widely: []
 wideness: []
 wife:
   - wives
+wild: []
 wilful: []
 wilfully: []
 will:
@@ -13641,6 +14776,10 @@ wind:
   - winding
   - winds
   - wound
+wind-instrument:
+  - wind-instruments
+window:
+  - windows
 wine:
   - wines
 wing:
@@ -13667,6 +14806,8 @@ wisher:
   - wishers
 wit:
   - wits
+witch:
+  - witches
 with: []
 withal: []
 withall: []
@@ -13689,6 +14830,7 @@ withhold:
   - withholds
 within: []
 without: []
+withstand: []
 witness:
   - witnessed
   - witnesses
@@ -13697,13 +14839,19 @@ wittily: []
 witty:
   - wittier
   - wittiest
+woe:
+  - woes
 woeful:
   - woful
+wolf:
+  - wolves
 woman:
   - womans
   - women
   - womens
 womanish: []
+womb:
+  - wombs
 wonder:
   - wonder'd
   - wondered
@@ -13723,9 +14871,12 @@ work:
   - worketh
   - working
   - works
+workman:
+  - workmen
 workmanship: []
 world:
   - worlds
+world-making: []
 worldly: []
 worry:
   - worried
@@ -13781,9 +14932,13 @@ yard:
 yea: []
 year:
   - years
-'yes': []
+"yes": []
 yesterday: []
 yet: []
+yield:
+  - yields
+  - yielded
+  - yielding
 yoke:
   - yokes
 you:
@@ -13798,5 +14953,7 @@ young: []
 youth:
   - youths
 zeal: []
+zealot:
+  - zealots
 zealous: []
 zenith: []
